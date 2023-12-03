@@ -1,0 +1,40 @@
+2023-05-13T00:01:53+08:00 INFO starting service impl=multiAppConn module=proxy service=multiAppConn
+2023-05-13T00:01:53+08:00 INFO starting service connection=query impl=localClient module=abci-client service=localClient
+2023-05-13T00:01:53+08:00 INFO starting service connection=snapshot impl=localClient module=abci-client service=localClient
+2023-05-13T00:01:53+08:00 INFO starting service connection=mempool impl=localClient module=abci-client service=localClient
+2023-05-13T00:01:53+08:00 INFO starting service connection=consensus impl=localClient module=abci-client service=localClient
+2023-05-13T00:01:53+08:00 INFO starting service impl=EventBus module=events service=EventBus
+2023-05-13T00:01:53+08:00 INFO starting service impl=PubSub module=pubsub service=PubSub
+2023-05-13T00:01:53+08:00 INFO starting service impl=IndexerService module=txindex service=IndexerService
+2023-05-13T00:01:53+08:00 INFO ABCI Handshake App Info hash= height=0 module=consensus protocol-version=0 software-version=
+2023-05-13T00:01:53+08:00 INFO ABCI Replay Blocks appHeight=0 module=consensus stateHeight=0 storeHeight=0
+2023-05-13T00:01:53+08:00 INFO Completed ABCI Handshake - Tendermint and App are synced appHash= appHeight=0 module=consensus
+2023-05-13T00:01:53+08:00 INFO Version info block=11 mode=validator p2p=8 tmVersion=0.35.7
+2023-05-13T00:01:53+08:00 INFO This node is a validator addr=319A7C3DA13B8A635B549417C7A98B7F28BB8F2A module=consensus pubKey="h�c��_��&���ɣJ�2��0Bv{�w��Wsn��"
+2023-05-13T00:01:53+08:00 INFO starting service impl=Node service=Node
+2023-05-13T00:01:53+08:00 INFO p2p service legacy_enabled=false
+2023-05-13T00:01:53+08:00 INFO starting service impl=router module=p2p service=router
+2023-05-13T00:01:53+08:00 INFO Starting RPC HTTP server on 192.168.0.166:43057 module=rpc-server
+2023-05-13T00:01:53+08:00 INFO starting router channels=402021222330386061626300 listen_addr=tcp://0.0.0.0:43056 module=p2p net_addr={"id":"46db66eb4108d745cc5063aa821939b4ba930685","ip":"0.0.0.0","port":43056} node_id=46db66eb4108d745cc5063aa821939b4ba930685
+2023-05-13T00:01:53+08:00 INFO starting service impl=BlockSync module=blockchain service=BlockSync
+2023-05-13T00:01:53+08:00 INFO starting service impl=ConsensusReactor module=consensus service=Consensus
+2023-05-13T00:01:53+08:00 INFO starting service impl=StateSync module=statesync service=StateSync
+2023-05-13T00:01:53+08:00 INFO starting service impl=Mempool module=mempool service=Mempool version=v1
+2023-05-13T00:01:53+08:00 INFO starting service impl=Evidence module=evidence service=Evidence
+2023-05-13T00:01:53+08:00 INFO starting service impl=PEX service=PEX
+2023-05-13T00:01:53+08:00 INFO starting service impl=MConn{192.168.0.166:37818} module=p2p peer={"Hostname":"192.168.0.166","NodeID":"a625c4704fc9db7d560341ab0974a4b323b7656b","Path":"","Port":37818,"Protocol":"mconn"} service=MConnection
+2023-05-13T00:01:53+08:00 INFO peer connected endpoint={} module=p2p peer=a625c4704fc9db7d560341ab0974a4b323b7656b
+2023-05-13T00:01:53+08:00 INFO received peer update module=statesync peer=a625c4704fc9db7d560341ab0974a4b323b7656b status=up
+2023-05-13T00:01:54+08:00 INFO switching to consensus reactor height=1 module=blockchain
+2023-05-13T00:01:54+08:00 INFO switching to consensus module=consensus
+2023-05-13T00:01:54+08:00 INFO starting service impl=ConsensusState module=consensus service=State
+2023-05-13T00:01:54+08:00 INFO starting service impl=baseWAL module=consensus service=baseWAL wal=/root/.haechibyshard/shard23/node0/data/cs.wal/wal
+2023-05-13T00:01:54+08:00 INFO starting service impl=Group module=consensus service=Group wal=/root/.haechibyshard/shard23/node0/data/cs.wal/wal
+2023-05-13T00:01:54+08:00 INFO starting service impl=TimeoutTicker module=consensus service=TimeoutTicker
+2023-05-13T00:01:54+08:00 INFO Searching for height height=1 max=0 min=0 module=consensus wal=/root/.haechibyshard/shard23/node0/data/cs.wal/wal
+2023-05-13T00:01:54+08:00 INFO Searching for height height=0 max=0 min=0 module=consensus wal=/root/.haechibyshard/shard23/node0/data/cs.wal/wal
+2023-05-13T00:01:54+08:00 INFO Found height=0 index=0 module=consensus wal=/root/.haechibyshard/shard23/node0/data/cs.wal/wal
+2023-05-13T00:01:54+08:00 INFO Catchup by replaying consensus messages height=1 module=consensus
+2023-05-13T00:01:54+08:00 INFO Replay: Done module=consensus
+2023-05-13T00:01:54+08:00 INFO received proposal module=consensus proposal={"Type":32,"block_id":{"hash":"9404C88B2A90CE90C3371EB8C211126840E2572C91E72FBD33E87FE38B37A3F1","parts":{"hash":"61FA31D220F0C7E614AA8F06DB83473E8C28415301F1621DF216FEAB698DE9BF","total":2}},"height":1,"pol_round":-1,"round":0,"signature":"5CWHaBxIWcgb59Crg8Vph2ghV1YeNmZVyWtqSLg9WXlnrNhdKyu6CPB6c/DoBchuyMT1glE8ecRlsBEwytppCg==","timestamp":"2023-05-12T16:01:54.116997233Z"}
+2023-05-13T00:01:54+08:00 INFO received complete proposal block hash=9404C88B2A90CE90C3371EB8C211126840E2572C91E72FBD33E87FE38B37A3F1 height=1 module=consensus

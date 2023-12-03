@@ -1,0 +1,749 @@
+2023-05-07T21:07:51+08:00 INFO starting service impl=multiAppConn module=proxy service=multiAppConn
+2023-05-07T21:07:51+08:00 INFO starting service connection=query impl=localClient module=abci-client service=localClient
+2023-05-07T21:07:51+08:00 INFO starting service connection=snapshot impl=localClient module=abci-client service=localClient
+2023-05-07T21:07:51+08:00 INFO starting service connection=mempool impl=localClient module=abci-client service=localClient
+2023-05-07T21:07:51+08:00 INFO starting service connection=consensus impl=localClient module=abci-client service=localClient
+2023-05-07T21:07:51+08:00 INFO starting service impl=EventBus module=events service=EventBus
+2023-05-07T21:07:51+08:00 INFO starting service impl=PubSub module=pubsub service=PubSub
+2023-05-07T21:07:51+08:00 INFO starting service impl=IndexerService module=txindex service=IndexerService
+2023-05-07T21:07:51+08:00 INFO ABCI Handshake App Info hash= height=0 module=consensus protocol-version=0 software-version=
+2023-05-07T21:07:51+08:00 INFO ABCI Replay Blocks appHeight=0 module=consensus stateHeight=0 storeHeight=0
+2023-05-07T21:07:51+08:00 INFO Completed ABCI Handshake - Tendermint and App are synced appHash= appHeight=0 module=consensus
+2023-05-07T21:07:51+08:00 INFO Version info block=11 mode=validator p2p=8 tmVersion=0.35.7
+2023-05-07T21:07:51+08:00 INFO This node is a validator addr=E6C9CD288467D3640FDE89C2F19E4F7D87EFCB56 module=consensus pubKey="\x0e���\x1c��v2��Pc��Ҷ���M�?7��j-o`\x04�"
+2023-05-07T21:07:51+08:00 INFO starting service impl=Node service=Node
+2023-05-07T21:07:51+08:00 INFO Starting RPC HTTP server on 127.0.0.1:20057 module=rpc-server
+2023-05-07T21:07:51+08:00 INFO p2p service legacy_enabled=false
+2023-05-07T21:07:51+08:00 INFO starting service impl=router module=p2p service=router
+2023-05-07T21:07:51+08:00 INFO starting router channels=402021222330386061626300 listen_addr=tcp://0.0.0.0:20056 module=p2p net_addr={"id":"0fcfecb15dee4afbd436db79c50e4a6f84fc2edd","ip":"0.0.0.0","port":20056} node_id=0fcfecb15dee4afbd436db79c50e4a6f84fc2edd
+2023-05-07T21:07:51+08:00 INFO starting service impl=BlockSync module=blockchain service=BlockSync
+2023-05-07T21:07:51+08:00 INFO starting service impl=ConsensusReactor module=consensus service=Consensus
+2023-05-07T21:07:51+08:00 INFO starting service impl=StateSync module=statesync service=StateSync
+2023-05-07T21:07:51+08:00 INFO starting service impl=Mempool module=mempool service=Mempool version=v1
+2023-05-07T21:07:51+08:00 INFO starting service impl=Evidence module=evidence service=Evidence
+2023-05-07T21:07:51+08:00 INFO starting service impl=PEX service=PEX
+2023-05-07T21:07:52+08:00 INFO starting service impl=MConn{127.0.0.1:64509} module=p2p peer={"Hostname":"127.0.0.1","NodeID":"381ce50234600bc2273ae5d357b4f60e545bfb0f","Path":"","Port":64509,"Protocol":"mconn"} service=MConnection
+2023-05-07T21:07:52+08:00 INFO peer connected endpoint={} module=p2p peer=381ce50234600bc2273ae5d357b4f60e545bfb0f
+2023-05-07T21:07:52+08:00 INFO received peer update module=statesync peer=381ce50234600bc2273ae5d357b4f60e545bfb0f status=up
+2023-05-07T21:07:52+08:00 INFO not caught up yet height=1 max_peer_height=0 module=blockchain timeout_in=58994.43262
+2023-05-07T21:07:53+08:00 INFO switching to consensus reactor height=1 module=blockchain
+2023-05-07T21:07:53+08:00 INFO switching to consensus module=consensus
+2023-05-07T21:07:53+08:00 INFO starting service impl=ConsensusState module=consensus service=State
+2023-05-07T21:07:53+08:00 INFO starting service impl=baseWAL module=consensus service=baseWAL wal=/Users/xiading/.haechibyshard/shard0/node0/data/cs.wal/wal
+2023-05-07T21:07:53+08:00 INFO starting service impl=Group module=consensus service=Group wal=/Users/xiading/.haechibyshard/shard0/node0/data/cs.wal/wal
+2023-05-07T21:07:53+08:00 INFO starting service impl=TimeoutTicker module=consensus service=TimeoutTicker
+2023-05-07T21:07:53+08:00 INFO Searching for height height=1 max=0 min=0 module=consensus wal=/Users/xiading/.haechibyshard/shard0/node0/data/cs.wal/wal
+2023-05-07T21:07:53+08:00 INFO Searching for height height=0 max=0 min=0 module=consensus wal=/Users/xiading/.haechibyshard/shard0/node0/data/cs.wal/wal
+2023-05-07T21:07:53+08:00 INFO Found height=0 index=0 module=consensus wal=/Users/xiading/.haechibyshard/shard0/node0/data/cs.wal/wal
+2023-05-07T21:07:53+08:00 INFO Catchup by replaying consensus messages height=1 module=consensus
+2023-05-07T21:07:53+08:00 INFO Replay: Done module=consensus
+2023-05-07T21:07:53+08:00 INFO received proposal module=consensus proposal={"Type":32,"block_id":{"hash":"A36E0B86DDB1B5E9F8CB2B19180FB9B5DBFC60B13604272AC2BABE2CAD318510","parts":{"hash":"A50949ACFEA80F2C4EEEC84E8F99631965109035F0294A47EBE94A6ED6AA602D","total":1}},"height":1,"pol_round":-1,"round":0,"signature":"dH/G9cPGHMVYN6vtaus+FoiSI8n+lB61NRJ0XDkRiyFHb/Z3qXlqU61c7ETdQK/YKKtMTLFeYEXKVNoTAhHkDA==","timestamp":"2023-05-07T13:07:53.295832Z"}
+2023-05-07T21:07:53+08:00 INFO received complete proposal block hash=A36E0B86DDB1B5E9F8CB2B19180FB9B5DBFC60B13604272AC2BABE2CAD318510 height=1 module=consensus
+2023-05-07T21:07:53+08:00 INFO finalizing commit of block hash=A36E0B86DDB1B5E9F8CB2B19180FB9B5DBFC60B13604272AC2BABE2CAD318510 height=1 module=consensus num_txs=0 root=
+2023-05-07T21:07:53+08:00 INFO executed block height=1 module=state num_invalid_txs=0 num_valid_txs=0
+2023-05-07T21:07:53+08:00 INFO committed state app_hash= height=1 module=state num_txs=0
+2023-05-07T21:07:54+08:00 INFO received proposal module=consensus proposal={"Type":32,"block_id":{"hash":"75B78FBA4217619C0E4A33E3B336649B246491B6DD51DBF67366E491A4C955AF","parts":{"hash":"52730EDDBAC5B0DEA6D8D2A3A63E13585E9E13C81891C597052A9F89D32C7DAD","total":1}},"height":2,"pol_round":-1,"round":0,"signature":"kNL0FxNEIqRD978Lw7MWzUB71kxrdct63pNSQCoYLYbQwaL9/G1jgx80gRsp5HpEX+cqAikIuoV1nVsDCVncBQ==","timestamp":"2023-05-07T13:07:54.900963Z"}
+2023-05-07T21:07:54+08:00 INFO received complete proposal block hash=75B78FBA4217619C0E4A33E3B336649B246491B6DD51DBF67366E491A4C955AF height=2 module=consensus
+2023-05-07T21:07:55+08:00 INFO finalizing commit of block hash=75B78FBA4217619C0E4A33E3B336649B246491B6DD51DBF67366E491A4C955AF height=2 module=consensus num_txs=182 root=
+2023-05-07T21:07:55+08:00 INFO executed block height=2 module=state num_invalid_txs=0 num_valid_txs=182
+2023-05-07T21:07:55+08:00 INFO committed state app_hash= height=2 module=state num_txs=182
+2023-05-07T21:07:56+08:00 INFO received proposal module=consensus proposal={"Type":32,"block_id":{"hash":"94A41F57E21D256095FCE6D731EF80CBC122A303824F7A8CC59CE369308084F6","parts":{"hash":"8CB622644171069DB69EA07E6E43B18028CF28F39AA3A1AC6F367094D38DF444","total":1}},"height":3,"pol_round":-1,"round":0,"signature":"p8JuWUCBli9AtagtfpipFTL1+2Xo+NdxZyZtm8zIKpS/HqXUT2xk+4tfFkmVNZuLC/D4STU8BAl9U/Xl5OF9AQ==","timestamp":"2023-05-07T13:07:56.601974Z"}
+2023-05-07T21:07:56+08:00 INFO received complete proposal block hash=94A41F57E21D256095FCE6D731EF80CBC122A303824F7A8CC59CE369308084F6 height=3 module=consensus
+2023-05-07T21:07:57+08:00 INFO finalizing commit of block hash=94A41F57E21D256095FCE6D731EF80CBC122A303824F7A8CC59CE369308084F6 height=3 module=consensus num_txs=571 root=
+2023-05-07T21:07:57+08:00 INFO executed block height=3 module=state num_invalid_txs=0 num_valid_txs=571
+2023-05-07T21:07:57+08:00 INFO committed state app_hash= height=3 module=state num_txs=571
+2023-05-07T21:07:58+08:00 INFO received proposal module=consensus proposal={"Type":32,"block_id":{"hash":"AEF33060861366F259210EF98B576FA6DD65DF7A3A40F3BB59BA7B427CCED157","parts":{"hash":"465A0AEB862F3FB834B327D2AA9816115754BE6D7A797E27188EB6A469C78ADC","total":1}},"height":4,"pol_round":-1,"round":0,"signature":"TYHPza7OySpseoglHs8gAjIvSXtsspKfpNwEv+l8U0ub7IZbEZ5TGlndNv4GHTnt284TMv3ug2qpVLfSS+FZAg==","timestamp":"2023-05-07T13:07:58.203943Z"}
+2023-05-07T21:07:58+08:00 INFO received complete proposal block hash=AEF33060861366F259210EF98B576FA6DD65DF7A3A40F3BB59BA7B427CCED157 height=4 module=consensus
+2023-05-07T21:07:58+08:00 INFO finalizing commit of block hash=AEF33060861366F259210EF98B576FA6DD65DF7A3A40F3BB59BA7B427CCED157 height=4 module=consensus num_txs=427 root=
+2023-05-07T21:07:58+08:00 INFO executed block height=4 module=state num_invalid_txs=0 num_valid_txs=427
+2023-05-07T21:07:58+08:00 INFO committed state app_hash= height=4 module=state num_txs=427
+2023-05-07T21:08:00+08:00 INFO received proposal module=consensus proposal={"Type":32,"block_id":{"hash":"4D74528C984ABEBCF1F54D748A909A99CA94AE6DF6D0A0F2077005E40B32C3DD","parts":{"hash":"27CA8C9C7625013F187BBE91F650E37633A295B3155396824A29A090E6805334","total":1}},"height":5,"pol_round":-1,"round":0,"signature":"MhR2Z5qomD1B2Jk9J6nIiLb/37Czpq5R+MOiTSsCvOTvy2qsrIKhifpL4z4TvNpt34uKyZ9gjzfu+IbD+3sqCA==","timestamp":"2023-05-07T13:07:59.757491Z"}
+2023-05-07T21:08:00+08:00 INFO received complete proposal block hash=4D74528C984ABEBCF1F54D748A909A99CA94AE6DF6D0A0F2077005E40B32C3DD height=5 module=consensus
+2023-05-07T21:08:00+08:00 INFO finalizing commit of block hash=4D74528C984ABEBCF1F54D748A909A99CA94AE6DF6D0A0F2077005E40B32C3DD height=5 module=consensus num_txs=520 root=
+2023-05-07T21:08:00+08:00 INFO executed block height=5 module=state num_invalid_txs=0 num_valid_txs=520
+2023-05-07T21:08:00+08:00 INFO committed state app_hash= height=5 module=state num_txs=520
+2023-05-07T21:08:01+08:00 INFO received proposal module=consensus proposal={"Type":32,"block_id":{"hash":"844CA6C802A7E0A1232EE7A1BBD865742808A754E6273DF64DA2035C88E1BA75","parts":{"hash":"6171CAFF37C236CF71461EF4F412778B1C78CB7F23D19304BCEE41103A425F0F","total":1}},"height":6,"pol_round":-1,"round":0,"signature":"DTkhnMIwSP7av2yTgbIkhwG+mPgOXIuILeOQ+kVOqY4YiIFLEyaY945CwIgjpMWzLBcn4A28zZpKB1HzYu/YAQ==","timestamp":"2023-05-07T13:08:01.701366Z"}
+2023-05-07T21:08:01+08:00 INFO received complete proposal block hash=844CA6C802A7E0A1232EE7A1BBD865742808A754E6273DF64DA2035C88E1BA75 height=6 module=consensus
+2023-05-07T21:08:02+08:00 INFO finalizing commit of block hash=844CA6C802A7E0A1232EE7A1BBD865742808A754E6273DF64DA2035C88E1BA75 height=6 module=consensus num_txs=429 root=
+2023-05-07T21:08:02+08:00 INFO executed block height=6 module=state num_invalid_txs=0 num_valid_txs=429
+2023-05-07T21:08:02+08:00 INFO committed state app_hash= height=6 module=state num_txs=429
+2023-05-07T21:08:09+08:00 INFO received proposal module=consensus proposal={"Type":32,"block_id":{"hash":"4ED53C312CD617D41781E8B95C28CAC54B020D684ACFAC02C2F3105200311401","parts":{"hash":"1E767D7DACFF453C7B3A6572A869ED0775AB96EF14593324266E23AF72A94E4C","total":1}},"height":7,"pol_round":-1,"round":0,"signature":"rS/i3bP9tcTGSoBFloLen0+cgVeNszbtgBQRB1ezIhurkuBYZvd7fWhBVCzIpd0R8+OXtZDBbHgQLTs0nWX6AQ==","timestamp":"2023-05-07T13:08:03.249302Z"}
+2023-05-07T21:08:09+08:00 INFO received complete proposal block hash=4ED53C312CD617D41781E8B95C28CAC54B020D684ACFAC02C2F3105200311401 height=7 module=consensus
+2023-05-07T21:08:11+08:00 INFO received proposal module=consensus proposal={"Type":32,"block_id":{"hash":"0A9B67A676A16A24A9970FBA6E2878331066E0FD826D2B60F8EC4B96EE3B79D9","parts":{"hash":"30D39C560F69508B7174B901C9220973B3825FA844530D46CAF740EBBE803464","total":1}},"height":7,"pol_round":-1,"round":1,"signature":"deKCQ0pbXYNkpRJPJMXvzueoSfDSZRX0+HTam2F1laGDtqRyHX18J15q7wXrQ4pAPnTbp6x3DM+7btTfJsePDg==","timestamp":"2023-05-07T13:08:11.555974Z"}
+2023-05-07T21:08:11+08:00 INFO received complete proposal block hash=0A9B67A676A16A24A9970FBA6E2878331066E0FD826D2B60F8EC4B96EE3B79D9 height=7 module=consensus
+2023-05-07T21:08:12+08:00 INFO finalizing commit of block hash=0A9B67A676A16A24A9970FBA6E2878331066E0FD826D2B60F8EC4B96EE3B79D9 height=7 module=consensus num_txs=577 root=
+2023-05-07T21:08:12+08:00 INFO executed block height=7 module=state num_invalid_txs=0 num_valid_txs=577
+2023-05-07T21:08:12+08:00 INFO committed state app_hash= height=7 module=state num_txs=577
+2023-05-07T21:08:13+08:00 INFO received proposal module=consensus proposal={"Type":32,"block_id":{"hash":"A3A37C988C037DFE119050156A36B198FC3EE18CE63E9E876C6E90F3593044E5","parts":{"hash":"33F3B0BF06A9DABEDCE04EA2FED21AA809A512AC31B5CBA2C2F07FE5D3B26BDE","total":1}},"height":8,"pol_round":-1,"round":0,"signature":"9PetP7fH3gFCph1lJHrWKpg4uhDbKUYG+Kcdrsl9vEvl/S3U8qOUOiJGfoTfsJxyguOvV1w+KEeVH93XM/E5Cg==","timestamp":"2023-05-07T13:08:13.075974Z"}
+2023-05-07T21:08:13+08:00 INFO received complete proposal block hash=A3A37C988C037DFE119050156A36B198FC3EE18CE63E9E876C6E90F3593044E5 height=8 module=consensus
+2023-05-07T21:08:13+08:00 INFO finalizing commit of block hash=A3A37C988C037DFE119050156A36B198FC3EE18CE63E9E876C6E90F3593044E5 height=8 module=consensus num_txs=385 root=
+2023-05-07T21:08:13+08:00 INFO executed block height=8 module=state num_invalid_txs=0 num_valid_txs=385
+2023-05-07T21:08:13+08:00 INFO committed state app_hash= height=8 module=state num_txs=385
+2023-05-07T21:08:14+08:00 INFO received proposal module=consensus proposal={"Type":32,"block_id":{"hash":"8C901AD23A18F71BAE5E1FE4E12B396B746B98682BED69A99E3BE9155C23BAE1","parts":{"hash":"A68F7CD3B94E7DAA6A18E4B7EF1480DF26465EBE9B14E10F519262CB978D043C","total":1}},"height":9,"pol_round":-1,"round":0,"signature":"PashU0bLL4qk1EwpT8UsQHwTAXYdlqODGViLuvb2sbVYsOpCpBtW9H/KCnxNA0C+CQyazgjf4KYbrd40SEAoBA==","timestamp":"2023-05-07T13:08:14.644573Z"}
+2023-05-07T21:08:14+08:00 INFO received complete proposal block hash=8C901AD23A18F71BAE5E1FE4E12B396B746B98682BED69A99E3BE9155C23BAE1 height=9 module=consensus
+2023-05-07T21:08:15+08:00 INFO finalizing commit of block hash=8C901AD23A18F71BAE5E1FE4E12B396B746B98682BED69A99E3BE9155C23BAE1 height=9 module=consensus num_txs=447 root=
+2023-05-07T21:08:15+08:00 INFO executed block height=9 module=state num_invalid_txs=0 num_valid_txs=447
+2023-05-07T21:08:15+08:00 INFO committed state app_hash= height=9 module=state num_txs=447
+2023-05-07T21:08:16+08:00 INFO received proposal module=consensus proposal={"Type":32,"block_id":{"hash":"279BE93CE4B682F5288E242D590EE3679BBED7E87A031618D5F0A290B4EDEFDE","parts":{"hash":"CB104983633CE33E95A96C5C456DE0916F88F77F1F63FF1EFA449FF903F1A897","total":1}},"height":10,"pol_round":-1,"round":0,"signature":"A4M+V4O3GLA+Vwn1c4cPkxlwmrBOBMi9ad88RbmXUfEE0ai5rc87g19CvldX8KKrj1vv1047Dl11XsFyA08cBQ==","timestamp":"2023-05-07T13:08:16.336313Z"}
+2023-05-07T21:08:16+08:00 INFO received complete proposal block hash=279BE93CE4B682F5288E242D590EE3679BBED7E87A031618D5F0A290B4EDEFDE height=10 module=consensus
+2023-05-07T21:08:16+08:00 INFO finalizing commit of block hash=279BE93CE4B682F5288E242D590EE3679BBED7E87A031618D5F0A290B4EDEFDE height=10 module=consensus num_txs=460 root=
+2023-05-07T21:08:16+08:00 INFO executed block height=10 module=state num_invalid_txs=0 num_valid_txs=460
+2023-05-07T21:08:16+08:00 INFO committed state app_hash= height=10 module=state num_txs=460
+2023-05-07T21:08:17+08:00 INFO received proposal module=consensus proposal={"Type":32,"block_id":{"hash":"BD9C5ACC328F64076439C9C61C3197AC72DCA01FF55995E4B2D40FF46D1A823A","parts":{"hash":"FE2567709BCBC27CC813D103AFCE1CA022BE6D6E9B3266A114E880D6169ED3D3","total":1}},"height":11,"pol_round":-1,"round":0,"signature":"RlSkW/l/zMKKqL0Ssm6cbGbfl7OMVcPAmtQHH+siOTDe9QMZiFl59tlPrfKQsatcnIHl9r7NubqNpb5g3vKNBA==","timestamp":"2023-05-07T13:08:17.842971Z"}
+2023-05-07T21:08:18+08:00 INFO received complete proposal block hash=BD9C5ACC328F64076439C9C61C3197AC72DCA01FF55995E4B2D40FF46D1A823A height=11 module=consensus
+2023-05-07T21:08:18+08:00 INFO finalizing commit of block hash=BD9C5ACC328F64076439C9C61C3197AC72DCA01FF55995E4B2D40FF46D1A823A height=11 module=consensus num_txs=447 root=
+2023-05-07T21:08:18+08:00 INFO executed block height=11 module=state num_invalid_txs=0 num_valid_txs=447
+2023-05-07T21:08:18+08:00 INFO committed state app_hash= height=11 module=state num_txs=447
+2023-05-07T21:08:19+08:00 INFO received proposal module=consensus proposal={"Type":32,"block_id":{"hash":"833CEF487A1F3CC815068C2DD0D31DE069F3B862B31878E452176C8BC4AE7002","parts":{"hash":"4D76A3FA39A7B02D80E8ABC39455910E894D968FE98C4264B070C0AF8FB44C79","total":1}},"height":12,"pol_round":-1,"round":0,"signature":"Cn6E9Q8n5vopGeXhkPYZamlUI7Ivv/pFvNFQo++OhuYHcjitdac7bcoVxtltW3mWg8lkx6d/8j1RdtBOeo5FAA==","timestamp":"2023-05-07T13:08:19.53703Z"}
+2023-05-07T21:08:19+08:00 INFO received complete proposal block hash=833CEF487A1F3CC815068C2DD0D31DE069F3B862B31878E452176C8BC4AE7002 height=12 module=consensus
+2023-05-07T21:08:19+08:00 INFO finalizing commit of block hash=833CEF487A1F3CC815068C2DD0D31DE069F3B862B31878E452176C8BC4AE7002 height=12 module=consensus num_txs=489 root=
+2023-05-07T21:08:20+08:00 INFO executed block height=12 module=state num_invalid_txs=0 num_valid_txs=489
+2023-05-07T21:08:20+08:00 INFO committed state app_hash= height=12 module=state num_txs=489
+2023-05-07T21:08:21+08:00 INFO received proposal module=consensus proposal={"Type":32,"block_id":{"hash":"3C7B5D1BF1C5BFA1337969B16E9064A5F01A1D49213A5EE4BC46051ED62F3919","parts":{"hash":"12849A099344F1E2660F75ABC47B3D234BD1211087F0B5ACC02C26506A301E26","total":1}},"height":13,"pol_round":-1,"round":0,"signature":"oyZ0FyZM9/e0boWwKgmNeGBuMLuBkZEM4PT6M1ZWbkVlDLoD3XgSuyvjlY17zXUY44jv3kLSg/a8Hl5snmG0Aw==","timestamp":"2023-05-07T13:08:20.984048Z"}
+2023-05-07T21:08:21+08:00 INFO received complete proposal block hash=3C7B5D1BF1C5BFA1337969B16E9064A5F01A1D49213A5EE4BC46051ED62F3919 height=13 module=consensus
+2023-05-07T21:08:21+08:00 INFO finalizing commit of block hash=3C7B5D1BF1C5BFA1337969B16E9064A5F01A1D49213A5EE4BC46051ED62F3919 height=13 module=consensus num_txs=289 root=
+2023-05-07T21:08:21+08:00 INFO executed block height=13 module=state num_invalid_txs=0 num_valid_txs=289
+2023-05-07T21:08:21+08:00 INFO committed state app_hash= height=13 module=state num_txs=289
+2023-05-07T21:08:22+08:00 INFO received proposal module=consensus proposal={"Type":32,"block_id":{"hash":"1BE0EB03B4AB3DD03BA651A54AEA4D75A969E7AD91CC9F2A9B3AB2A90B423AEA","parts":{"hash":"70D7D7E3D2990D817C6B78F1FA6A799DBDD8AF5602F29127809850F55E962E9E","total":1}},"height":14,"pol_round":-1,"round":0,"signature":"gIMBYDEvwgjfEp+Rz3LMh4mytceGT1Ex8BiKUEi7iKC5y+d83BBn0PQMDKL5juCZ9BiPDkweTrvpI5ifbHQzBw==","timestamp":"2023-05-07T13:08:22.640919Z"}
+2023-05-07T21:08:22+08:00 INFO received complete proposal block hash=1BE0EB03B4AB3DD03BA651A54AEA4D75A969E7AD91CC9F2A9B3AB2A90B423AEA height=14 module=consensus
+2023-05-07T21:08:23+08:00 INFO finalizing commit of block hash=1BE0EB03B4AB3DD03BA651A54AEA4D75A969E7AD91CC9F2A9B3AB2A90B423AEA height=14 module=consensus num_txs=172 root=
+2023-05-07T21:08:23+08:00 INFO executed block height=14 module=state num_invalid_txs=0 num_valid_txs=172
+2023-05-07T21:08:23+08:00 INFO committed state app_hash= height=14 module=state num_txs=172
+2023-05-07T21:08:24+08:00 INFO received proposal module=consensus proposal={"Type":32,"block_id":{"hash":"02B7D482A3128CF6854A6148CCF2433DDFE1ABC58179C9EF7921AE9E74A51B4A","parts":{"hash":"DD32616ED16B08EBE65DA7D73AFC9B9E99A5BF55CB17D8CCA1DC84C4A2338F02","total":1}},"height":15,"pol_round":-1,"round":0,"signature":"zs9dO0xrLUxaY9xbq8OGfSno3UZkAOel0AmxKpz+FOSt9ypnlKqNrAhcCUKjH+k4GqhL5ZupajrInutkEiLhAw==","timestamp":"2023-05-07T13:08:24.350224Z"}
+2023-05-07T21:08:24+08:00 INFO received complete proposal block hash=02B7D482A3128CF6854A6148CCF2433DDFE1ABC58179C9EF7921AE9E74A51B4A height=15 module=consensus
+2023-05-07T21:08:24+08:00 INFO finalizing commit of block hash=02B7D482A3128CF6854A6148CCF2433DDFE1ABC58179C9EF7921AE9E74A51B4A height=15 module=consensus num_txs=264 root=
+2023-05-07T21:08:24+08:00 INFO executed block height=15 module=state num_invalid_txs=0 num_valid_txs=264
+2023-05-07T21:08:24+08:00 INFO committed state app_hash= height=15 module=state num_txs=264
+2023-05-07T21:08:25+08:00 INFO received proposal module=consensus proposal={"Type":32,"block_id":{"hash":"547BCF42734E147BE6910C69A249445680B377145117D9291AB124A529D19056","parts":{"hash":"BFE0D125DEE64B3D0A87F1F6F53E347595632A6024AC4A773A642437B1A5DC82","total":1}},"height":16,"pol_round":-1,"round":0,"signature":"aVo4KBbAn3xoiumQ9vdDJrA0WgScyVVTxJDvACabckAlO0K9t6wmmaXfM6CM1i4NBGamwRV+mx1oRUCyqN7DAg==","timestamp":"2023-05-07T13:08:25.878772Z"}
+2023-05-07T21:08:25+08:00 INFO received complete proposal block hash=547BCF42734E147BE6910C69A249445680B377145117D9291AB124A529D19056 height=16 module=consensus
+2023-05-07T21:08:26+08:00 INFO finalizing commit of block hash=547BCF42734E147BE6910C69A249445680B377145117D9291AB124A529D19056 height=16 module=consensus num_txs=209 root=
+2023-05-07T21:08:26+08:00 INFO executed block height=16 module=state num_invalid_txs=0 num_valid_txs=209
+2023-05-07T21:08:26+08:00 INFO committed state app_hash= height=16 module=state num_txs=209
+2023-05-07T21:08:27+08:00 INFO received proposal module=consensus proposal={"Type":32,"block_id":{"hash":"3E12A32900D5DC34773D14279A8C6B41BD0BEEEB19936F82FB331D19993941C0","parts":{"hash":"BB024D8895EB79C4AAC3D928865224B4D610EA7D6DDAACBB0F0381A6AC035B4B","total":1}},"height":17,"pol_round":-1,"round":0,"signature":"HdQz0ziTYu7gkgfhIXIoXQpiIKGAJGu2YHlubg5KBZUShbv8hI6n5ViZyIVVT900UMr9y/0JF7u43AiU7XKiDQ==","timestamp":"2023-05-07T13:08:27.319113Z"}
+2023-05-07T21:08:27+08:00 INFO received complete proposal block hash=3E12A32900D5DC34773D14279A8C6B41BD0BEEEB19936F82FB331D19993941C0 height=17 module=consensus
+2023-05-07T21:08:27+08:00 INFO finalizing commit of block hash=3E12A32900D5DC34773D14279A8C6B41BD0BEEEB19936F82FB331D19993941C0 height=17 module=consensus num_txs=260 root=
+2023-05-07T21:08:28+08:00 INFO executed block height=17 module=state num_invalid_txs=0 num_valid_txs=260
+2023-05-07T21:08:28+08:00 INFO committed state app_hash= height=17 module=state num_txs=260
+2023-05-07T21:08:28+08:00 INFO received proposal module=consensus proposal={"Type":32,"block_id":{"hash":"5F6C1D23A96A6ED56AC4A0547CAA080470A0884941F121512E6226214C1F3754","parts":{"hash":"180EEFDD4E02C944167923BB605C55042CD192556F4E2DF2B6BDCDDF289D0C04","total":1}},"height":18,"pol_round":-1,"round":0,"signature":"A2X5Sh+DP/bcUXBneyu7evkbVKG1aLOuR1p5ExPo+FvGwa6UrZ2eZX61m5shlnZ50rS8OaBE2iQhtWiHJnvOBQ==","timestamp":"2023-05-07T13:08:28.844087Z"}
+2023-05-07T21:08:28+08:00 INFO received complete proposal block hash=5F6C1D23A96A6ED56AC4A0547CAA080470A0884941F121512E6226214C1F3754 height=18 module=consensus
+2023-05-07T21:08:29+08:00 INFO finalizing commit of block hash=5F6C1D23A96A6ED56AC4A0547CAA080470A0884941F121512E6226214C1F3754 height=18 module=consensus num_txs=225 root=
+2023-05-07T21:08:29+08:00 INFO executed block height=18 module=state num_invalid_txs=0 num_valid_txs=225
+2023-05-07T21:08:29+08:00 INFO committed state app_hash= height=18 module=state num_txs=225
+2023-05-07T21:08:30+08:00 INFO received proposal module=consensus proposal={"Type":32,"block_id":{"hash":"9CEAB5011AB6040ED30ECB9C40A6185CB7B7B13B34B07D66F7E008421685DA61","parts":{"hash":"0EB122721E4E6C8A1DD00CE8866C21278518A9A9919CD318F5B7234795581CE7","total":1}},"height":19,"pol_round":-1,"round":0,"signature":"JDovYBcTYpR8jcNEm/GfYJGFG01lQ9/KB9+Py1RMwlKAM6LLabPycy4dKI4pGkUKeOljjyA/ic29BUGnrCpQBw==","timestamp":"2023-05-07T13:08:30.58225Z"}
+2023-05-07T21:08:30+08:00 INFO received complete proposal block hash=9CEAB5011AB6040ED30ECB9C40A6185CB7B7B13B34B07D66F7E008421685DA61 height=19 module=consensus
+2023-05-07T21:08:31+08:00 INFO finalizing commit of block hash=9CEAB5011AB6040ED30ECB9C40A6185CB7B7B13B34B07D66F7E008421685DA61 height=19 module=consensus num_txs=282 root=
+2023-05-07T21:08:31+08:00 INFO executed block height=19 module=state num_invalid_txs=0 num_valid_txs=282
+2023-05-07T21:08:31+08:00 INFO committed state app_hash= height=19 module=state num_txs=282
+2023-05-07T21:08:32+08:00 INFO received proposal module=consensus proposal={"Type":32,"block_id":{"hash":"6D7E56A06CE269AE20BB76DB24AF10688819153D4AA3A9BD532DA21911709EE8","parts":{"hash":"E775CCA8DEE0AC836A353599CDC88AB9350E5CE8CD7E25818599E1F04584D264","total":1}},"height":20,"pol_round":-1,"round":0,"signature":"t/HOJ/ogHu0/BBt0CbYN9SoHLj88fXEVcFEqXAYSFSwB/SyMzm5Qxh6GYPmW7xqaBmp0B+xtgsqm0ts2tmGxCA==","timestamp":"2023-05-07T13:08:32.302365Z"}
+2023-05-07T21:08:32+08:00 INFO received complete proposal block hash=6D7E56A06CE269AE20BB76DB24AF10688819153D4AA3A9BD532DA21911709EE8 height=20 module=consensus
+2023-05-07T21:08:32+08:00 INFO finalizing commit of block hash=6D7E56A06CE269AE20BB76DB24AF10688819153D4AA3A9BD532DA21911709EE8 height=20 module=consensus num_txs=237 root=
+2023-05-07T21:08:32+08:00 INFO executed block height=20 module=state num_invalid_txs=0 num_valid_txs=237
+2023-05-07T21:08:32+08:00 INFO committed state app_hash= height=20 module=state num_txs=237
+2023-05-07T21:08:33+08:00 INFO received proposal module=consensus proposal={"Type":32,"block_id":{"hash":"335A5A7005444E0375530C5E9C9B1F7032A740109BB94E1B6F50B1F89C0637A7","parts":{"hash":"95CE9EC0B325A6038F4F1E8547869F0D3C4DC54C5FC27BD29BD05D3A506F40E8","total":1}},"height":21,"pol_round":-1,"round":0,"signature":"icfU70MOZ7ANP55oGeK/jyfZsYokacHz7r+lwLFsh77srV/7JCjXnQD/5pZkU2r2DrWiEDovq3GyB+mjc9s4AQ==","timestamp":"2023-05-07T13:08:33.74049Z"}
+2023-05-07T21:08:34+08:00 INFO received complete proposal block hash=335A5A7005444E0375530C5E9C9B1F7032A740109BB94E1B6F50B1F89C0637A7 height=21 module=consensus
+2023-05-07T21:08:34+08:00 INFO finalizing commit of block hash=335A5A7005444E0375530C5E9C9B1F7032A740109BB94E1B6F50B1F89C0637A7 height=21 module=consensus num_txs=223 root=
+2023-05-07T21:08:34+08:00 INFO executed block height=21 module=state num_invalid_txs=0 num_valid_txs=223
+2023-05-07T21:08:34+08:00 INFO committed state app_hash= height=21 module=state num_txs=223
+2023-05-07T21:08:35+08:00 INFO received proposal module=consensus proposal={"Type":32,"block_id":{"hash":"3E30DFBA16AAF2B8A43D5B268FC955A92C2BF3A0142D1C8481D8D69C94F20C92","parts":{"hash":"A78E0899C8D1B39A630599CF5E9A20A9959CAF0C772EC08DEB66C8EF4090B534","total":1}},"height":22,"pol_round":-1,"round":0,"signature":"Ot6L3t7ToiFM8IWocvw/9r75/egGcEknhPtR6mHF05c6l6gZ9C9WraqJQnCkwF/SOo4qCuZaRwvthLTvVgveCg==","timestamp":"2023-05-07T13:08:35.44373Z"}
+2023-05-07T21:08:35+08:00 INFO received complete proposal block hash=3E30DFBA16AAF2B8A43D5B268FC955A92C2BF3A0142D1C8481D8D69C94F20C92 height=22 module=consensus
+2023-05-07T21:08:35+08:00 INFO finalizing commit of block hash=3E30DFBA16AAF2B8A43D5B268FC955A92C2BF3A0142D1C8481D8D69C94F20C92 height=22 module=consensus num_txs=273 root=
+2023-05-07T21:08:35+08:00 INFO executed block height=22 module=state num_invalid_txs=0 num_valid_txs=273
+2023-05-07T21:08:35+08:00 INFO committed state app_hash= height=22 module=state num_txs=273
+2023-05-07T21:08:37+08:00 INFO received proposal module=consensus proposal={"Type":32,"block_id":{"hash":"B50535EA0C40900AA7ED6D878D03B60FC917036FDD4AAA0FEF7111D6A283BD84","parts":{"hash":"DD704EB74DC3EC3E11F5B8F30920733F55D034B1F2E373117BA7D4F32340626A","total":1}},"height":23,"pol_round":-1,"round":0,"signature":"W/LskZp9o2SzaaljYsy4I+MnFVd5gx2JJkOVcUxS4lc6y/UKYHYdLC4omuWgxi/xxb/4vV/Lk9qGON47jxKxDw==","timestamp":"2023-05-07T13:08:36.998722Z"}
+2023-05-07T21:08:37+08:00 INFO received complete proposal block hash=B50535EA0C40900AA7ED6D878D03B60FC917036FDD4AAA0FEF7111D6A283BD84 height=23 module=consensus
+2023-05-07T21:08:37+08:00 INFO finalizing commit of block hash=B50535EA0C40900AA7ED6D878D03B60FC917036FDD4AAA0FEF7111D6A283BD84 height=23 module=consensus num_txs=243 root=
+2023-05-07T21:08:37+08:00 INFO executed block height=23 module=state num_invalid_txs=0 num_valid_txs=243
+2023-05-07T21:08:37+08:00 INFO committed state app_hash= height=23 module=state num_txs=243
+2023-05-07T21:08:38+08:00 INFO received proposal module=consensus proposal={"Type":32,"block_id":{"hash":"C73D1D0BDC0F8A972FA14112CC634765C311AC98A3740FAA251BD16DE9F05638","parts":{"hash":"E8800F48E9F58BDB0A57C54F881F8F7D2F3BB325D353415132991D0AE671B4BC","total":1}},"height":24,"pol_round":-1,"round":0,"signature":"o7HWCCSMrccez44tBel6Si9clkoaHrVxlWkQs0a1C4tjst3rSNinOWtK2PjzFfqerCo5G0yn6ZY3UujlFC2LAA==","timestamp":"2023-05-07T13:08:38.500999Z"}
+2023-05-07T21:08:38+08:00 INFO received complete proposal block hash=C73D1D0BDC0F8A972FA14112CC634765C311AC98A3740FAA251BD16DE9F05638 height=24 module=consensus
+2023-05-07T21:08:38+08:00 INFO finalizing commit of block hash=C73D1D0BDC0F8A972FA14112CC634765C311AC98A3740FAA251BD16DE9F05638 height=24 module=consensus num_txs=222 root=
+2023-05-07T21:08:38+08:00 INFO executed block height=24 module=state num_invalid_txs=0 num_valid_txs=222
+2023-05-07T21:08:38+08:00 INFO committed state app_hash= height=24 module=state num_txs=222
+2023-05-07T21:08:40+08:00 INFO received proposal module=consensus proposal={"Type":32,"block_id":{"hash":"D581983565FC49443C554A979832392207A53B2F77B22BC2E3588B5E382AD1B6","parts":{"hash":"0C033DD6132DBC7E854A3D098180457A502164B447E59F897D02686245AF6148","total":1}},"height":25,"pol_round":-1,"round":0,"signature":"EITHvaXkJ7i6FxyxXCkeduHuazVzBlBfE5pywcDCOAcdc8lZkMH/aajeRj5iM7gpnqWv4hbzhGwno2NpR1xUAQ==","timestamp":"2023-05-07T13:08:39.906894Z"}
+2023-05-07T21:08:40+08:00 INFO received complete proposal block hash=D581983565FC49443C554A979832392207A53B2F77B22BC2E3588B5E382AD1B6 height=25 module=consensus
+2023-05-07T21:08:40+08:00 INFO finalizing commit of block hash=D581983565FC49443C554A979832392207A53B2F77B22BC2E3588B5E382AD1B6 height=25 module=consensus num_txs=231 root=
+2023-05-07T21:08:40+08:00 INFO executed block height=25 module=state num_invalid_txs=0 num_valid_txs=231
+2023-05-07T21:08:40+08:00 INFO committed state app_hash= height=25 module=state num_txs=231
+2023-05-07T21:08:41+08:00 INFO received proposal module=consensus proposal={"Type":32,"block_id":{"hash":"3016CDB3E92738D0185E1113A119A4CA8E0279EA9601B8A2973A8477D302CCFE","parts":{"hash":"1004FC9C578A295936A4DA0917DAA7AA7CB4D24D99CD12D7DFFB3113E00FDD0E","total":1}},"height":26,"pol_round":-1,"round":0,"signature":"0KPqEUCrTX0Mfk3A6UhhBc8b1OvK2pTP5FrBpNgWM9uSQ2y2N/5cZTmFC6VFQ4EUnjcVUU1oVPX/aJsO+uMGBw==","timestamp":"2023-05-07T13:08:41.930341Z"}
+2023-05-07T21:08:41+08:00 INFO received complete proposal block hash=3016CDB3E92738D0185E1113A119A4CA8E0279EA9601B8A2973A8477D302CCFE height=26 module=consensus
+2023-05-07T21:09:09+08:00 INFO received proposal module=consensus proposal={"Type":32,"block_id":{"hash":"BCCEFA6E33E5BCAE73FA617D38D7B6A71A7AD7FAA7B7CC700A732571FC21A635","parts":{"hash":"ED6BFA9D5BAF2D8C118C01FD91BE47D7F0E7DC06E7CD7D38ED771276057E3B25","total":1}},"height":26,"pol_round":-1,"round":1,"signature":"WIHtPUeTtS95MPxwT8EJxKBoucdYDBVnmBe9Kh76Fub8I0tO4Sw4vgHGYHG03x4Vm7z6/3Tvf9a2cu19/wSIAQ==","timestamp":"2023-05-07T13:08:52.461324Z"}
+2023-05-07T21:09:09+08:00 INFO received complete proposal block hash=BCCEFA6E33E5BCAE73FA617D38D7B6A71A7AD7FAA7B7CC700A732571FC21A635 height=26 module=consensus
+2023-05-07T21:09:24+08:00 INFO received proposal module=consensus proposal={"Type":32,"block_id":{"hash":"3016CDB3E92738D0185E1113A119A4CA8E0279EA9601B8A2973A8477D302CCFE","parts":{"hash":"1004FC9C578A295936A4DA0917DAA7AA7CB4D24D99CD12D7DFFB3113E00FDD0E","total":1}},"height":26,"pol_round":-1,"round":2,"signature":"fiU8qPSSR6Za0voyx4igoTVNWCB3q6Vg5BwJH+BNks3ZLPLatV3n/TcUIYJAACvO56JINBCDsQ/gJUdi6NPkBg==","timestamp":"2023-05-07T13:09:24.406615Z"}
+2023-05-07T21:09:24+08:00 INFO received complete proposal block hash=3016CDB3E92738D0185E1113A119A4CA8E0279EA9601B8A2973A8477D302CCFE height=26 module=consensus
+2023-05-07T21:09:48+08:00 INFO received proposal module=consensus proposal={"Type":32,"block_id":{"hash":"AC7E0616260120D852E5607B53E84BB3B6C03D9B5E1E430C916CFD578AB773C9","parts":{"hash":"E4C2600A85A1FA755B47B212F575E6842E45494648A88ED5A95B07A1CE278471","total":1}},"height":26,"pol_round":-1,"round":3,"signature":"Kl6sfdYDsEgL6o/pqiItTuUidVjaKlPGrozcIRs09YtViwubq6STEF3qzPP61nQ7eIOigvpwFhGwD0iVCyNkAw==","timestamp":"2023-05-07T13:09:47.789123Z"}
+2023-05-07T21:09:48+08:00 INFO received complete proposal block hash=AC7E0616260120D852E5607B53E84BB3B6C03D9B5E1E430C916CFD578AB773C9 height=26 module=consensus
+2023-05-07T21:09:48+08:00 INFO finalizing commit of block hash=AC7E0616260120D852E5607B53E84BB3B6C03D9B5E1E430C916CFD578AB773C9 height=26 module=consensus num_txs=595 root=
+2023-05-07T21:09:48+08:00 INFO executed block height=26 module=state num_invalid_txs=0 num_valid_txs=595
+2023-05-07T21:09:48+08:00 INFO committed state app_hash= height=26 module=state num_txs=595
+2023-05-07T21:09:49+08:00 INFO received proposal module=consensus proposal={"Type":32,"block_id":{"hash":"76AB5AFFF2E4C72195796EE68EED37B0BE644056E3FF09C86082647AEE8B6387","parts":{"hash":"E395D6A894DC9D459E1E9E550980C5249E0DE6583409F4622E31C5FB68E51E80","total":1}},"height":27,"pol_round":-1,"round":0,"signature":"rTw7c52mDWEwRXPb46DIMKiq7ewUlHrROmtrM8ciC7OJ3LmqTmapfHh3R3A6IKhAa8NInqGEt9R3zFVKsKUzBA==","timestamp":"2023-05-07T13:09:49.351406Z"}
+2023-05-07T21:09:49+08:00 INFO received complete proposal block hash=76AB5AFFF2E4C72195796EE68EED37B0BE644056E3FF09C86082647AEE8B6387 height=27 module=consensus
+2023-05-07T21:09:50+08:00 INFO finalizing commit of block hash=76AB5AFFF2E4C72195796EE68EED37B0BE644056E3FF09C86082647AEE8B6387 height=27 module=consensus num_txs=334 root=
+2023-05-07T21:09:50+08:00 INFO executed block height=27 module=state num_invalid_txs=0 num_valid_txs=334
+2023-05-07T21:09:50+08:00 INFO committed state app_hash= height=27 module=state num_txs=334
+2023-05-07T21:09:51+08:00 INFO received proposal module=consensus proposal={"Type":32,"block_id":{"hash":"C87DB91039E122F3DAD98FDE84869C5EC66E5A455CEDB8718AF14FF3EC18ACAD","parts":{"hash":"9A2ED80D47B87ED5C542E97F80776416420DE11EBAA7F49710C3283A3500ED45","total":1}},"height":28,"pol_round":-1,"round":0,"signature":"jZ7DhCEyRjWGNonh6gU/+o+xkzKIDSwhM5k6XzsNMs+t3aAcNjFvb8b+Sj38pPjXA5cuAKSBbWdZ5flLCEJeDQ==","timestamp":"2023-05-07T13:09:51.047392Z"}
+2023-05-07T21:09:51+08:00 INFO received complete proposal block hash=C87DB91039E122F3DAD98FDE84869C5EC66E5A455CEDB8718AF14FF3EC18ACAD height=28 module=consensus
+2023-05-07T21:09:52+08:00 INFO finalizing commit of block hash=C87DB91039E122F3DAD98FDE84869C5EC66E5A455CEDB8718AF14FF3EC18ACAD height=28 module=consensus num_txs=508 root=
+2023-05-07T21:09:52+08:00 INFO executed block height=28 module=state num_invalid_txs=0 num_valid_txs=508
+2023-05-07T21:09:52+08:00 INFO committed state app_hash= height=28 module=state num_txs=508
+2023-05-07T21:09:53+08:00 INFO received proposal module=consensus proposal={"Type":32,"block_id":{"hash":"E5E8897B0E6FB96B84DA1D83E9644666826546A1E5CFA1717C1EBE3D7842D2C6","parts":{"hash":"5A83024FE8A36B552E02711837893A32980EB33281EE32AFBA0DB05C66E3B9DA","total":1}},"height":29,"pol_round":-1,"round":0,"signature":"9Pre5FWDHDeL40JRA7iyVbrYFkoNXnNUEG9kotPINxwhs5cz1pbAxXECcK66cZb28K7Fe4rEtd8GQO/nf4SpAg==","timestamp":"2023-05-07T13:09:53.726502Z"}
+2023-05-07T21:09:53+08:00 INFO received complete proposal block hash=E5E8897B0E6FB96B84DA1D83E9644666826546A1E5CFA1717C1EBE3D7842D2C6 height=29 module=consensus
+2023-05-07T21:09:54+08:00 INFO finalizing commit of block hash=E5E8897B0E6FB96B84DA1D83E9644666826546A1E5CFA1717C1EBE3D7842D2C6 height=29 module=consensus num_txs=215 root=
+2023-05-07T21:09:54+08:00 INFO executed block height=29 module=state num_invalid_txs=0 num_valid_txs=215
+2023-05-07T21:09:54+08:00 INFO committed state app_hash= height=29 module=state num_txs=215
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=63.350847 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=94.520787 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=122.389826 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=141.23173 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=166.883833 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=217.385482 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=215.382227 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=230.490242 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=249.635063 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=209.485745 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=228.16956 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=341.702059 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=249.668007 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=342.110474 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=342.110507 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=342.277122 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=334.684765 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=342.315867 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=342.226082 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=463.018124 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=141.235718 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=495.766747 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=342.944468 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=494.343852 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=532.697666 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=465.010174 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=561.877286 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=341.889278 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=565.393035 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=584.685787 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=588.792722 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=594.287844 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=555.882054 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=531.090726 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=609.428803 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=342.830116 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=454.991987 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=648.934796 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=648.989943 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=647.971259 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=648.746846 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=649.238308 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=649.158889 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=649.428112 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=649.540326 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=648.317617 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=649.764299 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=649.948011 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=648.527844 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=249.551976 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=650.613008 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=648.815569 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=650.986644 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=648.354409 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=651.49379 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=651.35494 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=650.852739 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=650.845046 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=651.291688 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=650.676312 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=652.151749 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=652.522144 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=653.159294 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=649.39451 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=653.350866 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=652.510669 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=653.82292 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=653.265021 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=916.405216 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=653.244636 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=930.164022 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=924.311788 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=929.824944 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=929.937881 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=653.254455 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=931.575241 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=653.470791 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=653.239709 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=932.152831 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=932.304535 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=932.895042 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=930.310475 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=932.444422 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=934.163969 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=932.668212 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=652.540892 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=934.108799 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=651.140839 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=650.654276 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=649.15269 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=649.776857 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=648.109349 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=649.349762 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=648.874074 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=178.468406 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=230.363744 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=130.456692 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=68.359893 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=72.718197 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=82.281512 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=76.845335 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=76.44287 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=78.771983 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=76.513155 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=76.74074 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=92.263751 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=92.258636 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=89.949317 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=99.321421 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=89.54001 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=99.276098 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=85.903175 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=83.871465 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=98.493165 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=113.14358 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=83.045626 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=111.483537 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=110.007171 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=108.301233 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=106.0315 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=122.44553 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=102.036518 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=163.306729 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=143.629754 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=155.488339 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=172.573069 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=171.703793 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=192.004745 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=65.943427 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=192.889436 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=197.57741 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=215.326095 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=141.004196 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=128.207459 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=127.92259 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=125.018117 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=215.064399 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=304.778159 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=249.638777 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=230.503119 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=230.654218 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=249.448153 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=321.491399 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=323.647308 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=249.603478 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=249.637101 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=341.808428 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=249.875959 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=341.862208 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=341.67195 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=342.354168 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=341.758638 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=342.329074 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=341.766616 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=341.816634 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=342.023287 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=395.24895 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=396.859617 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=480.087623 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=476.045911 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=471.532792 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=342.993556 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=456.183439 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=342.306187 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=451.13431 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=445.554874 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=514.529378 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=445.23338 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=445.245548 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=506.558401 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=442.511637 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=503.128241 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=441.258515 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=500.549924 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=438.419146 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=542.171345 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=538.045474 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=537.729156 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=527.880508 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=343.094178 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=514.720814 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=569.923038 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=566.272142 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=555.859705 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=588.518422 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=550.429537 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=543.518793 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=583.733538 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=572.147331 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=607.018598 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=606.074866 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=604.647322 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=604.207043 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=602.650606 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=597.997235 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=594.470092 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=640.093651 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=630.644776 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=628.345264 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=619.403655 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=614.286546 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=648.764806 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=647.878945 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=647.793062 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=646.60216 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=648.866072 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=647.973056 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=648.184652 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=648.28583 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=648.044649 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=648.397238 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=649.657051 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=649.077387 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=648.85346 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=648.790988 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=649.036047 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=648.940173 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=648.248358 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=648.588593 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=649.906307 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=648.641788 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=649.671183 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=650.295009 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=650.208366 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=648.830502 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=650.141804 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=650.551079 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=650.532239 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=650.9811 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=650.825304 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=650.853916 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=651.044072 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=649.047865 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=650.903363 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=650.78088 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=651.39396 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=649.224064 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=651.927678 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=651.936849 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=651.827103 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=651.060181 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=650.695513 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=650.464222 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=652.272793 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=652.220897 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=651.874599 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=652.047939 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=652.215564 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=652.619565 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=652.853148 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=652.554751 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=652.796459 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=653.015691 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=652.81031 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=653.643559 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=654.567497 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=653.887183 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=652.906148 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=654.076307 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=653.369797 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=652.645404 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=654.038129 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=962.468097 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=963.18856 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=653.525681 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=1154.381271 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=1153.833178 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=1154.612851 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=964.891788 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=1154.570905 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=1155.581774 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=1154.191206 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=1155.365582 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=1154.271833 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=654.213762 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=1156.593958 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=966.007272 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=966.781035 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=923.79604 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=918.024273 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=916.429513 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=922.605515 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=653.901478 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=923.966203 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=929.260551 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=930.451362 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=930.410774 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=930.225919 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=930.526431 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=930.596088 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=930.304335 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=930.961285 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=930.082097 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=930.394335 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=929.881884 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=929.95059 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=930.89754 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=929.995032 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=930.803082 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=930.129164 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=931.378748 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=930.324521 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=930.290529 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=930.080663 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=930.46811 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=931.956665 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=930.013385 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=930.453444 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=930.606936 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=931.45249 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=932.376251 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=933.021676 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=932.790726 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=932.739904 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=931.651133 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=934.702387 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=935.510081 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=934.824608 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=935.630653 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=936.151853 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=936.073914 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=942.7923 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=936.003837 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=942.832503 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=935.931514 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=942.919989 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=942.781613 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=936.352502 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=943.248432 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=945.004291 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=944.323178 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=944.88999 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=944.022614 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=945.066729 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=944.311531 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=944.546503 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=945.232617 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=944.46995 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=944.615961 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=944.895704 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=944.765849 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=945.704608 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=948.125811 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=945.79527 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=945.124656 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=947.890862 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=947.970403 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=948.926185 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=948.76451 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=948.664303 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=951.47343 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=950.643494 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=950.512679 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=951.540414 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=952.724883 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=952.354903 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=945.151898 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=953.665447 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=955.544063 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=956.388544 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=974.931584 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=991.857491 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=961.465486 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=959.05033 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=1000.808194 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=984.30339 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=994.146069 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=1050.749759 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=1050.531582 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=1050.187398 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=1053.477126 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=1055.074351 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=1055.013939 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=1057.246486 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=1057.84968 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=1061.638645 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=1057.516675 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=944.803885 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=944.724156 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=1071.330567 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=1074.157907 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=1074.314905 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=1072.903069 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=1085.664324 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=1080.1421 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=1138.404465 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=1087.385614 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=946.961317 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=1137.363918 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=1136.416699 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=1150.611601 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=1150.309194 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=1149.575497 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=1149.781072 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=1150.013198 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=1149.966089 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=1150.899699 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=1150.947273 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=1151.041357 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=1150.010493 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=1149.973927 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=1149.914879 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=959.941688 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=1057.440829 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=1149.976891 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=1150.304347 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=1150.120621 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=1149.965986 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=1150.13305 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=1150.514724 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=1151.704181 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=1150.500982 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=959.604639 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=1151.633223 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=959.459134 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=1151.324841 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=959.376567 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=1151.864197 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=1150.493476 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=959.562376 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=1151.375941 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=1152.100855 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=1152.255349 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=1150.849065 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=1152.231808 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=961.417378 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=1152.406576 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=1152.235904 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=1151.896514 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=1152.495802 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=961.306275 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=959.7998 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=1151.017031 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=1152.790029 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=961.576662 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=1152.074374 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=1152.98733 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=1152.627247 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=961.990009 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=961.949329 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=1152.810186 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=962.023217 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=1153.273681 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=1153.266311 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=1153.303512 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=961.969218 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=1153.44597 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=1151.218339 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=1153.480341 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=1153.112278 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=962.502914 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=1153.279213 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=1153.354371 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=1153.50097 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=1153.937308 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=1153.371004 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=1153.154943 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=1151.739466 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=962.512057 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=963.027554 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=962.687354 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=962.900772 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=1153.027717 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=1151.635836 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=962.419044 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=1153.879775 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=962.91362 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=653.8298 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=962.85888 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=1154.506903 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=963.029316 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=1154.317037 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=1154.923346 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=1152.006291 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=963.597377 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=1155.275081 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=1155.379863 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=1155.170251 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=963.216675 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=1152.077375 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=963.427474 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=965.558956 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=965.628878 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=964.993438 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=965.130128 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=965.026971 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=1155.411715 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=966.73322 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=964.534378 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=966.814897 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=921.455392 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=1156.654763 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=1156.795352 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=965.867508 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=1156.59171 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=1156.788884 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=1177.57981 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=1064.162399 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=1066.493216 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=1189.181484 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=949.383046 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=1189.849735 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=1191.179698 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=1191.567213 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=1194.416822 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=1072.077394 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=951.927933 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=1195.991212 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=962.849158 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=1196.622225 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=1278.316321 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=1194.64384 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=1277.353444 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=1278.347911 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=1278.458349 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=1278.955229 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=1278.586978 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=1375.373487 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=1278.804749 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=1375.232252 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=1279.126104 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=1278.360574 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=1279.03853 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=3446.249472 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=3487.357974 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=3504.768607 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=1277.328098 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=3485.96406 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=3488.724902 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=1375.218464 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=1278.66882 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=1375.243922 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=1375.257987 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=3054.292586 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=1375.203307 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=1375.054681 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=1375.46312 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=1375.125797 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=1278.923348 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=1277.240034 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=3452.911473 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=3472.670037 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=3466.394153 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=3481.706243 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=3442.31295 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=3458.359451 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=3478.122896 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=3499.025338 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=3489.388445 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=3516.2238 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=1506.104832 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=1323.037276 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=1409.966631 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=1089.652496 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=1322.028172 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=1410.61664 err=null module=rpc
+2023-05-07T21:09:54+08:00 ERROR error on broadcastTxCommit duration=1327.444924 err=null module=rpc

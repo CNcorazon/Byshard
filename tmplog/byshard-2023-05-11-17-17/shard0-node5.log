@@ -1,0 +1,55 @@
+2023-05-11T17:17:25+08:00 INFO starting service impl=multiAppConn module=proxy service=multiAppConn
+2023-05-11T17:17:25+08:00 INFO starting service connection=query impl=localClient module=abci-client service=localClient
+2023-05-11T17:17:25+08:00 INFO starting service connection=snapshot impl=localClient module=abci-client service=localClient
+2023-05-11T17:17:25+08:00 INFO starting service connection=mempool impl=localClient module=abci-client service=localClient
+2023-05-11T17:17:25+08:00 INFO starting service connection=consensus impl=localClient module=abci-client service=localClient
+2023-05-11T17:17:25+08:00 INFO starting service impl=EventBus module=events service=EventBus
+2023-05-11T17:17:25+08:00 INFO starting service impl=PubSub module=pubsub service=PubSub
+2023-05-11T17:17:25+08:00 INFO starting service impl=IndexerService module=txindex service=IndexerService
+2023-05-11T17:17:25+08:00 INFO ABCI Handshake App Info hash= height=0 module=consensus protocol-version=0 software-version=
+2023-05-11T17:17:25+08:00 INFO ABCI Replay Blocks appHeight=0 module=consensus stateHeight=0 storeHeight=0
+2023-05-11T17:17:25+08:00 INFO Completed ABCI Handshake - Tendermint and App are synced appHash= appHeight=0 module=consensus
+2023-05-11T17:17:25+08:00 INFO Version info block=11 mode=validator p2p=8 tmVersion=0.35.7
+2023-05-11T17:17:25+08:00 INFO This node is a validator addr=8BD74691B461D0BF85E0D431187AD59A69CB9D8C module=consensus pubKey="���lK�\x0f�\t���R:�կ�=,ج�O�VOA�Sc3"
+2023-05-11T17:17:25+08:00 INFO starting service impl=Node service=Node
+2023-05-11T17:17:25+08:00 INFO p2p service legacy_enabled=false
+2023-05-11T17:17:25+08:00 INFO starting service impl=router module=p2p service=router
+2023-05-11T17:17:25+08:00 INFO starting router channels=402021222330386061626300 listen_addr=tcp://0.0.0.0:20556 module=p2p net_addr={"id":"8eb353b6d3682dabeb290614229717878bf5a910","ip":"0.0.0.0","port":20556} node_id=8eb353b6d3682dabeb290614229717878bf5a910
+2023-05-11T17:17:25+08:00 INFO starting service impl=BlockSync module=blockchain service=BlockSync
+2023-05-11T17:17:25+08:00 INFO Starting RPC HTTP server on 192.168.0.166:20557 module=rpc-server
+2023-05-11T17:17:25+08:00 INFO starting service impl=ConsensusReactor module=consensus service=Consensus
+2023-05-11T17:17:25+08:00 INFO starting service impl=StateSync module=statesync service=StateSync
+2023-05-11T17:17:25+08:00 INFO starting service impl=Mempool module=mempool service=Mempool version=v1
+2023-05-11T17:17:25+08:00 INFO starting service impl=Evidence module=evidence service=Evidence
+2023-05-11T17:17:25+08:00 INFO starting service impl=PEX service=PEX
+2023-05-11T17:17:25+08:00 INFO starting service impl=MConn{192.168.0.166:20156} module=p2p peer={"Hostname":"192.168.0.166","NodeID":"831e0d754dd83bc23a867c81a69af0197e554ed4","Path":"","Port":20156,"Protocol":"mconn"} service=MConnection
+2023-05-11T17:17:25+08:00 INFO peer connected endpoint={} module=p2p peer=831e0d754dd83bc23a867c81a69af0197e554ed4
+2023-05-11T17:17:25+08:00 INFO received peer update module=statesync peer=831e0d754dd83bc23a867c81a69af0197e554ed4 status=up
+2023-05-11T17:17:25+08:00 INFO starting service impl=MConn{192.168.0.166:45804} module=p2p peer={"Hostname":"192.168.0.166","NodeID":"bd31c82456f3abb5d94fb49f92472c895d60b781","Path":"","Port":45804,"Protocol":"mconn"} service=MConnection
+2023-05-11T17:17:25+08:00 INFO peer connected endpoint={} module=p2p peer=bd31c82456f3abb5d94fb49f92472c895d60b781
+2023-05-11T17:17:25+08:00 INFO received peer update module=statesync peer=bd31c82456f3abb5d94fb49f92472c895d60b781 status=up
+2023-05-11T17:17:25+08:00 INFO stopping service impl=Node service=Node
+2023-05-11T17:17:25+08:00 INFO Stopping Node
+2023-05-11T17:17:25+08:00 INFO stopping service impl=EventBus module=events service=EventBus
+2023-05-11T17:17:25+08:00 INFO stopping service impl=PubSub module=pubsub service=PubSub
+2023-05-11T17:17:25+08:00 INFO stopping service impl=IndexerService module=txindex service=IndexerService
+2023-05-11T17:17:25+08:00 ERROR failed to stop event sink err="leveldb: closed"
+2023-05-11T17:17:25+08:00 INFO stopping service impl=BlockSync module=blockchain service=BlockSync
+2023-05-11T17:17:25+08:00 INFO stopping service impl=ConsensusReactor module=consensus service=Consensus
+2023-05-11T17:17:25+08:00 ERROR not stopping service; not started yet impl=ConsensusState module=consensus service=State
+2023-05-11T17:17:25+08:00 ERROR failed to stop consensus state err="not started" module=consensus
+2023-05-11T17:17:25+08:00 INFO stopping service impl=StateSync module=statesync service=StateSync
+2023-05-11T17:17:25+08:00 INFO stopping service impl=Mempool module=mempool service=Mempool version=v1
+2023-05-11T17:17:25+08:00 INFO stopping service impl=Evidence module=evidence service=Evidence
+2023-05-11T17:17:25+08:00 INFO stopping service impl=PEX service=PEX
+2023-05-11T17:17:25+08:00 INFO stopping service impl=router module=p2p service=router
+2023-05-11T17:17:25+08:00 INFO stopping service impl=MConn{192.168.0.166:20156} module=p2p peer={"Hostname":"192.168.0.166","NodeID":"831e0d754dd83bc23a867c81a69af0197e554ed4","Path":"","Port":20156,"Protocol":"mconn"} service=MConnection
+2023-05-11T17:17:25+08:00 INFO stopping service impl=MConn{192.168.0.166:45804} module=p2p peer={"Hostname":"192.168.0.166","NodeID":"bd31c82456f3abb5d94fb49f92472c895d60b781","Path":"","Port":45804,"Protocol":"mconn"} service=MConnection
+2023-05-11T17:17:25+08:00 INFO peer disconnected endpoint={} module=p2p peer=831e0d754dd83bc23a867c81a69af0197e554ed4
+2023-05-11T17:17:25+08:00 INFO Closing rpc listener listener={}
+2023-05-11T17:17:25+08:00 INFO RPC HTTP server stopped err="accept tcp 192.168.0.166:20557: use of closed network connection" module=rpc-server
+2023-05-11T17:17:25+08:00 ERROR Error serving server err="accept tcp 192.168.0.166:20557: use of closed network connection"
+2023-05-11T17:17:25+08:00 INFO peer disconnected endpoint={} module=p2p peer=bd31c82456f3abb5d94fb49f92472c895d60b781
+2023-05-11T17:17:25+08:00 ERROR problem shutting down additional services err=
+2023-05-11T17:17:25+08:00 ERROR problem closing blockstore err="leveldb: closed"
+2023-05-11T17:17:25+08:00 ERROR problem closing statestore err="leveldb: closed"

@@ -1,0 +1,80 @@
+2023-05-11T17:17:20+08:00 INFO starting service impl=multiAppConn module=proxy service=multiAppConn
+2023-05-11T17:17:20+08:00 INFO starting service connection=query impl=localClient module=abci-client service=localClient
+2023-05-11T17:17:20+08:00 INFO starting service connection=snapshot impl=localClient module=abci-client service=localClient
+2023-05-11T17:17:20+08:00 INFO starting service connection=mempool impl=localClient module=abci-client service=localClient
+2023-05-11T17:17:20+08:00 INFO starting service connection=consensus impl=localClient module=abci-client service=localClient
+2023-05-11T17:17:20+08:00 INFO starting service impl=EventBus module=events service=EventBus
+2023-05-11T17:17:20+08:00 INFO starting service impl=PubSub module=pubsub service=PubSub
+2023-05-11T17:17:20+08:00 INFO starting service impl=IndexerService module=txindex service=IndexerService
+2023-05-11T17:17:20+08:00 INFO ABCI Handshake App Info hash= height=0 module=consensus protocol-version=0 software-version=
+2023-05-11T17:17:20+08:00 INFO ABCI Replay Blocks appHeight=0 module=consensus stateHeight=0 storeHeight=0
+2023-05-11T17:17:20+08:00 INFO Completed ABCI Handshake - Tendermint and App are synced appHash= appHeight=0 module=consensus
+2023-05-11T17:17:20+08:00 INFO Version info block=11 mode=validator p2p=8 tmVersion=0.35.7
+2023-05-11T17:17:20+08:00 INFO This node is a validator addr=3403ED671B248FD9A0D8755F0366601DC9146472 module=consensus pubKey="��p'�ڸ��1��4���j@����hgLƸ��T��"
+2023-05-11T17:17:20+08:00 INFO starting service impl=Node service=Node
+2023-05-11T17:17:20+08:00 INFO p2p service legacy_enabled=false
+2023-05-11T17:17:20+08:00 INFO starting service impl=router module=p2p service=router
+2023-05-11T17:17:20+08:00 INFO Starting RPC HTTP server on 192.168.0.166:20057 module=rpc-server
+2023-05-11T17:17:20+08:00 INFO starting router channels=402021222330386061626300 listen_addr=tcp://0.0.0.0:20056 module=p2p net_addr={"id":"fe918bc4be68e50e8412ea174c01e8da28033b6c","ip":"0.0.0.0","port":20056} node_id=fe918bc4be68e50e8412ea174c01e8da28033b6c
+2023-05-11T17:17:20+08:00 INFO starting service impl=BlockSync module=blockchain service=BlockSync
+2023-05-11T17:17:20+08:00 INFO starting service impl=ConsensusReactor module=consensus service=Consensus
+2023-05-11T17:17:20+08:00 INFO starting service impl=StateSync module=statesync service=StateSync
+2023-05-11T17:17:20+08:00 INFO starting service impl=Mempool module=mempool service=Mempool version=v1
+2023-05-11T17:17:20+08:00 INFO starting service impl=Evidence module=evidence service=Evidence
+2023-05-11T17:17:20+08:00 INFO starting service impl=PEX service=PEX
+2023-05-11T17:17:21+08:00 INFO not caught up yet height=1 max_peer_height=0 module=blockchain timeout_in=58998.920177
+2023-05-11T17:17:22+08:00 INFO starting service impl=MConn{192.168.0.166:54434} module=p2p peer={"Hostname":"192.168.0.166","NodeID":"16f631cd6cd53fc2ace00bd69fa80692c671d6e0","Path":"","Port":54434,"Protocol":"mconn"} service=MConnection
+2023-05-11T17:17:22+08:00 INFO peer connected endpoint={} module=p2p peer=16f631cd6cd53fc2ace00bd69fa80692c671d6e0
+2023-05-11T17:17:22+08:00 INFO received peer update module=statesync peer=16f631cd6cd53fc2ace00bd69fa80692c671d6e0 status=up
+2023-05-11T17:17:22+08:00 INFO not caught up yet height=1 max_peer_height=0 module=blockchain timeout_in=57999.288762
+2023-05-11T17:17:23+08:00 INFO switching to consensus reactor height=1 module=blockchain
+2023-05-11T17:17:23+08:00 INFO switching to consensus module=consensus
+2023-05-11T17:17:23+08:00 INFO starting service impl=ConsensusState module=consensus service=State
+2023-05-11T17:17:23+08:00 INFO starting service impl=baseWAL module=consensus service=baseWAL wal=/root/.haechibyshard/shard0/node0/data/cs.wal/wal
+2023-05-11T17:17:23+08:00 INFO starting service impl=Group module=consensus service=Group wal=/root/.haechibyshard/shard0/node0/data/cs.wal/wal
+2023-05-11T17:17:23+08:00 INFO starting service impl=TimeoutTicker module=consensus service=TimeoutTicker
+2023-05-11T17:17:23+08:00 INFO Searching for height height=1 max=0 min=0 module=consensus wal=/root/.haechibyshard/shard0/node0/data/cs.wal/wal
+2023-05-11T17:17:23+08:00 INFO Searching for height height=0 max=0 min=0 module=consensus wal=/root/.haechibyshard/shard0/node0/data/cs.wal/wal
+2023-05-11T17:17:23+08:00 INFO Found height=0 index=0 module=consensus wal=/root/.haechibyshard/shard0/node0/data/cs.wal/wal
+2023-05-11T17:17:23+08:00 INFO Catchup by replaying consensus messages height=1 module=consensus
+2023-05-11T17:17:23+08:00 INFO Replay: Done module=consensus
+2023-05-11T17:17:24+08:00 INFO starting service impl=MConn{192.168.0.166:54448} module=p2p peer={"Hostname":"192.168.0.166","NodeID":"831e0d754dd83bc23a867c81a69af0197e554ed4","Path":"","Port":54448,"Protocol":"mconn"} service=MConnection
+2023-05-11T17:17:24+08:00 INFO peer connected endpoint={} module=p2p peer=831e0d754dd83bc23a867c81a69af0197e554ed4
+2023-05-11T17:17:24+08:00 INFO received peer update module=statesync peer=831e0d754dd83bc23a867c81a69af0197e554ed4 status=up
+2023-05-11T17:17:24+08:00 INFO starting service impl=MConn{192.168.0.166:20356} module=p2p peer={"Hostname":"192.168.0.166","NodeID":"4ad65b6a30da15751664b7a2fba7355bf60a8217","Path":"","Port":20356,"Protocol":"mconn"} service=MConnection
+2023-05-11T17:17:24+08:00 INFO peer connected endpoint={} module=p2p peer=4ad65b6a30da15751664b7a2fba7355bf60a8217
+2023-05-11T17:17:24+08:00 INFO received peer update module=statesync peer=4ad65b6a30da15751664b7a2fba7355bf60a8217 status=up
+2023-05-11T17:17:24+08:00 INFO starting service impl=MConn{192.168.0.166:20456} module=p2p peer={"Hostname":"192.168.0.166","NodeID":"bd31c82456f3abb5d94fb49f92472c895d60b781","Path":"","Port":20456,"Protocol":"mconn"} service=MConnection
+2023-05-11T17:17:24+08:00 INFO peer connected endpoint={} module=p2p peer=bd31c82456f3abb5d94fb49f92472c895d60b781
+2023-05-11T17:17:24+08:00 INFO received peer update module=statesync peer=bd31c82456f3abb5d94fb49f92472c895d60b781 status=up
+2023-05-11T17:17:25+08:00 INFO stopping service impl=Node service=Node
+2023-05-11T17:17:25+08:00 INFO Stopping Node
+2023-05-11T17:17:25+08:00 INFO stopping service impl=EventBus module=events service=EventBus
+2023-05-11T17:17:25+08:00 INFO stopping service impl=PubSub module=pubsub service=PubSub
+2023-05-11T17:17:25+08:00 INFO stopping service impl=IndexerService module=txindex service=IndexerService
+2023-05-11T17:17:25+08:00 ERROR failed to stop event sink err="leveldb: closed"
+2023-05-11T17:17:25+08:00 INFO stopping service impl=BlockSync module=blockchain service=BlockSync
+2023-05-11T17:17:25+08:00 INFO stopping service impl=ConsensusReactor module=consensus service=Consensus
+2023-05-11T17:17:25+08:00 INFO stopping service impl=ConsensusState module=consensus service=State
+2023-05-11T17:17:25+08:00 INFO stopping service impl=TimeoutTicker module=consensus service=TimeoutTicker
+2023-05-11T17:17:25+08:00 INFO stopping service impl=baseWAL module=consensus service=baseWAL wal=/root/.haechibyshard/shard0/node0/data/cs.wal/wal
+2023-05-11T17:17:25+08:00 INFO stopping service impl=Group module=consensus service=Group wal=/root/.haechibyshard/shard0/node0/data/cs.wal/wal
+2023-05-11T17:17:25+08:00 INFO stopping service impl=StateSync module=statesync service=StateSync
+2023-05-11T17:17:25+08:00 INFO stopping service impl=Mempool module=mempool service=Mempool version=v1
+2023-05-11T17:17:25+08:00 INFO stopping service impl=Evidence module=evidence service=Evidence
+2023-05-11T17:17:25+08:00 INFO stopping service impl=PEX service=PEX
+2023-05-11T17:17:25+08:00 INFO stopping service impl=router module=p2p service=router
+2023-05-11T17:17:25+08:00 INFO stopping service impl=MConn{192.168.0.166:20456} module=p2p peer={"Hostname":"192.168.0.166","NodeID":"bd31c82456f3abb5d94fb49f92472c895d60b781","Path":"","Port":20456,"Protocol":"mconn"} service=MConnection
+2023-05-11T17:17:25+08:00 INFO stopping service impl=MConn{192.168.0.166:54434} module=p2p peer={"Hostname":"192.168.0.166","NodeID":"16f631cd6cd53fc2ace00bd69fa80692c671d6e0","Path":"","Port":54434,"Protocol":"mconn"} service=MConnection
+2023-05-11T17:17:25+08:00 INFO peer disconnected endpoint={} module=p2p peer=bd31c82456f3abb5d94fb49f92472c895d60b781
+2023-05-11T17:17:25+08:00 INFO stopping service impl=MConn{192.168.0.166:20356} module=p2p peer={"Hostname":"192.168.0.166","NodeID":"4ad65b6a30da15751664b7a2fba7355bf60a8217","Path":"","Port":20356,"Protocol":"mconn"} service=MConnection
+2023-05-11T17:17:25+08:00 INFO peer disconnected endpoint={} module=p2p peer=16f631cd6cd53fc2ace00bd69fa80692c671d6e0
+2023-05-11T17:17:25+08:00 INFO stopping service impl=MConn{192.168.0.166:54448} module=p2p peer={"Hostname":"192.168.0.166","NodeID":"831e0d754dd83bc23a867c81a69af0197e554ed4","Path":"","Port":54448,"Protocol":"mconn"} service=MConnection
+2023-05-11T17:17:25+08:00 INFO peer disconnected endpoint={} module=p2p peer=4ad65b6a30da15751664b7a2fba7355bf60a8217
+2023-05-11T17:17:25+08:00 INFO Closing rpc listener listener={}
+2023-05-11T17:17:25+08:00 INFO peer disconnected endpoint={} module=p2p peer=831e0d754dd83bc23a867c81a69af0197e554ed4
+2023-05-11T17:17:25+08:00 INFO RPC HTTP server stopped err="accept tcp 192.168.0.166:20057: use of closed network connection" module=rpc-server
+2023-05-11T17:17:25+08:00 ERROR Error serving server err="accept tcp 192.168.0.166:20057: use of closed network connection"
+2023-05-11T17:17:25+08:00 ERROR problem shutting down additional services err=
+2023-05-11T17:17:25+08:00 ERROR problem closing blockstore err="leveldb: closed"
+2023-05-11T17:17:25+08:00 ERROR problem closing statestore err="leveldb: closed"

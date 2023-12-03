@@ -1,0 +1,334 @@
+2023-05-07T20:45:22+08:00 INFO starting service impl=multiAppConn module=proxy service=multiAppConn
+2023-05-07T20:45:22+08:00 INFO starting service connection=query impl=localClient module=abci-client service=localClient
+2023-05-07T20:45:22+08:00 INFO starting service connection=snapshot impl=localClient module=abci-client service=localClient
+2023-05-07T20:45:22+08:00 INFO starting service connection=mempool impl=localClient module=abci-client service=localClient
+2023-05-07T20:45:22+08:00 INFO starting service connection=consensus impl=localClient module=abci-client service=localClient
+2023-05-07T20:45:22+08:00 INFO starting service impl=EventBus module=events service=EventBus
+2023-05-07T20:45:22+08:00 INFO starting service impl=PubSub module=pubsub service=PubSub
+2023-05-07T20:45:22+08:00 INFO starting service impl=IndexerService module=txindex service=IndexerService
+2023-05-07T20:45:22+08:00 INFO ABCI Handshake App Info hash= height=0 module=consensus protocol-version=0 software-version=
+2023-05-07T20:45:22+08:00 INFO ABCI Replay Blocks appHeight=0 module=consensus stateHeight=0 storeHeight=0
+2023-05-07T20:45:22+08:00 INFO Completed ABCI Handshake - Tendermint and App are synced appHash= appHeight=0 module=consensus
+2023-05-07T20:45:22+08:00 INFO Version info block=11 mode=validator p2p=8 tmVersion=0.35.7
+2023-05-07T20:45:22+08:00 INFO This node is a validator addr=13E7097D790DCABEBB5D42566D7F078C802DDF91 module=consensus pubKey="�\x04���g4�<��<�j�\t���g��w؊ʿ�>1L\t"
+2023-05-07T20:45:22+08:00 INFO starting service impl=Node service=Node
+2023-05-07T20:45:22+08:00 INFO Starting RPC HTTP server on 127.0.0.1:21057 module=rpc-server
+2023-05-07T20:45:22+08:00 INFO p2p service legacy_enabled=false
+2023-05-07T20:45:22+08:00 INFO starting service impl=router module=p2p service=router
+2023-05-07T20:45:22+08:00 INFO starting router channels=402021222330386061626300 listen_addr=tcp://0.0.0.0:21056 module=p2p net_addr={"id":"6c91ca952197a252717685a64deb3fed0ef5ff67","ip":"0.0.0.0","port":21056} node_id=6c91ca952197a252717685a64deb3fed0ef5ff67
+2023-05-07T20:45:22+08:00 INFO starting service impl=BlockSync module=blockchain service=BlockSync
+2023-05-07T20:45:22+08:00 INFO starting service impl=ConsensusReactor module=consensus service=Consensus
+2023-05-07T20:45:22+08:00 INFO starting service impl=StateSync module=statesync service=StateSync
+2023-05-07T20:45:22+08:00 INFO starting service impl=Mempool module=mempool service=Mempool version=v1
+2023-05-07T20:45:22+08:00 INFO starting service impl=Evidence module=evidence service=Evidence
+2023-05-07T20:45:22+08:00 INFO starting service impl=PEX service=PEX
+2023-05-07T20:45:23+08:00 INFO not caught up yet height=1 max_peer_height=0 module=blockchain timeout_in=58999.764153
+2023-05-07T20:45:23+08:00 INFO starting service impl=MConn{127.0.0.1:60253} module=p2p peer={"Hostname":"127.0.0.1","NodeID":"232a7ad567bd5de5496c86de65382e7ed0bc528e","Path":"","Port":60253,"Protocol":"mconn"} service=MConnection
+2023-05-07T20:45:23+08:00 INFO peer connected endpoint={} module=p2p peer=232a7ad567bd5de5496c86de65382e7ed0bc528e
+2023-05-07T20:45:23+08:00 INFO received peer update module=statesync peer=232a7ad567bd5de5496c86de65382e7ed0bc528e status=up
+2023-05-07T20:45:24+08:00 INFO switching to consensus reactor height=1 module=blockchain
+2023-05-07T20:45:24+08:00 INFO switching to consensus module=consensus
+2023-05-07T20:45:24+08:00 INFO starting service impl=ConsensusState module=consensus service=State
+2023-05-07T20:45:24+08:00 INFO starting service impl=baseWAL module=consensus service=baseWAL wal=/Users/xiading/.haechibyshard/shard1/node0/data/cs.wal/wal
+2023-05-07T20:45:24+08:00 INFO starting service impl=Group module=consensus service=Group wal=/Users/xiading/.haechibyshard/shard1/node0/data/cs.wal/wal
+2023-05-07T20:45:24+08:00 INFO starting service impl=TimeoutTicker module=consensus service=TimeoutTicker
+2023-05-07T20:45:24+08:00 INFO Searching for height height=1 max=0 min=0 module=consensus wal=/Users/xiading/.haechibyshard/shard1/node0/data/cs.wal/wal
+2023-05-07T20:45:24+08:00 INFO Searching for height height=0 max=0 min=0 module=consensus wal=/Users/xiading/.haechibyshard/shard1/node0/data/cs.wal/wal
+2023-05-07T20:45:24+08:00 INFO Found height=0 index=0 module=consensus wal=/Users/xiading/.haechibyshard/shard1/node0/data/cs.wal/wal
+2023-05-07T20:45:24+08:00 INFO Catchup by replaying consensus messages height=1 module=consensus
+2023-05-07T20:45:24+08:00 INFO Replay: Done module=consensus
+2023-05-07T20:45:24+08:00 INFO received proposal module=consensus proposal={"Type":32,"block_id":{"hash":"7AA08E383EC494F0411D34BF7C262B1A7E26EB95138A2BCA8B098EF0B21CBA95","parts":{"hash":"FE7308D5FA0E8BF86EBCD3CDE03E40E8ECC1AF1EE188A0DCD111BA79023BC1B0","total":1}},"height":1,"pol_round":-1,"round":0,"signature":"4Wn8E5Td6y5bXCICt+Z8xLF5FRGF0J4h7dCmSlPmsV+8oZU9qmQm0v1Cs0DOTPbYSAwna1g+HmnETDglya6MCQ==","timestamp":"2023-05-07T12:45:24.514043Z"}
+2023-05-07T20:45:24+08:00 INFO received complete proposal block hash=7AA08E383EC494F0411D34BF7C262B1A7E26EB95138A2BCA8B098EF0B21CBA95 height=1 module=consensus
+2023-05-07T20:45:25+08:00 INFO finalizing commit of block hash=7AA08E383EC494F0411D34BF7C262B1A7E26EB95138A2BCA8B098EF0B21CBA95 height=1 module=consensus num_txs=563 root=
+2023-05-07T20:45:25+08:00 INFO executed block height=1 module=state num_invalid_txs=0 num_valid_txs=563
+2023-05-07T20:45:25+08:00 INFO committed state app_hash= height=1 module=state num_txs=563
+2023-05-07T20:45:26+08:00 INFO received proposal module=consensus proposal={"Type":32,"block_id":{"hash":"0E04509BE0E2FA8AE84516B284195BF3EAA633D6CF074D105B01E70D0763AEFE","parts":{"hash":"F7A242113D7BCFFA18F4FD76963A2D66BF8B93C31A602E8C893A0AF37FEAB726","total":1}},"height":2,"pol_round":-1,"round":0,"signature":"jVkFdgUGWTI1NHdiaHG9nwUArbDsXLuFnD/4X4U/9CEoePozQJ9aZ54zmDhoPo5jVs2P4q7Ydgi99YhA2F58Bg==","timestamp":"2023-05-07T12:45:26.438401Z"}
+2023-05-07T20:45:26+08:00 INFO received complete proposal block hash=0E04509BE0E2FA8AE84516B284195BF3EAA633D6CF074D105B01E70D0763AEFE height=2 module=consensus
+2023-05-07T20:45:27+08:00 INFO finalizing commit of block hash=0E04509BE0E2FA8AE84516B284195BF3EAA633D6CF074D105B01E70D0763AEFE height=2 module=consensus num_txs=337 root=
+2023-05-07T20:45:27+08:00 INFO executed block height=2 module=state num_invalid_txs=0 num_valid_txs=337
+2023-05-07T20:45:27+08:00 INFO committed state app_hash= height=2 module=state num_txs=337
+2023-05-07T20:45:35+08:00 INFO received proposal module=consensus proposal={"Type":32,"block_id":{"hash":"5D2BC718921B890A0FF0A6FB789EFBD3C32CB2F7022E437D57FECFD953A8E6AB","parts":{"hash":"1BBBCCA890E0282728CB1DD2A328C5D123CC3E28B8DB7AF8FF373A28040C3FAE","total":1}},"height":3,"pol_round":-1,"round":0,"signature":"2/N2e28ju3H6I78PNkVPG3rmkKKGXmh0bUEc4oyKJPRpSG4jo0UefLHqgfXnqv+vHLN9RkVw4X2uTstFD4ENBQ==","timestamp":"2023-05-07T12:45:35.492608Z"}
+2023-05-07T20:45:35+08:00 INFO received complete proposal block hash=5D2BC718921B890A0FF0A6FB789EFBD3C32CB2F7022E437D57FECFD953A8E6AB height=3 module=consensus
+2023-05-07T20:45:36+08:00 INFO finalizing commit of block hash=5D2BC718921B890A0FF0A6FB789EFBD3C32CB2F7022E437D57FECFD953A8E6AB height=3 module=consensus num_txs=1 root=
+2023-05-07T20:45:36+08:00 INFO executed block height=3 module=state num_invalid_txs=0 num_valid_txs=1
+2023-05-07T20:45:36+08:00 INFO committed state app_hash= height=3 module=state num_txs=1
+2023-05-07T20:45:37+08:00 INFO received proposal module=consensus proposal={"Type":32,"block_id":{"hash":"9EED547848388BAD50A69C88D3ACCF8F4F27F2A2FDA3347E21709AEEEA7EA3A8","parts":{"hash":"5220571999FF4BD8A3083B29FDE7C6857E06EC88C9F2909D9AAE886BC87EC4DE","total":1}},"height":4,"pol_round":-1,"round":0,"signature":"Nz92iq/DL2prSmW4omRKscTNQfJQWidBd0AvNSta2WFTUjpPe2KuG1jWVQEleqBtngPUsicE2LLtBQsFPnYvBw==","timestamp":"2023-05-07T12:45:37.174166Z"}
+2023-05-07T20:45:37+08:00 INFO received complete proposal block hash=9EED547848388BAD50A69C88D3ACCF8F4F27F2A2FDA3347E21709AEEEA7EA3A8 height=4 module=consensus
+2023-05-07T20:45:37+08:00 INFO finalizing commit of block hash=9EED547848388BAD50A69C88D3ACCF8F4F27F2A2FDA3347E21709AEEEA7EA3A8 height=4 module=consensus num_txs=139 root=
+2023-05-07T20:45:37+08:00 INFO executed block height=4 module=state num_invalid_txs=0 num_valid_txs=139
+2023-05-07T20:45:37+08:00 INFO committed state app_hash= height=4 module=state num_txs=139
+2023-05-07T20:45:38+08:00 INFO received proposal module=consensus proposal={"Type":32,"block_id":{"hash":"00DD347649FCE98976384D2C441B813FDCEC1F20408676666727391942D9642B","parts":{"hash":"89B1C9910F47D845738590B5A2BA56488390F70CE8914BBED36524814B486D15","total":1}},"height":5,"pol_round":-1,"round":0,"signature":"tXETSoUHk1bUFRFesxtNjEjjDU9VzLofaOw1dnnOX5RBloUErV1a5H88oKzye36HU2Lxd3loBlSMuXZAmz3QCQ==","timestamp":"2023-05-07T12:45:38.767858Z"}
+2023-05-07T20:45:38+08:00 INFO received complete proposal block hash=00DD347649FCE98976384D2C441B813FDCEC1F20408676666727391942D9642B height=5 module=consensus
+2023-05-07T20:45:39+08:00 INFO finalizing commit of block hash=00DD347649FCE98976384D2C441B813FDCEC1F20408676666727391942D9642B height=5 module=consensus num_txs=446 root=
+2023-05-07T20:45:39+08:00 INFO executed block height=5 module=state num_invalid_txs=0 num_valid_txs=446
+2023-05-07T20:45:39+08:00 INFO committed state app_hash= height=5 module=state num_txs=446
+2023-05-07T20:45:40+08:00 INFO received proposal module=consensus proposal={"Type":32,"block_id":{"hash":"C47AF972976B1A2259BE4D9DAEF7B46BE3B6E88B9B43B25A78A5615D6B5DBA49","parts":{"hash":"BD68A1DA5F985ACEE5346FB8EDAABF704E51BB0267E0A61675052E0AAAFA3BBB","total":1}},"height":6,"pol_round":-1,"round":0,"signature":"jtBjIPmBes2Vhw5uYR2azj6kkvsv1NCVEIHyPy96+bR9AVsqKi272ZFbhEfJpKT3sm3y8mmCWL+7IpYbgycTBA==","timestamp":"2023-05-07T12:45:40.335105Z"}
+2023-05-07T20:45:40+08:00 INFO received complete proposal block hash=C47AF972976B1A2259BE4D9DAEF7B46BE3B6E88B9B43B25A78A5615D6B5DBA49 height=6 module=consensus
+2023-05-07T20:45:40+08:00 INFO finalizing commit of block hash=C47AF972976B1A2259BE4D9DAEF7B46BE3B6E88B9B43B25A78A5615D6B5DBA49 height=6 module=consensus num_txs=314 root=
+2023-05-07T20:45:40+08:00 INFO executed block height=6 module=state num_invalid_txs=0 num_valid_txs=314
+2023-05-07T20:45:40+08:00 INFO committed state app_hash= height=6 module=state num_txs=314
+2023-05-07T20:45:46+08:00 INFO received proposal module=consensus proposal={"Type":32,"block_id":{"hash":"6709861B0F383754EF01D022B77601FD363FFB9CBE6C2219A13940675A8DEB84","parts":{"hash":"57429138583C977BE30F6A002705EBBF557A01BCFF259F4E0447A2A50E392697","total":1}},"height":7,"pol_round":-1,"round":0,"signature":"/7mK2gf5/dPsz620iY1UuKdqjEPjpEoDn9o4ickyZ6DmIEgptqN0ZckzCUVrdHaS5spVe//MFC4L8hMSpz4UAw==","timestamp":"2023-05-07T12:45:46.642288Z"}
+2023-05-07T20:45:46+08:00 INFO received complete proposal block hash=6709861B0F383754EF01D022B77601FD363FFB9CBE6C2219A13940675A8DEB84 height=7 module=consensus
+2023-05-07T20:45:47+08:00 INFO finalizing commit of block hash=6709861B0F383754EF01D022B77601FD363FFB9CBE6C2219A13940675A8DEB84 height=7 module=consensus num_txs=1 root=
+2023-05-07T20:45:47+08:00 INFO executed block height=7 module=state num_invalid_txs=0 num_valid_txs=1
+2023-05-07T20:45:47+08:00 INFO committed state app_hash= height=7 module=state num_txs=1
+2023-05-07T20:45:48+08:00 INFO received proposal module=consensus proposal={"Type":32,"block_id":{"hash":"9277D3C9E575CECA5420599744DE11651AC07BDDE732CF505D6C2D670F4BE509","parts":{"hash":"6D82DD68E756E963A7FD631B4E2298B585D22FCB97319793FF929EE0C756095F","total":1}},"height":8,"pol_round":-1,"round":0,"signature":"uArzZezJxz6q4sdjoUdZgQA7uz1CmLJ76iY+UqgHk0WHW95VJNjQV4QzCU+wpkPQKa8jRbh5Pk/zyg/4fkA9DQ==","timestamp":"2023-05-07T12:45:48.233547Z"}
+2023-05-07T20:45:48+08:00 INFO received complete proposal block hash=9277D3C9E575CECA5420599744DE11651AC07BDDE732CF505D6C2D670F4BE509 height=8 module=consensus
+2023-05-07T20:45:48+08:00 INFO finalizing commit of block hash=9277D3C9E575CECA5420599744DE11651AC07BDDE732CF505D6C2D670F4BE509 height=8 module=consensus num_txs=37 root=
+2023-05-07T20:45:48+08:00 INFO executed block height=8 module=state num_invalid_txs=0 num_valid_txs=37
+2023-05-07T20:45:49+08:00 INFO committed state app_hash= height=8 module=state num_txs=37
+2023-05-07T20:45:50+08:00 INFO received proposal module=consensus proposal={"Type":32,"block_id":{"hash":"D43873E967951ED6D064A14B3C49EB752DA117F0FC57411DDA97A34D5FDC42AC","parts":{"hash":"D7201A01589E1D8641CEF948FB464A7DA06F05AC916FBB1FDBCC28CF290F8B99","total":1}},"height":9,"pol_round":-1,"round":0,"signature":"sUehTlyRalJWncvJU1i7Efr8B++685yO/WDFQQv+Q949pnp0dI6wSD2FLotU3Z2mU8yi2p73SLmWHpetAClIBQ==","timestamp":"2023-05-07T12:45:49.988694Z"}
+2023-05-07T20:45:50+08:00 INFO received complete proposal block hash=D43873E967951ED6D064A14B3C49EB752DA117F0FC57411DDA97A34D5FDC42AC height=9 module=consensus
+2023-05-07T20:45:50+08:00 INFO finalizing commit of block hash=D43873E967951ED6D064A14B3C49EB752DA117F0FC57411DDA97A34D5FDC42AC height=9 module=consensus num_txs=255 root=
+2023-05-07T20:45:50+08:00 INFO executed block height=9 module=state num_invalid_txs=0 num_valid_txs=255
+2023-05-07T20:45:50+08:00 INFO committed state app_hash= height=9 module=state num_txs=255
+2023-05-07T20:45:51+08:00 INFO received proposal module=consensus proposal={"Type":32,"block_id":{"hash":"A1293C94F19ADBC63518ACF937C5CF55E818030EFFEB69E3B9E2C4155AAF35FF","parts":{"hash":"CABA9932A8484E9C05F4EA36A9E6E15E9AA51602CB1B66FB7CCFB9343856A7C9","total":1}},"height":10,"pol_round":-1,"round":0,"signature":"sSa3E/a3ltGpgw0QGSv4hoiLW+14n3QTQPmQz2h1b3q7H9nXDXWrgZnDt0spUQl3RdhNi2YjjjPsRVODwQeVBg==","timestamp":"2023-05-07T12:45:51.756109Z"}
+2023-05-07T20:45:51+08:00 INFO received complete proposal block hash=A1293C94F19ADBC63518ACF937C5CF55E818030EFFEB69E3B9E2C4155AAF35FF height=10 module=consensus
+2023-05-07T20:45:52+08:00 INFO finalizing commit of block hash=A1293C94F19ADBC63518ACF937C5CF55E818030EFFEB69E3B9E2C4155AAF35FF height=10 module=consensus num_txs=421 root=
+2023-05-07T20:45:52+08:00 INFO executed block height=10 module=state num_invalid_txs=0 num_valid_txs=421
+2023-05-07T20:45:52+08:00 INFO committed state app_hash= height=10 module=state num_txs=421
+2023-05-07T20:45:53+08:00 INFO received proposal module=consensus proposal={"Type":32,"block_id":{"hash":"FB3413D346414DBEE3D633D7571CD29993566542268AC225AB6E1970F39E7E88","parts":{"hash":"0AA838BF328CAE05A0EBF45AE6B159F00B5AF4BBEF83D786F7DCF4040D91EC8C","total":1}},"height":11,"pol_round":-1,"round":0,"signature":"9ATDasaKgPBWOicb6zpx+QG0u0d69/7LbJCH77vaSyZ5YSmUA+AggBN/eqgcywu/zjm/PKR1/TEcuWb6DtTSCw==","timestamp":"2023-05-07T12:45:53.197037Z"}
+2023-05-07T20:45:53+08:00 INFO received complete proposal block hash=FB3413D346414DBEE3D633D7571CD29993566542268AC225AB6E1970F39E7E88 height=11 module=consensus
+2023-05-07T20:45:53+08:00 INFO finalizing commit of block hash=FB3413D346414DBEE3D633D7571CD29993566542268AC225AB6E1970F39E7E88 height=11 module=consensus num_txs=186 root=
+2023-05-07T20:45:53+08:00 INFO executed block height=11 module=state num_invalid_txs=0 num_valid_txs=186
+2023-05-07T20:45:53+08:00 INFO committed state app_hash= height=11 module=state num_txs=186
+2023-05-07T20:45:57+08:00 INFO received proposal module=consensus proposal={"Type":32,"block_id":{"hash":"AC2C3796ECC580308F947811C77E2E9835D6544559246AC6795B56029DB44739","parts":{"hash":"E098988AA556A8556D631E7460041788B3C7A7184235F41166DCD22A213718D8","total":1}},"height":12,"pol_round":-1,"round":0,"signature":"f3z3JBuxr7mo2vKSPjv03mDhnBm6JuyAAILyONq4mXB/dap2pYpQRbEFRE9s5rl8QmmqvnTCfLoh3M885rEsDw==","timestamp":"2023-05-07T12:45:57.687289Z"}
+2023-05-07T20:45:58+08:00 INFO received complete proposal block hash=AC2C3796ECC580308F947811C77E2E9835D6544559246AC6795B56029DB44739 height=12 module=consensus
+2023-05-07T20:45:58+08:00 INFO finalizing commit of block hash=AC2C3796ECC580308F947811C77E2E9835D6544559246AC6795B56029DB44739 height=12 module=consensus num_txs=1 root=
+2023-05-07T20:45:58+08:00 INFO executed block height=12 module=state num_invalid_txs=0 num_valid_txs=1
+2023-05-07T20:45:58+08:00 INFO committed state app_hash= height=12 module=state num_txs=1
+2023-05-07T20:45:59+08:00 INFO received proposal module=consensus proposal={"Type":32,"block_id":{"hash":"049CBF362931E52BA6850F2FA5DCE419F420E406DD769F9EFD2530BAC228E5CF","parts":{"hash":"1689B31D34AC0ADC256CB8D34A034A6BA50EFA12C90D565F49065B7C6D7DB924","total":1}},"height":13,"pol_round":-1,"round":0,"signature":"1/yd/TiMgVvvHOCE32UcHAM6VR94chz1kdblh4Av7jNy+p1h+RgYBYknGbQoiG6Cxh8GtR1L1omsIP2oGbf5DQ==","timestamp":"2023-05-07T12:45:59.247098Z"}
+2023-05-07T20:45:59+08:00 INFO received complete proposal block hash=049CBF362931E52BA6850F2FA5DCE419F420E406DD769F9EFD2530BAC228E5CF height=13 module=consensus
+2023-05-07T20:45:59+08:00 INFO finalizing commit of block hash=049CBF362931E52BA6850F2FA5DCE419F420E406DD769F9EFD2530BAC228E5CF height=13 module=consensus num_txs=4 root=
+2023-05-07T20:45:59+08:00 INFO executed block height=13 module=state num_invalid_txs=0 num_valid_txs=4
+2023-05-07T20:45:59+08:00 INFO committed state app_hash= height=13 module=state num_txs=4
+2023-05-07T20:46:00+08:00 INFO received proposal module=consensus proposal={"Type":32,"block_id":{"hash":"79BC032FB2C01D9AA5206DDF50C61E75F6446C3FD1D1C35E05794F6FF6959591","parts":{"hash":"A72FDAC10CA3B184231CB3AF57C68DD9052B2823B7B8B92C028FE0DF88D64FC1","total":1}},"height":14,"pol_round":-1,"round":0,"signature":"mimWmmapa/ybTFamdLVNSCo2GbIPrC4ICFuXtAXC39m3tZ6+fumJVaBFIOTA21CKrUrzrva9ly6la5UQ5JFgDQ==","timestamp":"2023-05-07T12:46:00.803292Z"}
+2023-05-07T20:46:01+08:00 INFO received complete proposal block hash=79BC032FB2C01D9AA5206DDF50C61E75F6446C3FD1D1C35E05794F6FF6959591 height=14 module=consensus
+2023-05-07T20:46:01+08:00 INFO finalizing commit of block hash=79BC032FB2C01D9AA5206DDF50C61E75F6446C3FD1D1C35E05794F6FF6959591 height=14 module=consensus num_txs=60 root=
+2023-05-07T20:46:01+08:00 INFO executed block height=14 module=state num_invalid_txs=0 num_valid_txs=60
+2023-05-07T20:46:01+08:00 INFO committed state app_hash= height=14 module=state num_txs=60
+2023-05-07T20:46:02+08:00 INFO received proposal module=consensus proposal={"Type":32,"block_id":{"hash":"9F19AB2E97AA73FFC9EDC958B2B261ABBA3351E488EED3E6C07D14D358CED472","parts":{"hash":"502CF168E3EF192B42DDC81CFA7F978E5FE4171282371122239793BEA800FA10","total":1}},"height":15,"pol_round":-1,"round":0,"signature":"YpgWF3f+kHTgM8IKc1XynsOmN9Eil7HTeh7c2cArckKwlpRCgD7LEauur6RFw6gpMOcYFx5hMQaOLkq1ICpxBQ==","timestamp":"2023-05-07T12:46:02.415065Z"}
+2023-05-07T20:46:02+08:00 INFO received complete proposal block hash=9F19AB2E97AA73FFC9EDC958B2B261ABBA3351E488EED3E6C07D14D358CED472 height=15 module=consensus
+2023-05-07T20:46:02+08:00 INFO finalizing commit of block hash=9F19AB2E97AA73FFC9EDC958B2B261ABBA3351E488EED3E6C07D14D358CED472 height=15 module=consensus num_txs=264 root=
+2023-05-07T20:46:02+08:00 INFO executed block height=15 module=state num_invalid_txs=0 num_valid_txs=264
+2023-05-07T20:46:02+08:00 INFO committed state app_hash= height=15 module=state num_txs=264
+2023-05-07T20:46:04+08:00 INFO received proposal module=consensus proposal={"Type":32,"block_id":{"hash":"B824B7D259AA468CB24AE4E61B9D2562561431701AFA97518B381E5471F9FABA","parts":{"hash":"E5AADA2CD8811E82A6890E81020428D36E01DCD9458F4E591AD307A6A3AFB2EA","total":1}},"height":16,"pol_round":-1,"round":0,"signature":"EBm6Mw41WJ+etmJVaI33yL7JBnloZp8/ziwj5wv03O5qO/aZ3uUj9+537Q/s9HGmEHmkshico7JVNvc1SNeRBg==","timestamp":"2023-05-07T12:46:04.029509Z"}
+2023-05-07T20:46:04+08:00 INFO received complete proposal block hash=B824B7D259AA468CB24AE4E61B9D2562561431701AFA97518B381E5471F9FABA height=16 module=consensus
+2023-05-07T20:46:04+08:00 INFO finalizing commit of block hash=B824B7D259AA468CB24AE4E61B9D2562561431701AFA97518B381E5471F9FABA height=16 module=consensus num_txs=414 root=
+2023-05-07T20:46:04+08:00 INFO executed block height=16 module=state num_invalid_txs=0 num_valid_txs=414
+2023-05-07T20:46:04+08:00 INFO committed state app_hash= height=16 module=state num_txs=414
+2023-05-07T20:46:05+08:00 INFO received proposal module=consensus proposal={"Type":32,"block_id":{"hash":"CE5BDEFCDDAAC1C200902A5F3CE01528B01D4CB677F6241166A9131906922099","parts":{"hash":"052A5BFB7D27F4D4256F99510C154A6487C0EC871B438D15DE78592227C24253","total":1}},"height":17,"pol_round":-1,"round":0,"signature":"tDMYSPUI2rxdZRBR6jc2sSqIgfAMqNhzg2Sx69XgCyMoQBxEU/mJbDTpoThtwPqQma57RKfgEynw7H1flL9oAA==","timestamp":"2023-05-07T12:46:05.736469Z"}
+2023-05-07T20:46:05+08:00 INFO received complete proposal block hash=CE5BDEFCDDAAC1C200902A5F3CE01528B01D4CB677F6241166A9131906922099 height=17 module=consensus
+2023-05-07T20:46:06+08:00 INFO finalizing commit of block hash=CE5BDEFCDDAAC1C200902A5F3CE01528B01D4CB677F6241166A9131906922099 height=17 module=consensus num_txs=157 root=
+2023-05-07T20:46:06+08:00 INFO executed block height=17 module=state num_invalid_txs=0 num_valid_txs=157
+2023-05-07T20:46:06+08:00 INFO committed state app_hash= height=17 module=state num_txs=157
+2023-05-07T20:46:08+08:00 INFO received proposal module=consensus proposal={"Type":32,"block_id":{"hash":"3ED2B62AEA631CA5098815327E306ACE9526CF14B3FBED940B5D15E7F3EAD5EA","parts":{"hash":"6228FA0EB1CC85EF87235F13CE1E45DFD4C535376D4A58EFA8E4E38BB541E8B3","total":1}},"height":18,"pol_round":-1,"round":0,"signature":"/ewKvGOjac0Gid+nA6mu3voFUwhuhq3yP34PZx5UBYq/c3hk9ss63Ow9yadesj2KjzrTOy2LQfajeF9uzI+ADw==","timestamp":"2023-05-07T12:46:08.752275Z"}
+2023-05-07T20:46:08+08:00 INFO received complete proposal block hash=3ED2B62AEA631CA5098815327E306ACE9526CF14B3FBED940B5D15E7F3EAD5EA height=18 module=consensus
+2023-05-07T20:46:09+08:00 INFO finalizing commit of block hash=3ED2B62AEA631CA5098815327E306ACE9526CF14B3FBED940B5D15E7F3EAD5EA height=18 module=consensus num_txs=1 root=
+2023-05-07T20:46:09+08:00 INFO executed block height=18 module=state num_invalid_txs=0 num_valid_txs=1
+2023-05-07T20:46:09+08:00 INFO committed state app_hash= height=18 module=state num_txs=1
+2023-05-07T20:46:10+08:00 INFO received proposal module=consensus proposal={"Type":32,"block_id":{"hash":"8417DBED2314C9DBF7445F09390F2186898826984C6C0BC1086D77208D01A26A","parts":{"hash":"E186C716A69D67182C17C3BE43F4FADCF81CF03FE7E2F90FB710809C50ED5BE3","total":1}},"height":19,"pol_round":-1,"round":0,"signature":"mrePSs1d9+OWp3gPbNY3C0L6xf9UkT+Vx2huNTtdgRHx1aUmSfOATyeTm4HBKPlyK3BmJ7sc2skLQF9Z4e6CDA==","timestamp":"2023-05-07T12:46:10.317866Z"}
+2023-05-07T20:46:10+08:00 INFO received complete proposal block hash=8417DBED2314C9DBF7445F09390F2186898826984C6C0BC1086D77208D01A26A height=19 module=consensus
+2023-05-07T20:46:10+08:00 INFO finalizing commit of block hash=8417DBED2314C9DBF7445F09390F2186898826984C6C0BC1086D77208D01A26A height=19 module=consensus num_txs=4 root=
+2023-05-07T20:46:10+08:00 INFO executed block height=19 module=state num_invalid_txs=0 num_valid_txs=4
+2023-05-07T20:46:10+08:00 INFO committed state app_hash= height=19 module=state num_txs=4
+2023-05-07T20:46:12+08:00 INFO received proposal module=consensus proposal={"Type":32,"block_id":{"hash":"1E1C2E6D9A96FB1B9171693752302BC7A62CA850BD4B3182F597C598D36DD69B","parts":{"hash":"1698198D9A0CFD827D2A55722911502C5C41AF2BAD1B9BCC08C65D7A9ADF2AD1","total":1}},"height":20,"pol_round":-1,"round":0,"signature":"XcchWeGzEZPnPuTLtYPaZ3BGhPpFlgq7wbVcOdtB25TgJcVh+UX1dkAVQY2SYBH2zufxZuGRCLqUylSMjTavCA==","timestamp":"2023-05-07T12:46:11.883601Z"}
+2023-05-07T20:46:12+08:00 INFO received complete proposal block hash=1E1C2E6D9A96FB1B9171693752302BC7A62CA850BD4B3182F597C598D36DD69B height=20 module=consensus
+2023-05-07T20:46:12+08:00 INFO finalizing commit of block hash=1E1C2E6D9A96FB1B9171693752302BC7A62CA850BD4B3182F597C598D36DD69B height=20 module=consensus num_txs=27 root=
+2023-05-07T20:46:12+08:00 INFO executed block height=20 module=state num_invalid_txs=0 num_valid_txs=27
+2023-05-07T20:46:12+08:00 INFO committed state app_hash= height=20 module=state num_txs=27
+2023-05-07T20:46:13+08:00 INFO received proposal module=consensus proposal={"Type":32,"block_id":{"hash":"04D699AE7E8397BBE2CE5AFE715586B1E52E381052382F35FFDE918589EE818F","parts":{"hash":"2A8A507A3F73D356F226E0EB68637E32861B1F6E0ECD02AA2EA11CB81C167F88","total":1}},"height":21,"pol_round":-1,"round":0,"signature":"6Z1x+WB5dBDQns2B4QVn/wT0MlP7kZPXba6ObDrSdTnMaw8vN6e27WJxWymads+KK4PFha7L/+Sft9d3f3sZBQ==","timestamp":"2023-05-07T12:46:13.404532Z"}
+2023-05-07T20:46:13+08:00 INFO received complete proposal block hash=04D699AE7E8397BBE2CE5AFE715586B1E52E381052382F35FFDE918589EE818F height=21 module=consensus
+2023-05-07T20:46:13+08:00 INFO finalizing commit of block hash=04D699AE7E8397BBE2CE5AFE715586B1E52E381052382F35FFDE918589EE818F height=21 module=consensus num_txs=127 root=
+2023-05-07T20:46:14+08:00 INFO executed block height=21 module=state num_invalid_txs=0 num_valid_txs=127
+2023-05-07T20:46:14+08:00 INFO committed state app_hash= height=21 module=state num_txs=127
+2023-05-07T20:46:15+08:00 INFO received proposal module=consensus proposal={"Type":32,"block_id":{"hash":"0F8F36AFCFA808DEA68BA1FC4BEF765BD0EC2A8A6CF994F84BF937217F81BA85","parts":{"hash":"E13F938E202103A019C6999AACF439ACD1277C458391CF2EA9989AA060B4465E","total":1}},"height":22,"pol_round":-1,"round":0,"signature":"xsVYzRPlLEN9IrS6/GeNMmwP8ZbNovthL6d1GfT6KjWxUiW2xNWhHi26ODfhQMb+C7BN+svisCMtryoUo2AmCQ==","timestamp":"2023-05-07T12:46:15.124059Z"}
+2023-05-07T20:46:15+08:00 INFO received complete proposal block hash=0F8F36AFCFA808DEA68BA1FC4BEF765BD0EC2A8A6CF994F84BF937217F81BA85 height=22 module=consensus
+2023-05-07T20:46:15+08:00 INFO finalizing commit of block hash=0F8F36AFCFA808DEA68BA1FC4BEF765BD0EC2A8A6CF994F84BF937217F81BA85 height=22 module=consensus num_txs=269 root=
+2023-05-07T20:46:15+08:00 INFO executed block height=22 module=state num_invalid_txs=0 num_valid_txs=269
+2023-05-07T20:46:15+08:00 INFO committed state app_hash= height=22 module=state num_txs=269
+2023-05-07T20:46:16+08:00 INFO received proposal module=consensus proposal={"Type":32,"block_id":{"hash":"035169C4DD2A2ADCAB03663AD6132C92B85D317A4531BAB2C202E770CBFABD0C","parts":{"hash":"F44C67968BA921FFDC20645B229C716AABED594922EB5EC61AF4C38EF8FFA404","total":1}},"height":23,"pol_round":-1,"round":0,"signature":"esz5/uULMsNsjtdQc74/O6+8BjJHs0+Fwp3rZOk4Fr2fb9D/vbOeYYhnA5QpEIXvZcR9JUgHEi4WbFcz52BuDg==","timestamp":"2023-05-07T12:46:16.877382Z"}
+2023-05-07T20:46:16+08:00 INFO received complete proposal block hash=035169C4DD2A2ADCAB03663AD6132C92B85D317A4531BAB2C202E770CBFABD0C height=23 module=consensus
+2023-05-07T20:46:17+08:00 INFO finalizing commit of block hash=035169C4DD2A2ADCAB03663AD6132C92B85D317A4531BAB2C202E770CBFABD0C height=23 module=consensus num_txs=394 root=
+2023-05-07T20:46:17+08:00 INFO executed block height=23 module=state num_invalid_txs=0 num_valid_txs=394
+2023-05-07T20:46:17+08:00 INFO committed state app_hash= height=23 module=state num_txs=394
+2023-05-07T20:46:18+08:00 INFO received proposal module=consensus proposal={"Type":32,"block_id":{"hash":"1086F95472B1EB197DFD0ECBEEB1F9CBFCA4DC16CA675430751C1233A5A23F74","parts":{"hash":"1E07F10E8A3922920C408887715DBC431F2DEB151389D848772FD67250D3406D","total":1}},"height":24,"pol_round":-1,"round":0,"signature":"MbEhv6MsV1LJuxqj3IFOJ9UgBFS9euW5XagLI1V39S53giqTvk2toXjYraGKst8er1ObcMTd3ILkoOFBelXTBA==","timestamp":"2023-05-07T12:46:18.450701Z"}
+2023-05-07T20:46:18+08:00 INFO received complete proposal block hash=1086F95472B1EB197DFD0ECBEEB1F9CBFCA4DC16CA675430751C1233A5A23F74 height=24 module=consensus
+2023-05-07T20:46:18+08:00 INFO finalizing commit of block hash=1086F95472B1EB197DFD0ECBEEB1F9CBFCA4DC16CA675430751C1233A5A23F74 height=24 module=consensus num_txs=78 root=
+2023-05-07T20:46:19+08:00 INFO executed block height=24 module=state num_invalid_txs=0 num_valid_txs=78
+2023-05-07T20:46:19+08:00 INFO committed state app_hash= height=24 module=state num_txs=78
+2023-05-07T20:46:20+08:00 INFO received proposal module=consensus proposal={"Type":32,"block_id":{"hash":"9BED35D0404CDF8E0506C6065A899E3795968CF9E40B6DD502F7A5D437D6E83A","parts":{"hash":"0A0C4B7FCB702A31F038B6D17D6EAA920BAFF3FA87A1D3C69961BBE8B3EE9DB5","total":1}},"height":25,"pol_round":-1,"round":0,"signature":"CMfUk48EGD46P7gYomGmemjx2RLF6P13gqO397hkb5rPM2ig08E9mSD4BxfUKhZ7Tgd5XCLfW1zCKr3zdhSVAw==","timestamp":"2023-05-07T12:46:20.052367Z"}
+2023-05-07T20:46:20+08:00 INFO received complete proposal block hash=9BED35D0404CDF8E0506C6065A899E3795968CF9E40B6DD502F7A5D437D6E83A height=25 module=consensus
+2023-05-07T20:46:20+08:00 INFO finalizing commit of block hash=9BED35D0404CDF8E0506C6065A899E3795968CF9E40B6DD502F7A5D437D6E83A height=25 module=consensus num_txs=1 root=
+2023-05-07T20:46:20+08:00 INFO executed block height=25 module=state num_invalid_txs=0 num_valid_txs=1
+2023-05-07T20:46:20+08:00 INFO committed state app_hash= height=25 module=state num_txs=1
+2023-05-07T20:46:21+08:00 INFO received proposal module=consensus proposal={"Type":32,"block_id":{"hash":"B1F8DD91F302DADDA5528BD4D51799C5AD3379134495A2EAA9FB4081AF0F07C6","parts":{"hash":"441672F0BB28F22696582689BA1FEDB5B826B3FB25FC28729B117F4D1DE9A4DC","total":1}},"height":26,"pol_round":-1,"round":0,"signature":"QNsZFt2GuI91h78Wf5Kd8l6iKKdw8tc122P44PxUePkCVPFzIJhA7T7XYW1qIlayMolax24BRRmIwQHcWJioAg==","timestamp":"2023-05-07T12:46:21.671359Z"}
+2023-05-07T20:46:21+08:00 INFO received complete proposal block hash=B1F8DD91F302DADDA5528BD4D51799C5AD3379134495A2EAA9FB4081AF0F07C6 height=26 module=consensus
+2023-05-07T20:46:22+08:00 INFO finalizing commit of block hash=B1F8DD91F302DADDA5528BD4D51799C5AD3379134495A2EAA9FB4081AF0F07C6 height=26 module=consensus num_txs=3 root=
+2023-05-07T20:46:22+08:00 INFO executed block height=26 module=state num_invalid_txs=0 num_valid_txs=3
+2023-05-07T20:46:22+08:00 INFO committed state app_hash= height=26 module=state num_txs=3
+2023-05-07T20:46:23+08:00 INFO received proposal module=consensus proposal={"Type":32,"block_id":{"hash":"7519E37E02DB11C6FB0356043D8514137730C2C900BE46F02550D9768872B560","parts":{"hash":"4B43995FCDEA90BD7A9395EFEAB502E1E3315B015097A9AF6E903939D3710C3C","total":1}},"height":27,"pol_round":-1,"round":0,"signature":"S+XE6MHWtDsBrBW5v+WJGbcRRZYXuepg803XJ9murjzaPVsdvpMAdHuR8P4v1y2/RNs7y9HjTcIZVGNkF1xPDA==","timestamp":"2023-05-07T12:46:23.128083Z"}
+2023-05-07T20:46:23+08:00 INFO received complete proposal block hash=7519E37E02DB11C6FB0356043D8514137730C2C900BE46F02550D9768872B560 height=27 module=consensus
+2023-05-07T20:46:23+08:00 INFO finalizing commit of block hash=7519E37E02DB11C6FB0356043D8514137730C2C900BE46F02550D9768872B560 height=27 module=consensus num_txs=17 root=
+2023-05-07T20:46:23+08:00 INFO executed block height=27 module=state num_invalid_txs=0 num_valid_txs=17
+2023-05-07T20:46:23+08:00 INFO committed state app_hash= height=27 module=state num_txs=17
+2023-05-07T20:46:24+08:00 INFO received proposal module=consensus proposal={"Type":32,"block_id":{"hash":"2C97E98C562749307EDFC1BD409CD0B917F08DBA9023E89560F8A8B716EECF87","parts":{"hash":"C07D1BA451110E8BA531D58ED68B46EB7CF508F15615E2BBA19D3CCB2C08CF97","total":1}},"height":28,"pol_round":-1,"round":0,"signature":"BkUpPWDsxAXXTtUP6e5kTdNPDk2D4FvfR+kZgwekX/qmcc+12gzy5gV/22TrFj1GUhVQG1vXlN+NEBvt/6GACQ==","timestamp":"2023-05-07T12:46:24.60756Z"}
+2023-05-07T20:46:24+08:00 INFO received complete proposal block hash=2C97E98C562749307EDFC1BD409CD0B917F08DBA9023E89560F8A8B716EECF87 height=28 module=consensus
+2023-05-07T20:46:25+08:00 INFO finalizing commit of block hash=2C97E98C562749307EDFC1BD409CD0B917F08DBA9023E89560F8A8B716EECF87 height=28 module=consensus num_txs=77 root=
+2023-05-07T20:46:25+08:00 INFO executed block height=28 module=state num_invalid_txs=0 num_valid_txs=77
+2023-05-07T20:46:25+08:00 INFO committed state app_hash= height=28 module=state num_txs=77
+2023-05-07T20:46:26+08:00 INFO received proposal module=consensus proposal={"Type":32,"block_id":{"hash":"93E5498638F6C1A686CFA5112D122CC4887B8AD3400123C9DA3B82438C026EE3","parts":{"hash":"7DA162FD6F4DEB58E99B3A25C3EBE8427F54B3092B7B72DB14D49526D82B96B3","total":1}},"height":29,"pol_round":-1,"round":0,"signature":"7rSjeihqGx7u7nDiaWADwH16jI+Yay7wvAXGSxQzxKS0XL1Hwauawa3EfHJT4TQ3ZCDJihBqI0CjLp0bYOQXAQ==","timestamp":"2023-05-07T12:46:26.29502Z"}
+2023-05-07T20:46:26+08:00 INFO received complete proposal block hash=93E5498638F6C1A686CFA5112D122CC4887B8AD3400123C9DA3B82438C026EE3 height=29 module=consensus
+2023-05-07T20:46:26+08:00 INFO finalizing commit of block hash=93E5498638F6C1A686CFA5112D122CC4887B8AD3400123C9DA3B82438C026EE3 height=29 module=consensus num_txs=146 root=
+2023-05-07T20:46:26+08:00 INFO executed block height=29 module=state num_invalid_txs=0 num_valid_txs=146
+2023-05-07T20:46:26+08:00 INFO committed state app_hash= height=29 module=state num_txs=146
+2023-05-07T20:46:27+08:00 INFO received proposal module=consensus proposal={"Type":32,"block_id":{"hash":"E22B7F7A73DEC666B108BC3CF7AA51D214B9009FA0869DA33917F6B95092930B","parts":{"hash":"3E0288D4728B34E67428A711CEB24E645771DAD09ED7900C390F049CC5BAC757","total":1}},"height":30,"pol_round":-1,"round":0,"signature":"Bqt95yvQvyokNckg8kuaxcTbfLX86IQK67UnGwD85ZgqmR2Mz4lySnCF0R2PZFbU/K6SK6Tc2vAxbCm8KP1JCQ==","timestamp":"2023-05-07T12:46:27.86993Z"}
+2023-05-07T20:46:28+08:00 INFO received complete proposal block hash=E22B7F7A73DEC666B108BC3CF7AA51D214B9009FA0869DA33917F6B95092930B height=30 module=consensus
+2023-05-07T20:46:28+08:00 INFO finalizing commit of block hash=E22B7F7A73DEC666B108BC3CF7AA51D214B9009FA0869DA33917F6B95092930B height=30 module=consensus num_txs=326 root=
+2023-05-07T20:46:28+08:00 INFO executed block height=30 module=state num_invalid_txs=0 num_valid_txs=326
+2023-05-07T20:46:28+08:00 INFO committed state app_hash= height=30 module=state num_txs=326
+2023-05-07T20:46:29+08:00 INFO received proposal module=consensus proposal={"Type":32,"block_id":{"hash":"4024C4D0D43D99D94CF9BC3AD43DF71A0E6C653673F69EA9561C58D7A3DD35F2","parts":{"hash":"A73A9382534974F9954CA4EA003DF4CCE5318766FAB10EB2C6B5E14B8C062694","total":1}},"height":31,"pol_round":-1,"round":0,"signature":"Q6PcYQAsqpQoI+QC72qdgg3OXNWD/1q91LRJHqA3OYNw7BP71xrGSlDoaMVqnqDzJr0d1QLWJcqNJEGmVOj4Dw==","timestamp":"2023-05-07T12:46:29.590826Z"}
+2023-05-07T20:46:29+08:00 INFO received complete proposal block hash=4024C4D0D43D99D94CF9BC3AD43DF71A0E6C653673F69EA9561C58D7A3DD35F2 height=31 module=consensus
+2023-05-07T20:46:30+08:00 INFO finalizing commit of block hash=4024C4D0D43D99D94CF9BC3AD43DF71A0E6C653673F69EA9561C58D7A3DD35F2 height=31 module=consensus num_txs=291 root=
+2023-05-07T20:46:30+08:00 INFO executed block height=31 module=state num_invalid_txs=0 num_valid_txs=291
+2023-05-07T20:46:30+08:00 INFO committed state app_hash= height=31 module=state num_txs=291
+2023-05-07T20:46:31+08:00 INFO received proposal module=consensus proposal={"Type":32,"block_id":{"hash":"59776971CBC231A6699226AD83ECD85A94A2EE49DD389E84C3A7CC8E474BBE39","parts":{"hash":"DDA6AE479F2E92A38F5225DE0533DB1A33BC789C3B61E7BF6ED7706B8090B418","total":1}},"height":32,"pol_round":-1,"round":0,"signature":"gfG7lbL9nLsj9vwaskkuNo2jEW6Up6v2VIPrJ0Wj2Y33xIOIDlxQYMfoUAxVhqPRmQDhR4gRLmBSDq06YTcVCg==","timestamp":"2023-05-07T12:46:31.181702Z"}
+2023-05-07T20:46:31+08:00 INFO received complete proposal block hash=59776971CBC231A6699226AD83ECD85A94A2EE49DD389E84C3A7CC8E474BBE39 height=32 module=consensus
+2023-05-07T20:46:31+08:00 INFO finalizing commit of block hash=59776971CBC231A6699226AD83ECD85A94A2EE49DD389E84C3A7CC8E474BBE39 height=32 module=consensus num_txs=40 root=
+2023-05-07T20:46:31+08:00 INFO executed block height=32 module=state num_invalid_txs=0 num_valid_txs=40
+2023-05-07T20:46:31+08:00 INFO committed state app_hash= height=32 module=state num_txs=40
+2023-05-07T20:46:32+08:00 INFO received proposal module=consensus proposal={"Type":32,"block_id":{"hash":"E2F7F411BAC5A572219BA014A699046A266E07816D4DFCEFEB3FBAD3434F8B6D","parts":{"hash":"9FC4D6823223AE85290BF11FE9FFBB3D01B2B2AD571F5402849D35DC0CC17C47","total":1}},"height":33,"pol_round":-1,"round":0,"signature":"tSxuebX+XMgP7rRCjT1WZX4OkeNgsDyJHtZBE93KUruV6B4jXXdeRgOy7gCcVQJU3TaPntcuw0jz83xapFGuAA==","timestamp":"2023-05-07T12:46:32.705385Z"}
+2023-05-07T20:46:32+08:00 INFO received complete proposal block hash=E2F7F411BAC5A572219BA014A699046A266E07816D4DFCEFEB3FBAD3434F8B6D height=33 module=consensus
+2023-05-07T20:46:33+08:00 INFO finalizing commit of block hash=E2F7F411BAC5A572219BA014A699046A266E07816D4DFCEFEB3FBAD3434F8B6D height=33 module=consensus num_txs=2 root=
+2023-05-07T20:46:33+08:00 INFO executed block height=33 module=state num_invalid_txs=0 num_valid_txs=2
+2023-05-07T20:46:33+08:00 INFO committed state app_hash= height=33 module=state num_txs=2
+2023-05-07T20:46:34+08:00 INFO received proposal module=consensus proposal={"Type":32,"block_id":{"hash":"E97DEC7A92AE94473ACD8F09688989D2885915E29FA8EDFC641A17677CB537C0","parts":{"hash":"AE3DE9BC43A9EB6AE05449F2B732B8B00504DBB7B04D0F4F4989AC65EBA9ABAB","total":1}},"height":34,"pol_round":-1,"round":0,"signature":"PDPgCl/g1x5RvZuT9zLLnwuAji78zG1zVHIhY5jZM88zEGBZe7Eds+GHaMDo27WQf6H4BPTr5C58EIBCEhdsCQ==","timestamp":"2023-05-07T12:46:34.28603Z"}
+2023-05-07T20:46:34+08:00 INFO received complete proposal block hash=E97DEC7A92AE94473ACD8F09688989D2885915E29FA8EDFC641A17677CB537C0 height=34 module=consensus
+2023-05-07T20:46:34+08:00 INFO finalizing commit of block hash=E97DEC7A92AE94473ACD8F09688989D2885915E29FA8EDFC641A17677CB537C0 height=34 module=consensus num_txs=15 root=
+2023-05-07T20:46:34+08:00 INFO executed block height=34 module=state num_invalid_txs=0 num_valid_txs=15
+2023-05-07T20:46:34+08:00 INFO committed state app_hash= height=34 module=state num_txs=15
+2023-05-07T20:46:35+08:00 INFO received proposal module=consensus proposal={"Type":32,"block_id":{"hash":"F0AEC6C1C06F3FDC28B08ACDA4A5E359A1AC044DC7FDE845E8984D3C2C28560C","parts":{"hash":"EB18C38615ACDE19183058122F3D4BA8F2EB65E49DE1C6A6042487234636BEB2","total":1}},"height":35,"pol_round":-1,"round":0,"signature":"dnW1p8DFvnhqrF8Z/Fn3oletF+VCw1vk2JGnIaNn4yLlgMULr42RLxmJifHlW8OiK1kA6hD9n+1quXH4klzkCA==","timestamp":"2023-05-07T12:46:35.793172Z"}
+2023-05-07T20:46:35+08:00 INFO received complete proposal block hash=F0AEC6C1C06F3FDC28B08ACDA4A5E359A1AC044DC7FDE845E8984D3C2C28560C height=35 module=consensus
+2023-05-07T20:46:38+08:00 INFO finalizing commit of block hash=F0AEC6C1C06F3FDC28B08ACDA4A5E359A1AC044DC7FDE845E8984D3C2C28560C height=35 module=consensus num_txs=41 root=
+2023-05-07T20:46:38+08:00 INFO executed block height=35 module=state num_invalid_txs=0 num_valid_txs=41
+2023-05-07T20:46:38+08:00 INFO committed state app_hash= height=35 module=state num_txs=41
+2023-05-07T20:46:41+08:00 INFO received proposal module=consensus proposal={"Type":32,"block_id":{"hash":"CD1E212A72196F6CC5A41E55C3BDE31BCEA001EC6558F9D27E2B300C207AB6F2","parts":{"hash":"0929DEA457BACDAC99101AC3148A004D4AD425DF6E18D09756BB0F49C84D7758","total":1}},"height":36,"pol_round":-1,"round":0,"signature":"4dqo9qU36DSqmL1bwLgSereWYL/yE1U68IutSivikogH3hyOcLE/8yqSFN8xuaSN55WVYDjFuml4hviibcuHAQ==","timestamp":"2023-05-07T12:46:41.024047Z"}
+2023-05-07T20:46:41+08:00 INFO received complete proposal block hash=CD1E212A72196F6CC5A41E55C3BDE31BCEA001EC6558F9D27E2B300C207AB6F2 height=36 module=consensus
+2023-05-07T20:46:41+08:00 INFO finalizing commit of block hash=CD1E212A72196F6CC5A41E55C3BDE31BCEA001EC6558F9D27E2B300C207AB6F2 height=36 module=consensus num_txs=188 root=
+2023-05-07T20:46:41+08:00 INFO executed block height=36 module=state num_invalid_txs=0 num_valid_txs=188
+2023-05-07T20:46:41+08:00 INFO committed state app_hash= height=36 module=state num_txs=188
+2023-05-07T20:46:42+08:00 INFO received proposal module=consensus proposal={"Type":32,"block_id":{"hash":"F9044FBB5CB9F7FCB99E3D89BD737C0D916A527EF60C801FFA84BA75BC9FBE72","parts":{"hash":"5BDAB06723A93C230E86920A4B8890EF21A4474596B648CE897C9BB1230D3B12","total":1}},"height":37,"pol_round":-1,"round":0,"signature":"ATBSE7D+/GCdSZysUeUh1TuLWZCA0cl6GeopHHoPzLSnis0o+UAI5ADoUhCmXtDDtvThRxN+H1muOwBaNmKXAw==","timestamp":"2023-05-07T12:46:42.422605Z"}
+2023-05-07T20:46:42+08:00 INFO received complete proposal block hash=F9044FBB5CB9F7FCB99E3D89BD737C0D916A527EF60C801FFA84BA75BC9FBE72 height=37 module=consensus
+2023-05-07T20:46:42+08:00 INFO finalizing commit of block hash=F9044FBB5CB9F7FCB99E3D89BD737C0D916A527EF60C801FFA84BA75BC9FBE72 height=37 module=consensus num_txs=534 root=
+2023-05-07T20:46:42+08:00 INFO executed block height=37 module=state num_invalid_txs=0 num_valid_txs=534
+2023-05-07T20:46:42+08:00 INFO committed state app_hash= height=37 module=state num_txs=534
+2023-05-07T20:46:44+08:00 INFO received proposal module=consensus proposal={"Type":32,"block_id":{"hash":"20CDC4552494B867C3240F4389507364FB3BF0413075FAC5AFA406B3C41211CE","parts":{"hash":"C3AB67D772ECF1D92315CB557B61D3727B89E985ECFEC696196F9079DAF313E2","total":1}},"height":38,"pol_round":-1,"round":0,"signature":"Koc+X2A8nqAF27uYTizCIcp2aCujz+4N8ezL6L5Y+Yx/XPCrx4fs9jqetv6i1/6PidP4AlQ5W5fosnJi5codBw==","timestamp":"2023-05-07T12:46:43.952297Z"}
+2023-05-07T20:46:44+08:00 INFO received complete proposal block hash=20CDC4552494B867C3240F4389507364FB3BF0413075FAC5AFA406B3C41211CE height=38 module=consensus
+2023-05-07T20:46:44+08:00 INFO finalizing commit of block hash=20CDC4552494B867C3240F4389507364FB3BF0413075FAC5AFA406B3C41211CE height=38 module=consensus num_txs=120 root=
+2023-05-07T20:46:44+08:00 INFO executed block height=38 module=state num_invalid_txs=0 num_valid_txs=120
+2023-05-07T20:46:44+08:00 INFO committed state app_hash= height=38 module=state num_txs=120
+2023-05-07T20:46:45+08:00 INFO received proposal module=consensus proposal={"Type":32,"block_id":{"hash":"4C575AC98105918F1FD5477DBEFFABD2305C083FBF14708A09926A59115EC490","parts":{"hash":"0A66B7AA49DA9BF5D4418C751E15F2DC65E8A571CC1944092D3F56AAF180D3B2","total":1}},"height":39,"pol_round":-1,"round":0,"signature":"sp0JJTiVwJrjX6UAn9cz391dvqQOtEaYIL2ndMwpmOsSyLmOzuT3i+4btlQH45m2PzqtAUrhi3auObSwsHYZBg==","timestamp":"2023-05-07T12:46:45.534653Z"}
+2023-05-07T20:46:45+08:00 INFO received complete proposal block hash=4C575AC98105918F1FD5477DBEFFABD2305C083FBF14708A09926A59115EC490 height=39 module=consensus
+2023-05-07T20:46:46+08:00 INFO finalizing commit of block hash=4C575AC98105918F1FD5477DBEFFABD2305C083FBF14708A09926A59115EC490 height=39 module=consensus num_txs=13 root=
+2023-05-07T20:46:46+08:00 INFO executed block height=39 module=state num_invalid_txs=0 num_valid_txs=13
+2023-05-07T20:46:46+08:00 INFO committed state app_hash= height=39 module=state num_txs=13
+2023-05-07T20:46:47+08:00 INFO received proposal module=consensus proposal={"Type":32,"block_id":{"hash":"BC12F6587C578FF3141B43A8EF5B4ADDF067376DF6D34A3ED2E086E306C13D38","parts":{"hash":"6087C9A57D938B36F08A85F3ABD7514DD49B2EC550E6FA0E9EC222B802AB9F9F","total":1}},"height":40,"pol_round":-1,"round":0,"signature":"Bq+t2+eVPXQ0cLu5vOQS4cxsqpaNaBkqBzOoC4SrHLObNQMOVyFEB8JkTVP2e39YKMJ7/nhFIJuHwU/xdWI8Bw==","timestamp":"2023-05-07T12:46:47.17191Z"}
+2023-05-07T20:46:47+08:00 INFO received complete proposal block hash=BC12F6587C578FF3141B43A8EF5B4ADDF067376DF6D34A3ED2E086E306C13D38 height=40 module=consensus
+2023-05-07T20:46:47+08:00 INFO finalizing commit of block hash=BC12F6587C578FF3141B43A8EF5B4ADDF067376DF6D34A3ED2E086E306C13D38 height=40 module=consensus num_txs=4 root=
+2023-05-07T20:46:47+08:00 INFO executed block height=40 module=state num_invalid_txs=0 num_valid_txs=4
+2023-05-07T20:46:47+08:00 INFO committed state app_hash= height=40 module=state num_txs=4
+2023-05-07T20:46:48+08:00 INFO received proposal module=consensus proposal={"Type":32,"block_id":{"hash":"4D3F5D86AED61D2EFD741308550EF414C0A7013C6D6E3CDC4D3A9439069A6921","parts":{"hash":"847D61DEB66C9419B7D3528C595A4A7ACEDCC6F6DE2E3D61C1C03235CB64500C","total":1}},"height":41,"pol_round":-1,"round":0,"signature":"S9+qilyZXJDtZlTFy6SRP0BzpbxHCKE4bquCYUKqS7Uv/pJy53pamFedYYSrtCRnkrOmwjDq1xXfvkV0si6UCg==","timestamp":"2023-05-07T12:46:48.908424Z"}
+2023-05-07T20:46:48+08:00 INFO received complete proposal block hash=4D3F5D86AED61D2EFD741308550EF414C0A7013C6D6E3CDC4D3A9439069A6921 height=41 module=consensus
+2023-05-07T20:46:49+08:00 INFO finalizing commit of block hash=4D3F5D86AED61D2EFD741308550EF414C0A7013C6D6E3CDC4D3A9439069A6921 height=41 module=consensus num_txs=23 root=
+2023-05-07T20:46:49+08:00 INFO executed block height=41 module=state num_invalid_txs=0 num_valid_txs=23
+2023-05-07T20:46:49+08:00 INFO committed state app_hash= height=41 module=state num_txs=23
+2023-05-07T20:46:51+08:00 INFO received proposal module=consensus proposal={"Type":32,"block_id":{"hash":"14749E7EC4F65C09B34713682D70462E31B0F4D098A2C18434A7C9F8EFC2339C","parts":{"hash":"9D0B8D2548A939DD6C3C768D732508D6698F534ED23F3127C3100CB3E2C6A121","total":1}},"height":42,"pol_round":-1,"round":0,"signature":"BNYaEMk1PUwmcRP4tG7amonGzf5p50L3wbnGEsvdtp8jS3z3+CwuvpGoedoN/AAUilWUALtYgrZasnw1pztVAg==","timestamp":"2023-05-07T12:46:50.532602Z"}
+2023-05-07T20:46:52+08:00 INFO received complete proposal block hash=14749E7EC4F65C09B34713682D70462E31B0F4D098A2C18434A7C9F8EFC2339C height=42 module=consensus
+2023-05-07T20:46:53+08:00 INFO finalizing commit of block hash=14749E7EC4F65C09B34713682D70462E31B0F4D098A2C18434A7C9F8EFC2339C height=42 module=consensus num_txs=18 root=
+2023-05-07T20:46:53+08:00 INFO executed block height=42 module=state num_invalid_txs=0 num_valid_txs=18
+2023-05-07T20:46:53+08:00 INFO committed state app_hash= height=42 module=state num_txs=18
+2023-05-07T20:46:54+08:00 INFO received proposal module=consensus proposal={"Type":32,"block_id":{"hash":"443480B9579E49B0277FC2F3C91759C30FD8291DF9ED5ECBD716203EDDDCF7D7","parts":{"hash":"8F9C3B3A1E7759A858982CD51D9C84389DAAB5536D2FF6A1A55A767A3A1A2499","total":1}},"height":43,"pol_round":-1,"round":0,"signature":"hmiHSpmcd8XM7Y+GGWDZ2cFXJRfvmYzGs+rF/9nHfn2NGuAztF5LeKt5UYoWAcI0QBIQHB6S0HrmeJkyJaH3Bw==","timestamp":"2023-05-07T12:46:54.748316Z"}
+2023-05-07T20:46:54+08:00 INFO received complete proposal block hash=443480B9579E49B0277FC2F3C91759C30FD8291DF9ED5ECBD716203EDDDCF7D7 height=43 module=consensus
+2023-05-07T20:46:55+08:00 INFO finalizing commit of block hash=443480B9579E49B0277FC2F3C91759C30FD8291DF9ED5ECBD716203EDDDCF7D7 height=43 module=consensus num_txs=585 root=
+2023-05-07T20:46:55+08:00 INFO executed block height=43 module=state num_invalid_txs=0 num_valid_txs=585
+2023-05-07T20:46:55+08:00 INFO committed state app_hash= height=43 module=state num_txs=585
+2023-05-07T20:46:56+08:00 INFO received proposal module=consensus proposal={"Type":32,"block_id":{"hash":"CAC1D19664E68ECB70D4FFFDF9D4B744181938C82EE5C8DED63A0BEF3DA2052D","parts":{"hash":"D452521F1D741810A8AFFDC96ED4A1F36325088767F06D4036C0A951BA1DCBCE","total":1}},"height":44,"pol_round":-1,"round":0,"signature":"gXaQf+nXlW3DWpc6k/gEJZ9cqKEbP8zDjTCxwZ3Y7qSdNnVq19MSbz0uLOnQVH4O5boXC5srwVkkY8C7traAAA==","timestamp":"2023-05-07T12:46:56.337713Z"}
+2023-05-07T20:46:56+08:00 INFO received complete proposal block hash=CAC1D19664E68ECB70D4FFFDF9D4B744181938C82EE5C8DED63A0BEF3DA2052D height=44 module=consensus
+2023-05-07T20:46:56+08:00 INFO finalizing commit of block hash=CAC1D19664E68ECB70D4FFFDF9D4B744181938C82EE5C8DED63A0BEF3DA2052D height=44 module=consensus num_txs=258 root=
+2023-05-07T20:46:56+08:00 INFO executed block height=44 module=state num_invalid_txs=0 num_valid_txs=258
+2023-05-07T20:46:56+08:00 INFO committed state app_hash= height=44 module=state num_txs=258
+2023-05-07T20:46:57+08:00 INFO received proposal module=consensus proposal={"Type":32,"block_id":{"hash":"B6EA19CE7DA3402F8123191BA61737FC4E8A7A4408E1813045CAA6159693995F","parts":{"hash":"C4C2C124348A4E27F997FA659582F9B302E44750F5A100258BFB93E9BE3713DD","total":1}},"height":45,"pol_round":-1,"round":0,"signature":"g+3pHpCoQ7VzCgZQWc7MDe6jrZhNYSoKMgI0VmOVxnYbQ3l+CfFxMn6U3K9jrnZFuwMVClG7UmCHU3mWFj5LBA==","timestamp":"2023-05-07T12:46:57.868651Z"}
+2023-05-07T20:46:57+08:00 INFO received complete proposal block hash=B6EA19CE7DA3402F8123191BA61737FC4E8A7A4408E1813045CAA6159693995F height=45 module=consensus
+2023-05-07T20:46:58+08:00 INFO finalizing commit of block hash=B6EA19CE7DA3402F8123191BA61737FC4E8A7A4408E1813045CAA6159693995F height=45 module=consensus num_txs=12 root=
+2023-05-07T20:46:58+08:00 INFO executed block height=45 module=state num_invalid_txs=0 num_valid_txs=12
+2023-05-07T20:46:58+08:00 INFO committed state app_hash= height=45 module=state num_txs=12
+2023-05-07T20:46:59+08:00 INFO received proposal module=consensus proposal={"Type":32,"block_id":{"hash":"E3B56B49A0E80CD9E92E69BE75ACDA1D6EC477DE03AC0AECEFC86E516418D576","parts":{"hash":"140FBD431D86FE346F3D35D49E55C978F7DCF4A2D3238A6C685DAF8EDDFCBD22","total":1}},"height":46,"pol_round":-1,"round":0,"signature":"Wn6rE5pnVXhNCo+tw8WpoD+FnfIPOzEc7OSaeyDJje9jpIGjXXrbd4mtXOcJML4W56wwF0kFdQfEnwIDB9UuCQ==","timestamp":"2023-05-07T12:46:59.439173Z"}
+2023-05-07T20:46:59+08:00 INFO received complete proposal block hash=E3B56B49A0E80CD9E92E69BE75ACDA1D6EC477DE03AC0AECEFC86E516418D576 height=46 module=consensus
+2023-05-07T20:46:59+08:00 INFO finalizing commit of block hash=E3B56B49A0E80CD9E92E69BE75ACDA1D6EC477DE03AC0AECEFC86E516418D576 height=46 module=consensus num_txs=4 root=
+2023-05-07T20:47:00+08:00 INFO executed block height=46 module=state num_invalid_txs=0 num_valid_txs=4
+2023-05-07T20:47:00+08:00 INFO committed state app_hash= height=46 module=state num_txs=4
+2023-05-07T20:47:00+08:00 INFO received proposal module=consensus proposal={"Type":32,"block_id":{"hash":"391E8FEBABA4EC2B2A5E868CE9BC4A3D58C194BD6890EB209E79E0F7466FE1E9","parts":{"hash":"F59A73B284AFFFC7A24B49C0837AF4E750BE634CB3A7153469FF55A27A39C3CE","total":1}},"height":47,"pol_round":-1,"round":0,"signature":"udmD5+FbvdSi/8kxlXW8H8DTKz0qsgOcyeTs3kcFnags4JEL1TQzNIT086UgOj5iY2HjT+VpBwzMDg5jeANFCw==","timestamp":"2023-05-07T12:47:00.951223Z"}
+2023-05-07T20:47:00+08:00 INFO received complete proposal block hash=391E8FEBABA4EC2B2A5E868CE9BC4A3D58C194BD6890EB209E79E0F7466FE1E9 height=47 module=consensus
+2023-05-07T20:47:01+08:00 INFO finalizing commit of block hash=391E8FEBABA4EC2B2A5E868CE9BC4A3D58C194BD6890EB209E79E0F7466FE1E9 height=47 module=consensus num_txs=23 root=
+2023-05-07T20:47:01+08:00 INFO executed block height=47 module=state num_invalid_txs=0 num_valid_txs=23
+2023-05-07T20:47:01+08:00 INFO committed state app_hash= height=47 module=state num_txs=23
+2023-05-07T20:47:04+08:00 INFO received proposal module=consensus proposal={"Type":32,"block_id":{"hash":"4BD50C403C90932F086C145A4D169DB8B41AD67F7E2CDA5FA5CA2C0FE8683F4F","parts":{"hash":"0CE714FCCD7A979286DE8932B5C9461F3F64A0DC3AE91DE5940E37C4472FDA03","total":1}},"height":48,"pol_round":-1,"round":0,"signature":"e0TLjbFfhBsnUnAktZxdDcDrUfGgBs9UxdmwvgoCUrDKWFiQxSKeqAtg9BZIZrp7+tZVWBOm40XSvJtKdrHOBQ==","timestamp":"2023-05-07T12:47:04.442769Z"}
+2023-05-07T20:47:04+08:00 INFO received complete proposal block hash=4BD50C403C90932F086C145A4D169DB8B41AD67F7E2CDA5FA5CA2C0FE8683F4F height=48 module=consensus
+2023-05-07T20:47:05+08:00 INFO finalizing commit of block hash=4BD50C403C90932F086C145A4D169DB8B41AD67F7E2CDA5FA5CA2C0FE8683F4F height=48 module=consensus num_txs=2 root=
+2023-05-07T20:47:05+08:00 INFO executed block height=48 module=state num_invalid_txs=0 num_valid_txs=2
+2023-05-07T20:47:05+08:00 INFO committed state app_hash= height=48 module=state num_txs=2
+2023-05-07T20:47:06+08:00 INFO received proposal module=consensus proposal={"Type":32,"block_id":{"hash":"261B71FCC829FC933684328E481261738688F12E8E6528F5487BF2CA4065FF4D","parts":{"hash":"6647914DC9816627AB81B9ECF808752F16EACE1E281EDA10A8106212DBA71ABB","total":1}},"height":49,"pol_round":-1,"round":0,"signature":"6tRCejF4eiitbf519Mq79EXyWNQ9ZRxil1lyMNIUfzul8cTv9FKbSwFZPqwi0BjdSQjNOZpnJWft0jcqMOqpAQ==","timestamp":"2023-05-07T12:47:06.25099Z"}
+2023-05-07T20:47:06+08:00 INFO received complete proposal block hash=261B71FCC829FC933684328E481261738688F12E8E6528F5487BF2CA4065FF4D height=49 module=consensus
+2023-05-07T20:47:06+08:00 INFO finalizing commit of block hash=261B71FCC829FC933684328E481261738688F12E8E6528F5487BF2CA4065FF4D height=49 module=consensus num_txs=421 root=
+2023-05-07T20:47:06+08:00 INFO executed block height=49 module=state num_invalid_txs=0 num_valid_txs=421
+2023-05-07T20:47:06+08:00 INFO committed state app_hash= height=49 module=state num_txs=421
+2023-05-07T20:47:07+08:00 INFO received proposal module=consensus proposal={"Type":32,"block_id":{"hash":"2D0F36809658A691D48A55F62499D0F3B078587E6A17FFA19FA8A476A46E44CF","parts":{"hash":"E1267504BA69E8128C48C66F9C6C49AADD7CDAC3B6E2BFFEF9F17474840CBFBA","total":1}},"height":50,"pol_round":-1,"round":0,"signature":"kookFGU48BETtI+d9tUGzBBXATBznXoNPnqVBT7LDep6CsI87emDLK7I3HMz2QlM7sOii0eSfeskaEInqzByAw==","timestamp":"2023-05-07T12:47:07.624924Z"}
+2023-05-07T20:47:07+08:00 INFO received complete proposal block hash=2D0F36809658A691D48A55F62499D0F3B078587E6A17FFA19FA8A476A46E44CF height=50 module=consensus
+2023-05-07T20:47:08+08:00 INFO finalizing commit of block hash=2D0F36809658A691D48A55F62499D0F3B078587E6A17FFA19FA8A476A46E44CF height=50 module=consensus num_txs=317 root=
+2023-05-07T20:47:08+08:00 INFO executed block height=50 module=state num_invalid_txs=0 num_valid_txs=317
+2023-05-07T20:47:08+08:00 INFO committed state app_hash= height=50 module=state num_txs=317
+2023-05-07T20:47:09+08:00 INFO received proposal module=consensus proposal={"Type":32,"block_id":{"hash":"EBDBCEDE51565C159DFEB876366365882EFA871D64F0A0EF62A2DE7C827EFBDE","parts":{"hash":"72D819AA730AD5BA5DB8E590F515B0B80244B64F47CB823B593BADCA57C8DFB6","total":1}},"height":51,"pol_round":-1,"round":0,"signature":"1avd62OlNwKNPZ7p1F1EAy45Q1RG48o7hbaDu618yir6qPhj7rbT2wxxTzRYgem/CQ0T6XpHdyDIUgBBkWnnDw==","timestamp":"2023-05-07T12:47:09.166839Z"}
+2023-05-07T20:47:09+08:00 INFO received complete proposal block hash=EBDBCEDE51565C159DFEB876366365882EFA871D64F0A0EF62A2DE7C827EFBDE height=51 module=consensus
+2023-05-07T20:47:09+08:00 INFO finalizing commit of block hash=EBDBCEDE51565C159DFEB876366365882EFA871D64F0A0EF62A2DE7C827EFBDE height=51 module=consensus num_txs=128 root=
+2023-05-07T20:47:09+08:00 INFO executed block height=51 module=state num_invalid_txs=0 num_valid_txs=128
+2023-05-07T20:47:09+08:00 INFO committed state app_hash= height=51 module=state num_txs=128
+2023-05-07T20:47:10+08:00 INFO received proposal module=consensus proposal={"Type":32,"block_id":{"hash":"8693496CAFBA9B528FB37A647DD2AC723569FB911D53A1F54B15EEF4229D6427","parts":{"hash":"BC75712CC15E9D03AE6A27A9A26FF7E6FEC23FEA49463276E700BDC8618B25A8","total":1}},"height":52,"pol_round":-1,"round":0,"signature":"QNKV66KQpPAbJRT0/NreS9SUhN4rySndxHU49OvAkR1WCG0qDBl1Q79k++ik2qXt7lgG58+TFUyxShZJp1H/BA==","timestamp":"2023-05-07T12:47:10.725674Z"}
+2023-05-07T20:47:10+08:00 INFO received complete proposal block hash=8693496CAFBA9B528FB37A647DD2AC723569FB911D53A1F54B15EEF4229D6427 height=52 module=consensus
+2023-05-07T20:47:11+08:00 INFO finalizing commit of block hash=8693496CAFBA9B528FB37A647DD2AC723569FB911D53A1F54B15EEF4229D6427 height=52 module=consensus num_txs=5 root=
+2023-05-07T20:47:11+08:00 INFO executed block height=52 module=state num_invalid_txs=0 num_valid_txs=5
+2023-05-07T20:47:11+08:00 INFO committed state app_hash= height=52 module=state num_txs=5
+2023-05-07T20:47:12+08:00 INFO received proposal module=consensus proposal={"Type":32,"block_id":{"hash":"6792E2117F282C4A3A242D0E48760500312097FFD3CD577A6D6BBF7F05A4C43B","parts":{"hash":"4962CBF7B061258EBB12C522E64599DA2BE23749A170B78C2763E232DAAF8BCA","total":1}},"height":53,"pol_round":-1,"round":0,"signature":"lnuhZpLmT2wTxot5lzJkgjO6vbf1zvxCEqwLAx133ZUC7a4KBLICwhWUxNQqm+29YqBdJakdDBUc+3/332GUCw==","timestamp":"2023-05-07T12:47:12.229114Z"}
+2023-05-07T20:47:12+08:00 INFO received complete proposal block hash=6792E2117F282C4A3A242D0E48760500312097FFD3CD577A6D6BBF7F05A4C43B height=53 module=consensus
+2023-05-07T20:47:12+08:00 INFO finalizing commit of block hash=6792E2117F282C4A3A242D0E48760500312097FFD3CD577A6D6BBF7F05A4C43B height=53 module=consensus num_txs=16 root=
+2023-05-07T20:47:12+08:00 INFO executed block height=53 module=state num_invalid_txs=0 num_valid_txs=16
+2023-05-07T20:47:12+08:00 INFO committed state app_hash= height=53 module=state num_txs=16
+2023-05-07T20:47:13+08:00 INFO received proposal module=consensus proposal={"Type":32,"block_id":{"hash":"704F80469501D97022B8D80E579B9E901AA1EF8E4DFEA9577B67EE3270DE785A","parts":{"hash":"621EB8094849A0AF8C1C5AB431C2AEC5E658129A8A7025CDCF4BC09437A49313","total":1}},"height":54,"pol_round":-1,"round":0,"signature":"ZBKvyQo/wqpIq0ObIzL55Zo7izL6kT21gRu2auJju3pjCXfZtaxrpsyRtZ/Gos20UvGzBsMH64HZA5FgaqbsDw==","timestamp":"2023-05-07T12:47:13.695236Z"}
+2023-05-07T20:47:13+08:00 INFO received complete proposal block hash=704F80469501D97022B8D80E579B9E901AA1EF8E4DFEA9577B67EE3270DE785A height=54 module=consensus
+2023-05-07T20:47:14+08:00 INFO finalizing commit of block hash=704F80469501D97022B8D80E579B9E901AA1EF8E4DFEA9577B67EE3270DE785A height=54 module=consensus num_txs=11 root=
+2023-05-07T20:47:14+08:00 INFO executed block height=54 module=state num_invalid_txs=0 num_valid_txs=11
+2023-05-07T20:47:14+08:00 INFO committed state app_hash= height=54 module=state num_txs=11
+2023-05-07T20:47:16+08:00 INFO received proposal module=consensus proposal={"Type":32,"block_id":{"hash":"8476BDA1FEE81CFCECE3E2C6769DC08F580ADA3896E60915A10DF3805D1AFF50","parts":{"hash":"E87EA7FE271C1030356AE028A0316E0D2120FB3108C8CB6227E4FEBFFE5FD8D1","total":1}},"height":55,"pol_round":-1,"round":0,"signature":"UIySWvongriG5HQB/5y/BPucQpYF0buyUkjzHpXj/DKYfdTv9hTqIQWk+b6WherfQIf1qiHiow7qcb/2OlydAA==","timestamp":"2023-05-07T12:47:16.12242Z"}
+2023-05-07T20:47:16+08:00 INFO received complete proposal block hash=8476BDA1FEE81CFCECE3E2C6769DC08F580ADA3896E60915A10DF3805D1AFF50 height=55 module=consensus
+2023-05-07T20:47:17+08:00 INFO finalizing commit of block hash=8476BDA1FEE81CFCECE3E2C6769DC08F580ADA3896E60915A10DF3805D1AFF50 height=55 module=consensus num_txs=1 root=
+2023-05-07T20:47:17+08:00 INFO executed block height=55 module=state num_invalid_txs=0 num_valid_txs=1
+2023-05-07T20:47:17+08:00 INFO committed state app_hash= height=55 module=state num_txs=1
+2023-05-07T20:47:18+08:00 INFO received proposal module=consensus proposal={"Type":32,"block_id":{"hash":"DBBF6AB660AA5FC1FBD6AEF1B0CE566CB87F116E14C61D775B37A2FF101D85CC","parts":{"hash":"FE0553E8BA2862B19022D123FE52BA43362A929CE2F751178E0AF15EA93F836E","total":1}},"height":56,"pol_round":-1,"round":0,"signature":"Exe/ZAov8CrIO1BZJIBvUNjDaWLgbV3Knm9zfPxK02OL//Co+NYMQ7OGrEfeDSM3WsNo4Sm9s/NycaGBGWEDCQ==","timestamp":"2023-05-07T12:47:18.207096Z"}
+2023-05-07T20:47:18+08:00 INFO received complete proposal block hash=DBBF6AB660AA5FC1FBD6AEF1B0CE566CB87F116E14C61D775B37A2FF101D85CC height=56 module=consensus
+2023-05-07T20:47:18+08:00 INFO finalizing commit of block hash=DBBF6AB660AA5FC1FBD6AEF1B0CE566CB87F116E14C61D775B37A2FF101D85CC height=56 module=consensus num_txs=397 root=
+2023-05-07T20:47:18+08:00 INFO executed block height=56 module=state num_invalid_txs=0 num_valid_txs=397
+2023-05-07T20:47:18+08:00 INFO committed state app_hash= height=56 module=state num_txs=397
+2023-05-07T20:47:19+08:00 INFO received proposal module=consensus proposal={"Type":32,"block_id":{"hash":"558E31253D4640C2674F9D99DEAFE068CFA85212EEF4648D1ADDE6070250C2C5","parts":{"hash":"C4CAA36F49F8F5650FB3D7384ED5BC6524D88AB9FC06DA72386682EFF56B4336","total":1}},"height":57,"pol_round":-1,"round":0,"signature":"alZRVczwK1vsiMi7J10f/R88znjp3+16nURlUDLAG/P+OefmMYpcY5cuJNg2Xks9CJKeWx4AbLr/wlt0UZbtDg==","timestamp":"2023-05-07T12:47:19.638515Z"}
+2023-05-07T20:47:19+08:00 INFO received complete proposal block hash=558E31253D4640C2674F9D99DEAFE068CFA85212EEF4648D1ADDE6070250C2C5 height=57 module=consensus
+2023-05-07T20:47:20+08:00 INFO finalizing commit of block hash=558E31253D4640C2674F9D99DEAFE068CFA85212EEF4648D1ADDE6070250C2C5 height=57 module=consensus num_txs=336 root=
+2023-05-07T20:47:20+08:00 INFO executed block height=57 module=state num_invalid_txs=0 num_valid_txs=336
+2023-05-07T20:47:20+08:00 INFO committed state app_hash= height=57 module=state num_txs=336
+2023-05-07T20:47:21+08:00 INFO received proposal module=consensus proposal={"Type":32,"block_id":{"hash":"C546306ACE1F7684D034412E2C4789A813D3B52FAE16E30DFF693EE933751AC9","parts":{"hash":"9CA03C39FDBD6984E0C12A16D68F645D7A5F1A91A2E4263217B1C7648E6BFE21","total":1}},"height":58,"pol_round":-1,"round":0,"signature":"x12214QvXnEotTRZnJJmitgytIlwMorr81uutPmEKmMXVYngueMzcXrGZzv21C1riioPvJ0KcsfwTQDveiV2BA==","timestamp":"2023-05-07T12:47:21.331849Z"}
+2023-05-07T20:47:21+08:00 INFO received complete proposal block hash=C546306ACE1F7684D034412E2C4789A813D3B52FAE16E30DFF693EE933751AC9 height=58 module=consensus
+2023-05-07T20:47:21+08:00 INFO finalizing commit of block hash=C546306ACE1F7684D034412E2C4789A813D3B52FAE16E30DFF693EE933751AC9 height=58 module=consensus num_txs=134 root=
+2023-05-07T20:47:21+08:00 INFO executed block height=58 module=state num_invalid_txs=0 num_valid_txs=134
+2023-05-07T20:47:22+08:00 INFO committed state app_hash= height=58 module=state num_txs=134
+2023-05-07T20:47:22+08:00 INFO received proposal module=consensus proposal={"Type":32,"block_id":{"hash":"8023B7D3836DA6CFB3FCC68134F6900604995496D69F0E8C944AC89B063B2D23","parts":{"hash":"16901C2624A296DC14DE6A28F20DB85EC0A9D441C8B2AF1AC5A98E1C1657C6CE","total":1}},"height":59,"pol_round":-1,"round":0,"signature":"jV+Q2pgA4x7uvAMjr3KOtuujKmFk3GBRbngGd2yb3kmLXJEdgZily3uhRzFLaV5s93FiTl1JKvpXwvuCrBqFDw==","timestamp":"2023-05-07T12:47:22.848075Z"}
+2023-05-07T20:47:22+08:00 INFO received complete proposal block hash=8023B7D3836DA6CFB3FCC68134F6900604995496D69F0E8C944AC89B063B2D23 height=59 module=consensus
+2023-05-07T20:47:23+08:00 INFO finalizing commit of block hash=8023B7D3836DA6CFB3FCC68134F6900604995496D69F0E8C944AC89B063B2D23 height=59 module=consensus num_txs=5 root=
+2023-05-07T20:47:23+08:00 INFO executed block height=59 module=state num_invalid_txs=0 num_valid_txs=5
+2023-05-07T20:47:23+08:00 INFO committed state app_hash= height=59 module=state num_txs=5

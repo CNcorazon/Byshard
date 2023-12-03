@@ -1,0 +1,82 @@
+2023-05-12T21:02:18+08:00 INFO starting service impl=multiAppConn module=proxy service=multiAppConn
+2023-05-12T21:02:18+08:00 INFO starting service connection=query impl=localClient module=abci-client service=localClient
+2023-05-12T21:02:18+08:00 INFO starting service connection=snapshot impl=localClient module=abci-client service=localClient
+2023-05-12T21:02:18+08:00 INFO starting service connection=mempool impl=localClient module=abci-client service=localClient
+2023-05-12T21:02:18+08:00 INFO starting service connection=consensus impl=localClient module=abci-client service=localClient
+2023-05-12T21:02:18+08:00 INFO starting service impl=EventBus module=events service=EventBus
+2023-05-12T21:02:18+08:00 INFO starting service impl=PubSub module=pubsub service=PubSub
+2023-05-12T21:02:18+08:00 INFO starting service impl=IndexerService module=txindex service=IndexerService
+2023-05-12T21:02:18+08:00 INFO ABCI Handshake App Info hash= height=0 module=consensus protocol-version=0 software-version=
+2023-05-12T21:02:18+08:00 INFO ABCI Replay Blocks appHeight=0 module=consensus stateHeight=0 storeHeight=0
+2023-05-12T21:02:18+08:00 INFO Completed ABCI Handshake - Tendermint and App are synced appHash= appHeight=0 module=consensus
+2023-05-12T21:02:18+08:00 INFO Version info block=11 mode=validator p2p=8 tmVersion=0.35.7
+2023-05-12T21:02:18+08:00 INFO This node is a validator addr=73CEA07AA934F17938B771E450E7A8B67DE43B07 module=consensus pubKey="{\x12�H��옣gSv���\x05Vٿ�\x10�w�ɀ���;\x14�"
+2023-05-12T21:02:20+08:00 INFO starting service impl=Node service=Node
+2023-05-12T21:02:20+08:00 INFO p2p service legacy_enabled=false
+2023-05-12T21:02:20+08:00 INFO starting service impl=router module=p2p service=router
+2023-05-12T21:02:20+08:00 INFO starting router channels=402021222330386061626300 listen_addr=tcp://0.0.0.0:37856 module=p2p net_addr={"id":"fb9d3ebb5da78710f346b104b48ebbbff6eced2e","ip":"0.0.0.0","port":37856} node_id=fb9d3ebb5da78710f346b104b48ebbbff6eced2e
+2023-05-12T21:02:20+08:00 INFO starting service impl=BlockSync module=blockchain service=BlockSync
+2023-05-12T21:02:20+08:00 INFO starting service impl=ConsensusReactor module=consensus service=Consensus
+2023-05-12T21:02:20+08:00 INFO starting service impl=StateSync module=statesync service=StateSync
+2023-05-12T21:02:20+08:00 INFO starting service impl=Mempool module=mempool service=Mempool version=v1
+2023-05-12T21:02:20+08:00 INFO starting service impl=Evidence module=evidence service=Evidence
+2023-05-12T21:02:20+08:00 INFO starting service impl=PEX service=PEX
+2023-05-12T21:02:20+08:00 INFO Starting RPC HTTP server on 192.168.0.166:37857 module=rpc-server
+2023-05-12T21:02:20+08:00 INFO starting service impl=MConn{192.168.0.166:37456} module=p2p peer={"Hostname":"192.168.0.166","NodeID":"45545e84aa96de6dfdbd833edf389ac925f29613","Path":"","Port":37456,"Protocol":"mconn"} service=MConnection
+2023-05-12T21:02:20+08:00 INFO starting service impl=MConn{192.168.0.166:37056} module=p2p peer={"Hostname":"192.168.0.166","NodeID":"3ec88cb72d14885d52f6b013dc139a0e7b12710f","Path":"","Port":37056,"Protocol":"mconn"} service=MConnection
+2023-05-12T21:02:20+08:00 INFO peer connected endpoint={} module=p2p peer=45545e84aa96de6dfdbd833edf389ac925f29613
+2023-05-12T21:02:20+08:00 INFO peer connected endpoint={} module=p2p peer=3ec88cb72d14885d52f6b013dc139a0e7b12710f
+2023-05-12T21:02:20+08:00 INFO received peer update module=statesync peer=45545e84aa96de6dfdbd833edf389ac925f29613 status=up
+2023-05-12T21:02:21+08:00 INFO received peer update module=statesync peer=3ec88cb72d14885d52f6b013dc139a0e7b12710f status=up
+2023-05-12T21:02:21+08:00 INFO not caught up yet height=1 max_peer_height=0 module=blockchain timeout_in=58972.957229
+2023-05-12T21:02:22+08:00 INFO switching to consensus reactor height=1 module=blockchain
+2023-05-12T21:02:22+08:00 INFO switching to consensus module=consensus
+2023-05-12T21:02:22+08:00 INFO starting service impl=ConsensusState module=consensus service=State
+2023-05-12T21:02:22+08:00 INFO starting service impl=baseWAL module=consensus service=baseWAL wal=/root/.haechibyshard/shard17/node8/data/cs.wal/wal
+2023-05-12T21:02:23+08:00 INFO starting service impl=Group module=consensus service=Group wal=/root/.haechibyshard/shard17/node8/data/cs.wal/wal
+2023-05-12T21:02:23+08:00 INFO starting service impl=TimeoutTicker module=consensus service=TimeoutTicker
+2023-05-12T21:02:23+08:00 INFO Searching for height height=1 max=0 min=0 module=consensus wal=/root/.haechibyshard/shard17/node8/data/cs.wal/wal
+2023-05-12T21:02:23+08:00 INFO Searching for height height=0 max=0 min=0 module=consensus wal=/root/.haechibyshard/shard17/node8/data/cs.wal/wal
+2023-05-12T21:02:23+08:00 INFO Found height=0 index=0 module=consensus wal=/root/.haechibyshard/shard17/node8/data/cs.wal/wal
+2023-05-12T21:02:23+08:00 INFO Catchup by replaying consensus messages height=1 module=consensus
+2023-05-12T21:02:23+08:00 INFO Replay: Done module=consensus
+2023-05-12T21:02:24+08:00 INFO starting service impl=MConn{192.168.0.166:57284} module=p2p peer={"Hostname":"192.168.0.166","NodeID":"2aeea68363eb68378caef16fd6740b01ef16477b","Path":"","Port":57284,"Protocol":"mconn"} service=MConnection
+2023-05-12T21:02:24+08:00 INFO peer connected endpoint={} module=p2p peer=2aeea68363eb68378caef16fd6740b01ef16477b
+2023-05-12T21:02:24+08:00 INFO received peer update module=statesync peer=2aeea68363eb68378caef16fd6740b01ef16477b status=up
+2023-05-12T21:02:24+08:00 INFO received proposal module=consensus proposal={"Type":32,"block_id":{"hash":"CADFFC8BF235EC60B5FF7F5AF78836B91EBC9F7B1CFE7FB24E6FD2698F320FE8","parts":{"hash":"BBD0BD405378CCBEB2320A9D94F5CCDD5A05C2B571889D18E8997E67790EA538","total":6}},"height":1,"pol_round":-1,"round":0,"signature":"oXZT/eVSsxz56sm8fJWaASiLq19ECkbzkDPW5PB9uw9KpXzaHtcmHbqUlJEshxirRmk+V3WzHfZlSwPC2wwxBg==","timestamp":"2023-05-12T13:02:23.379398686Z"}
+2023-05-12T21:02:24+08:00 ERROR rejected incoming good transaction; mempool full err="mempool is full: number of txs 5000 (max: 5000), total txs bytes 385369 (max: 1073741824)" module=mempool tx=FE6FD7C3B4F72F9140D87E0833552D4BDEA0308D884576DE811A993ED40AFB5B version=v1
+2023-05-12T21:02:24+08:00 ERROR rejected incoming good transaction; mempool full err="mempool is full: number of txs 5000 (max: 5000), total txs bytes 385369 (max: 1073741824)" module=mempool tx=3B957988176446E01988779E0F5B6D59BD863398A469A4F25BD6213841B53FB3 version=v1
+2023-05-12T21:02:24+08:00 ERROR rejected incoming good transaction; mempool full err="mempool is full: number of txs 5000 (max: 5000), total txs bytes 385369 (max: 1073741824)" module=mempool tx=E8CEDFDE7916BEEAB9A1C00F65831B5C91F41A0A97F1BF4899755E0E24E2C5BE version=v1
+2023-05-12T21:02:24+08:00 ERROR rejected incoming good transaction; mempool full err="mempool is full: number of txs 5000 (max: 5000), total txs bytes 385369 (max: 1073741824)" module=mempool tx=E2D1C224EFDB71648DFA68F23EE053183741D2C23604A9FC5B225AAC504B7FCE version=v1
+2023-05-12T21:02:24+08:00 ERROR rejected incoming good transaction; mempool full err="mempool is full: number of txs 5000 (max: 5000), total txs bytes 385369 (max: 1073741824)" module=mempool tx=B0F45F0700ADB4E08BBC8750966786AD9E9854E7D6954C7DE99FDED10BC5B545 version=v1
+2023-05-12T21:02:24+08:00 ERROR rejected incoming good transaction; mempool full err="mempool is full: number of txs 5000 (max: 5000), total txs bytes 385369 (max: 1073741824)" module=mempool tx=429A82C37FB961838B1FC790081B968D6D50DE819AE58A50A8D7988960EEF155 version=v1
+2023-05-12T21:02:24+08:00 ERROR rejected incoming good transaction; mempool full err="mempool is full: number of txs 5000 (max: 5000), total txs bytes 385369 (max: 1073741824)" module=mempool tx=374AAA7DB92C49D99999B1E1025281BC4F682F61AAD6BCD30D357C5C6A1E9B3B version=v1
+2023-05-12T21:02:24+08:00 ERROR rejected incoming good transaction; mempool full err="mempool is full: number of txs 5000 (max: 5000), total txs bytes 385369 (max: 1073741824)" module=mempool tx=7E89326F4219EF709733BAF10DFB60FEB1A7D04E192708987DE72D5C62807F80 version=v1
+2023-05-12T21:02:24+08:00 ERROR rejected incoming good transaction; mempool full err="mempool is full: number of txs 5000 (max: 5000), total txs bytes 385369 (max: 1073741824)" module=mempool tx=E8F4D18A60F203C20398A5EFB95F514DA7715FCFF0A90A67CDD54D72170E8563 version=v1
+2023-05-12T21:02:24+08:00 ERROR rejected incoming good transaction; mempool full err="mempool is full: number of txs 5000 (max: 5000), total txs bytes 385369 (max: 1073741824)" module=mempool tx=5EE1B7325C56FD99FB441BE796B48837EC07780CAE2234ED11EBE74D5A06AABC version=v1
+2023-05-12T21:02:24+08:00 ERROR rejected incoming good transaction; mempool full err="mempool is full: number of txs 5000 (max: 5000), total txs bytes 385369 (max: 1073741824)" module=mempool tx=D2387508701740F1CEF350D3D4D3D346904115C872F7B580B73BADEADD419D10 version=v1
+2023-05-12T21:02:24+08:00 ERROR rejected incoming good transaction; mempool full err="mempool is full: number of txs 5000 (max: 5000), total txs bytes 385369 (max: 1073741824)" module=mempool tx=50301E004E9EEE9503191829504A3568646763DA1AE8EE895C0FA93ED68061D6 version=v1
+2023-05-12T21:02:24+08:00 ERROR rejected incoming good transaction; mempool full err="mempool is full: number of txs 5000 (max: 5000), total txs bytes 385369 (max: 1073741824)" module=mempool tx=AE3AEEDACD909B9E18EDA5BBFBCFD0CEF00C7F1D839D3B26FDFFC9A663D21EBC version=v1
+2023-05-12T21:02:24+08:00 ERROR rejected incoming good transaction; mempool full err="mempool is full: number of txs 5000 (max: 5000), total txs bytes 385369 (max: 1073741824)" module=mempool tx=590ABF7DF06BE74DBF62103F5D9385DAEB2332F7138867E27CF119335E18A5FB version=v1
+2023-05-12T21:02:24+08:00 ERROR rejected incoming good transaction; mempool full err="mempool is full: number of txs 5000 (max: 5000), total txs bytes 385369 (max: 1073741824)" module=mempool tx=7763C7DAE26C01A8A7E64004674183790D506F2246D225510924A96400B57017 version=v1
+2023-05-12T21:02:24+08:00 ERROR rejected incoming good transaction; mempool full err="mempool is full: number of txs 5000 (max: 5000), total txs bytes 385369 (max: 1073741824)" module=mempool tx=CB01DB5F47A42F85C39767612270520403608FF09E6313F095F26390EF11A283 version=v1
+2023-05-12T21:02:24+08:00 ERROR rejected incoming good transaction; mempool full err="mempool is full: number of txs 5000 (max: 5000), total txs bytes 385369 (max: 1073741824)" module=mempool tx=BFB5B282C0595E6351A97138459F9BE1F532252B353A7350857767594757D877 version=v1
+2023-05-12T21:02:24+08:00 ERROR rejected incoming good transaction; mempool full err="mempool is full: number of txs 5000 (max: 5000), total txs bytes 385369 (max: 1073741824)" module=mempool tx=0F936932783003FD3F85C9683299A235D9049497AFB3544CBF2747ED4E0F7C1E version=v1
+2023-05-12T21:02:24+08:00 ERROR rejected incoming good transaction; mempool full err="mempool is full: number of txs 5000 (max: 5000), total txs bytes 385369 (max: 1073741824)" module=mempool tx=AADA34CD6AEA290F1108676B87B6BC691ABE2D4B40C903038466CC7A76C33E10 version=v1
+2023-05-12T21:02:24+08:00 ERROR rejected incoming good transaction; mempool full err="mempool is full: number of txs 5000 (max: 5000), total txs bytes 385369 (max: 1073741824)" module=mempool tx=AF401EC4996FF5C2AA406ABEEE9B52977F1DE637C920D664AA3D32172C5FDC58 version=v1
+2023-05-12T21:02:24+08:00 ERROR rejected incoming good transaction; mempool full err="mempool is full: number of txs 5000 (max: 5000), total txs bytes 385369 (max: 1073741824)" module=mempool tx=2E84C69EEF9A53E69F22274F68DD108EFCC5DCEE47E422415D657CA133039BF4 version=v1
+2023-05-12T21:02:24+08:00 ERROR rejected incoming good transaction; mempool full err="mempool is full: number of txs 5000 (max: 5000), total txs bytes 385369 (max: 1073741824)" module=mempool tx=842E83E549265E01E5D0FF0CF90F4C2B73F3FAC3C6B665CFFF093152B6A41BB1 version=v1
+2023-05-12T21:02:24+08:00 ERROR rejected incoming good transaction; mempool full err="mempool is full: number of txs 5000 (max: 5000), total txs bytes 385369 (max: 1073741824)" module=mempool tx=4DC82CE96AFDCF4AF93050766E314B8482AD38738792C7C645723037735A44EF version=v1
+2023-05-12T21:02:24+08:00 ERROR rejected incoming good transaction; mempool full err="mempool is full: number of txs 5000 (max: 5000), total txs bytes 385369 (max: 1073741824)" module=mempool tx=2A36CF95AC209C1A5EC4191A7284409075D80ED1D8511D5F74983E65F8E85B68 version=v1
+2023-05-12T21:02:24+08:00 ERROR rejected incoming good transaction; mempool full err="mempool is full: number of txs 5000 (max: 5000), total txs bytes 385369 (max: 1073741824)" module=mempool tx=F84206D99CB101FF265EC8F164202FEF208AAE904B9942A90CE571F936550C44 version=v1
+2023-05-12T21:02:24+08:00 ERROR rejected incoming good transaction; mempool full err="mempool is full: number of txs 5000 (max: 5000), total txs bytes 385369 (max: 1073741824)" module=mempool tx=6A4B2152DD2007056025845442B1CBC11932ED17F46559B11D1D7801C329B459 version=v1
+2023-05-12T21:02:24+08:00 ERROR rejected incoming good transaction; mempool full err="mempool is full: number of txs 5000 (max: 5000), total txs bytes 385369 (max: 1073741824)" module=mempool tx=90D7FF9A3E77A09EF5DFDD61B6AC5DD13D67332656BE97D0A07DDE3D81CE6F77 version=v1
+2023-05-12T21:02:24+08:00 ERROR rejected incoming good transaction; mempool full err="mempool is full: number of txs 5000 (max: 5000), total txs bytes 385369 (max: 1073741824)" module=mempool tx=E73D4A35850152FA55B45445399D1FCAE56A683ED5C40E5A077BE340D97825B6 version=v1
+2023-05-12T21:02:24+08:00 ERROR rejected incoming good transaction; mempool full err="mempool is full: number of txs 5000 (max: 5000), total txs bytes 385369 (max: 1073741824)" module=mempool tx=A13533D83654ADE7EA0F99B06BA03CF2CD31FA4571D65A8A0F2E8CC7C819494F version=v1
+2023-05-12T21:02:24+08:00 ERROR rejected incoming good transaction; mempool full err="mempool is full: number of txs 5000 (max: 5000), total txs bytes 385369 (max: 1073741824)" module=mempool tx=AE38C306EC3EDF8951E1529C3950919E9CB144C6A13A9DEABFAF856236AD0A16 version=v1
+2023-05-12T21:02:24+08:00 ERROR rejected incoming good transaction; mempool full err="mempool is full: number of txs 5000 (max: 5000), total txs bytes 385369 (max: 1073741824)" module=mempool tx=7EBA3782A90ED3315D4012119D3BE04083103421ED098B3F375B9F6C9CA551AE version=v1
+2023-05-12T21:02:24+08:00 ERROR rejected incoming good transaction; mempool full err="mempool is full: number of txs 5000 (max: 5000), total txs bytes 385369 (max: 1073741824)" module=mempool tx=6CD9873E6BB136DEEF9E8071B086520EBBEC0C23B11BECB0BA18799CC594D0DC version=v1
+2023-05-12T21:02:24+08:00 ERROR rejected incoming good transaction; mempool full err="mempool is full: number of txs 5000 (max: 5000), total txs bytes 385369 (max: 1073741824)" module=mempool tx=0DB0356CB3FA94B8F5232FA9AE07D9639E437B6315C449F6F66217251EDD86B3 version=v1
+2023-05-12T21:02:24+08:00 ERROR rejected incoming good transaction; mempool full err="mempool is full: number of txs 5000 (max: 5000), total txs bytes 385369 (max: 1073741824)" module=mempool tx=2FA32AA60F3C0CF087340B0FB0312033994D0CEF6D27142AE18C999663F4405C version=v1
+2023-05-12T21:02:25+08:00 ERROR rejected incoming good transaction; mempool full err="mempool is full: number of txs 5000 (max: 5000), total txs bytes 385369 (max: 1073741824)" module=mempool tx=4D27DD3C00DC0E0C31CEE31D84F3D85039B2D4D26944F328B211D556DDD39F39 version=v1
+2023-05-12T21:02:25+08:00 INFO received complete proposal block hash=CADFFC8BF235EC60B5FF7F5AF78836B91EBC9F7B1CFE7FB24E6FD2698F320FE8 height=1 module=consensus

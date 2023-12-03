@@ -1,0 +1,48 @@
+2023-05-19T18:35:00+08:00 INFO starting service impl=multiAppConn module=proxy service=multiAppConn
+2023-05-19T18:35:00+08:00 INFO starting service connection=query impl=localClient module=abci-client service=localClient
+2023-05-19T18:35:00+08:00 INFO starting service connection=snapshot impl=localClient module=abci-client service=localClient
+2023-05-19T18:35:00+08:00 INFO starting service connection=mempool impl=localClient module=abci-client service=localClient
+2023-05-19T18:35:00+08:00 INFO starting service connection=consensus impl=localClient module=abci-client service=localClient
+2023-05-19T18:35:00+08:00 INFO starting service impl=EventBus module=events service=EventBus
+2023-05-19T18:35:00+08:00 INFO starting service impl=PubSub module=pubsub service=PubSub
+2023-05-19T18:35:00+08:00 INFO starting service impl=IndexerService module=txindex service=IndexerService
+2023-05-19T18:35:00+08:00 INFO ABCI Handshake App Info hash= height=0 module=consensus protocol-version=0 software-version=
+2023-05-19T18:35:00+08:00 INFO ABCI Replay Blocks appHeight=0 module=consensus stateHeight=0 storeHeight=0
+2023-05-19T18:35:00+08:00 INFO Completed ABCI Handshake - Tendermint and App are synced appHash= appHeight=0 module=consensus
+2023-05-19T18:35:00+08:00 INFO Version info block=11 mode=validator p2p=8 tmVersion=0.35.7
+2023-05-19T18:35:00+08:00 INFO This node is a validator addr=563D941ECBCC150752CCDDB0352581441212167B module=consensus pubKey="�?p��W\u009e�5�7d]qi�~�\x1e[�p_���o 1M."
+2023-05-19T18:35:00+08:00 INFO starting service impl=Node service=Node
+2023-05-19T18:35:00+08:00 INFO p2p service legacy_enabled=false
+2023-05-19T18:35:00+08:00 INFO starting service impl=router module=p2p service=router
+2023-05-19T18:35:00+08:00 INFO Starting RPC HTTP server on 192.168.0.166:42157 module=rpc-server
+2023-05-19T18:35:00+08:00 INFO starting router channels=402021222330386061626300 listen_addr=tcp://0.0.0.0:42156 module=p2p net_addr={"id":"31a27751fc780feb7c9bd0efcdbfe6f8bbe697fd","ip":"0.0.0.0","port":42156} node_id=31a27751fc780feb7c9bd0efcdbfe6f8bbe697fd
+2023-05-19T18:35:00+08:00 INFO starting service impl=BlockSync module=blockchain service=BlockSync
+2023-05-19T18:35:00+08:00 INFO starting service impl=ConsensusReactor module=consensus service=Consensus
+2023-05-19T18:35:00+08:00 INFO starting service impl=ConsensusState module=consensus service=State
+2023-05-19T18:35:00+08:00 INFO starting service impl=baseWAL module=consensus service=baseWAL wal=/root/.haechibyshard/shard52/node0/data/cs.wal/wal
+2023-05-19T18:35:00+08:00 INFO starting service impl=Group module=consensus service=Group wal=/root/.haechibyshard/shard52/node0/data/cs.wal/wal
+2023-05-19T18:35:00+08:00 INFO starting service impl=TimeoutTicker module=consensus service=TimeoutTicker
+2023-05-19T18:35:00+08:00 INFO Searching for height height=1 max=0 min=0 module=consensus wal=/root/.haechibyshard/shard52/node0/data/cs.wal/wal
+2023-05-19T18:35:00+08:00 INFO Searching for height height=0 max=0 min=0 module=consensus wal=/root/.haechibyshard/shard52/node0/data/cs.wal/wal
+2023-05-19T18:35:00+08:00 INFO Found height=0 index=0 module=consensus wal=/root/.haechibyshard/shard52/node0/data/cs.wal/wal
+2023-05-19T18:35:00+08:00 INFO Catchup by replaying consensus messages height=1 module=consensus
+2023-05-19T18:35:00+08:00 INFO Replay: Done module=consensus
+2023-05-19T18:35:00+08:00 INFO starting service impl=StateSync module=statesync service=StateSync
+2023-05-19T18:35:00+08:00 INFO starting service impl=Mempool module=mempool service=Mempool version=v1
+2023-05-19T18:35:00+08:00 INFO starting service impl=Evidence module=evidence service=Evidence
+2023-05-19T18:35:00+08:00 INFO starting service impl=PEX service=PEX
+2023-05-19T18:35:01+08:00 INFO received proposal module=consensus proposal={"Type":32,"block_id":{"hash":"5426AF3674B54326951DFC1B472FAE31F84184365E71FB946F102837EA1F0638","parts":{"hash":"4AA56D5458C9836A0E3007413753CEFF8756DCBE9DC05F96BA7165E1D308205A","total":1}},"height":1,"pol_round":-1,"round":0,"signature":"T0yhE++cxWujIYjvwiOh1WUB4OVNB8znYF6YKDTiSXQKLb6RhAWS/IxbsBizXitrBDh5hYD5Ms5+LYjSYwXZDA==","timestamp":"2023-05-19T10:35:01.445409406Z"}
+2023-05-19T18:35:01+08:00 INFO received complete proposal block hash=5426AF3674B54326951DFC1B472FAE31F84184365E71FB946F102837EA1F0638 height=1 module=consensus
+2023-05-19T18:35:01+08:00 INFO finalizing commit of block hash=5426AF3674B54326951DFC1B472FAE31F84184365E71FB946F102837EA1F0638 height=1 module=consensus num_txs=5 root=
+2023-05-19T18:35:01+08:00 INFO executed block height=1 module=state num_invalid_txs=0 num_valid_txs=5
+2023-05-19T18:35:01+08:00 INFO committed state app_hash= height=1 module=state num_txs=5
+2023-05-19T18:35:02+08:00 INFO received proposal module=consensus proposal={"Type":32,"block_id":{"hash":"68E25D19E166B80403A6010649F5E585A19CA44AA99E939EC224213AAAEBA8B7","parts":{"hash":"5552562099362426F1EA8F8581B35CA4EFD05326AC6239464112A55F5B9913DB","total":1}},"height":2,"pol_round":-1,"round":0,"signature":"KeamM5vw+Ai3kBjGQobIhTri0/JJYA+TbKEiHt0HJUHx30+e5n8WDS70FuCxvAZ0xNQZKWcIK9fKrsbfSXqFBw==","timestamp":"2023-05-19T10:35:02.465757051Z"}
+2023-05-19T18:35:02+08:00 INFO received complete proposal block hash=68E25D19E166B80403A6010649F5E585A19CA44AA99E939EC224213AAAEBA8B7 height=2 module=consensus
+2023-05-19T18:35:02+08:00 INFO finalizing commit of block hash=68E25D19E166B80403A6010649F5E585A19CA44AA99E939EC224213AAAEBA8B7 height=2 module=consensus num_txs=4 root=
+2023-05-19T18:35:02+08:00 INFO executed block height=2 module=state num_invalid_txs=0 num_valid_txs=4
+2023-05-19T18:35:02+08:00 INFO committed state app_hash= height=2 module=state num_txs=4
+2023-05-19T18:35:03+08:00 INFO received proposal module=consensus proposal={"Type":32,"block_id":{"hash":"030A12F5F1B1241FCBA1CF4EF9D6A318A6022E4E85F7A88FE1A8F0A6DD5D9EE6","parts":{"hash":"E367F090DEF3A27881F7D5FB50E16A55DEA27FE8C052E443ADBAE513A830B1A0","total":1}},"height":3,"pol_round":-1,"round":0,"signature":"PGKI7ndd/njK3f+a8rv/5VPQO6PfZo6y0Dr5131Qg6qd+cHZd84uELXj0Dm10EQG6jdSN/Nw0+NTkhPEJu7YAw==","timestamp":"2023-05-19T10:35:03.484032692Z"}
+2023-05-19T18:35:03+08:00 INFO received complete proposal block hash=030A12F5F1B1241FCBA1CF4EF9D6A318A6022E4E85F7A88FE1A8F0A6DD5D9EE6 height=3 module=consensus
+2023-05-19T18:35:03+08:00 INFO finalizing commit of block hash=030A12F5F1B1241FCBA1CF4EF9D6A318A6022E4E85F7A88FE1A8F0A6DD5D9EE6 height=3 module=consensus num_txs=1 root=
+2023-05-19T18:35:03+08:00 INFO executed block height=3 module=state num_invalid_txs=0 num_valid_txs=1
+2023-05-19T18:35:03+08:00 INFO committed state app_hash= height=3 module=state num_txs=1

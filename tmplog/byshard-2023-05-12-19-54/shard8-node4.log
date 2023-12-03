@@ -1,0 +1,181 @@
+2023-05-12T19:54:43+08:00 INFO starting service impl=multiAppConn module=proxy service=multiAppConn
+2023-05-12T19:54:43+08:00 INFO starting service connection=query impl=localClient module=abci-client service=localClient
+2023-05-12T19:54:43+08:00 INFO starting service connection=snapshot impl=localClient module=abci-client service=localClient
+2023-05-12T19:54:43+08:00 INFO starting service connection=mempool impl=localClient module=abci-client service=localClient
+2023-05-12T19:54:43+08:00 INFO starting service connection=consensus impl=localClient module=abci-client service=localClient
+2023-05-12T19:54:43+08:00 INFO starting service impl=EventBus module=events service=EventBus
+2023-05-12T19:54:43+08:00 INFO starting service impl=PubSub module=pubsub service=PubSub
+2023-05-12T19:54:43+08:00 INFO starting service impl=IndexerService module=txindex service=IndexerService
+2023-05-12T19:54:43+08:00 INFO ABCI Handshake App Info hash= height=0 module=consensus protocol-version=0 software-version=
+2023-05-12T19:54:43+08:00 INFO ABCI Replay Blocks appHeight=0 module=consensus stateHeight=0 storeHeight=0
+2023-05-12T19:54:43+08:00 INFO Completed ABCI Handshake - Tendermint and App are synced appHash= appHeight=0 module=consensus
+2023-05-12T19:54:43+08:00 INFO Version info block=11 mode=validator p2p=8 tmVersion=0.35.7
+2023-05-12T19:54:43+08:00 INFO This node is a validator addr=64DE6931CC34D62A0640B955FE95C3FE7A2C2A41 module=consensus pubKey="�B���=shH\x00�3��\f�>#CX6��9�K��DW��"
+2023-05-12T19:54:43+08:00 INFO starting service impl=Node service=Node
+2023-05-12T19:54:43+08:00 INFO p2p service legacy_enabled=false
+2023-05-12T19:54:43+08:00 INFO starting service impl=router module=p2p service=router
+2023-05-12T19:54:43+08:00 INFO starting router channels=402021222330386061626300 listen_addr=tcp://0.0.0.0:28456 module=p2p net_addr={"id":"0e5ddf23945fda654fff8125fc420e1b8ef79ba7","ip":"0.0.0.0","port":28456} node_id=0e5ddf23945fda654fff8125fc420e1b8ef79ba7
+2023-05-12T19:54:43+08:00 INFO starting service impl=BlockSync module=blockchain service=BlockSync
+2023-05-12T19:54:43+08:00 INFO starting service impl=ConsensusReactor module=consensus service=Consensus
+2023-05-12T19:54:43+08:00 INFO starting service impl=StateSync module=statesync service=StateSync
+2023-05-12T19:54:43+08:00 INFO starting service impl=Mempool module=mempool service=Mempool version=v1
+2023-05-12T19:54:43+08:00 INFO starting service impl=Evidence module=evidence service=Evidence
+2023-05-12T19:54:43+08:00 INFO Starting RPC HTTP server on 192.168.0.166:28457 module=rpc-server
+2023-05-12T19:54:43+08:00 INFO starting service impl=PEX service=PEX
+2023-05-12T19:54:43+08:00 INFO starting service impl=MConn{192.168.0.166:39538} module=p2p peer={"Hostname":"192.168.0.166","NodeID":"5e707a146f801ba7ee38702c2fc8cb1e33a1f3f9","Path":"","Port":39538,"Protocol":"mconn"} service=MConnection
+2023-05-12T19:54:43+08:00 INFO starting service impl=MConn{192.168.0.166:28156} module=p2p peer={"Hostname":"192.168.0.166","NodeID":"5e707a146f801ba7ee38702c2fc8cb1e33a1f3f9","Path":"","Port":28156,"Protocol":"mconn"} service=MConnection
+2023-05-12T19:54:43+08:00 INFO Connection is closed @ recvRoutine (likely by the other side) conn={"Logger":{}} module=p2p peer={"Hostname":"192.168.0.166","NodeID":"5e707a146f801ba7ee38702c2fc8cb1e33a1f3f9","Path":"","Port":28156,"Protocol":"mconn"}
+2023-05-12T19:54:43+08:00 INFO stopping service impl=MConn{192.168.0.166:28156} module=p2p peer={"Hostname":"192.168.0.166","NodeID":"5e707a146f801ba7ee38702c2fc8cb1e33a1f3f9","Path":"","Port":28156,"Protocol":"mconn"} service=MConnection
+2023-05-12T19:54:43+08:00 INFO received peer update module=statesync peer=5e707a146f801ba7ee38702c2fc8cb1e33a1f3f9 status=up
+2023-05-12T19:54:43+08:00 ERROR failed to dial peer err="peer 5e707a146f801ba7ee38702c2fc8cb1e33a1f3f9 is already connected" module=p2p op=outgoing/dialing peer=5e707a146f801ba7ee38702c2fc8cb1e33a1f3f9
+2023-05-12T19:54:43+08:00 INFO peer connected endpoint={} module=p2p peer=5e707a146f801ba7ee38702c2fc8cb1e33a1f3f9
+2023-05-12T19:54:43+08:00 INFO starting service impl=MConn{192.168.0.166:39548} module=p2p peer={"Hostname":"192.168.0.166","NodeID":"671b7d78f1370762a3d0b579483aa70325f67e1f","Path":"","Port":39548,"Protocol":"mconn"} service=MConnection
+2023-05-12T19:54:43+08:00 INFO peer connected endpoint={} module=p2p peer=671b7d78f1370762a3d0b579483aa70325f67e1f
+2023-05-12T19:54:43+08:00 INFO received peer update module=statesync peer=671b7d78f1370762a3d0b579483aa70325f67e1f status=up
+2023-05-12T19:54:44+08:00 INFO switching to consensus reactor height=1 module=blockchain
+2023-05-12T19:54:44+08:00 INFO switching to consensus module=consensus
+2023-05-12T19:54:44+08:00 INFO starting service impl=ConsensusState module=consensus service=State
+2023-05-12T19:54:44+08:00 INFO starting service impl=baseWAL module=consensus service=baseWAL wal=/root/.haechibyshard/shard8/node4/data/cs.wal/wal
+2023-05-12T19:54:44+08:00 INFO starting service impl=Group module=consensus service=Group wal=/root/.haechibyshard/shard8/node4/data/cs.wal/wal
+2023-05-12T19:54:44+08:00 INFO starting service impl=TimeoutTicker module=consensus service=TimeoutTicker
+2023-05-12T19:54:44+08:00 INFO Searching for height height=1 max=0 min=0 module=consensus wal=/root/.haechibyshard/shard8/node4/data/cs.wal/wal
+2023-05-12T19:54:44+08:00 INFO Searching for height height=0 max=0 min=0 module=consensus wal=/root/.haechibyshard/shard8/node4/data/cs.wal/wal
+2023-05-12T19:54:44+08:00 INFO Found height=0 index=0 module=consensus wal=/root/.haechibyshard/shard8/node4/data/cs.wal/wal
+2023-05-12T19:54:44+08:00 INFO Catchup by replaying consensus messages height=1 module=consensus
+2023-05-12T19:54:44+08:00 INFO Replay: Done module=consensus
+2023-05-12T19:54:44+08:00 INFO starting service impl=MConn{192.168.0.166:28256} module=p2p peer={"Hostname":"192.168.0.166","NodeID":"b7341c4f4f6d3045a6ae0be8c2dcdaa184c47059","Path":"","Port":28256,"Protocol":"mconn"} service=MConnection
+2023-05-12T19:54:44+08:00 INFO peer connected endpoint={} module=p2p peer=b7341c4f4f6d3045a6ae0be8c2dcdaa184c47059
+2023-05-12T19:54:44+08:00 INFO received peer update module=statesync peer=b7341c4f4f6d3045a6ae0be8c2dcdaa184c47059 status=up
+2023-05-12T19:54:44+08:00 INFO starting service impl=MConn{192.168.0.166:39562} module=p2p peer={"Hostname":"192.168.0.166","NodeID":"844c8182b9ea0fb2dc79f2d42fafd54d7b1ba2fc","Path":"","Port":39562,"Protocol":"mconn"} service=MConnection
+2023-05-12T19:54:44+08:00 INFO peer connected endpoint={} module=p2p peer=844c8182b9ea0fb2dc79f2d42fafd54d7b1ba2fc
+2023-05-12T19:54:44+08:00 INFO received peer update module=statesync peer=844c8182b9ea0fb2dc79f2d42fafd54d7b1ba2fc status=up
+2023-05-12T19:54:44+08:00 INFO starting service impl=MConn{192.168.0.166:39578} module=p2p peer={"Hostname":"192.168.0.166","NodeID":"70bbf9235149698454eba7e53dcd0897079606e5","Path":"","Port":39578,"Protocol":"mconn"} service=MConnection
+2023-05-12T19:54:44+08:00 INFO peer connected endpoint={} module=p2p peer=70bbf9235149698454eba7e53dcd0897079606e5
+2023-05-12T19:54:44+08:00 INFO starting service impl=MConn{192.168.0.166:28756} module=p2p peer={"Hostname":"192.168.0.166","NodeID":"e9b9ecc284c4545d9c34bfefaa68f59d767dfd20","Path":"","Port":28756,"Protocol":"mconn"} service=MConnection
+2023-05-12T19:54:44+08:00 INFO peer connected endpoint={} module=p2p peer=e9b9ecc284c4545d9c34bfefaa68f59d767dfd20
+2023-05-12T19:54:44+08:00 INFO received peer update module=statesync peer=70bbf9235149698454eba7e53dcd0897079606e5 status=up
+2023-05-12T19:54:44+08:00 INFO received peer update module=statesync peer=e9b9ecc284c4545d9c34bfefaa68f59d767dfd20 status=up
+2023-05-12T19:54:45+08:00 INFO starting service impl=MConn{192.168.0.166:28556} module=p2p peer={"Hostname":"192.168.0.166","NodeID":"ea7f769661525e69f4afe7abdb4f4e2a7b8c65ab","Path":"","Port":28556,"Protocol":"mconn"} service=MConnection
+2023-05-12T19:54:45+08:00 INFO peer connected endpoint={} module=p2p peer=ea7f769661525e69f4afe7abdb4f4e2a7b8c65ab
+2023-05-12T19:54:45+08:00 INFO starting service impl=MConn{192.168.0.166:28356} module=p2p peer={"Hostname":"192.168.0.166","NodeID":"b7b2ad31f8aa3426d79ca6c62c2573870f1d039d","Path":"","Port":28356,"Protocol":"mconn"} service=MConnection
+2023-05-12T19:54:45+08:00 INFO peer connected endpoint={} module=p2p peer=b7b2ad31f8aa3426d79ca6c62c2573870f1d039d
+2023-05-12T19:54:45+08:00 INFO starting service impl=MConn{192.168.0.166:39580} module=p2p peer={"Hostname":"192.168.0.166","NodeID":"b7b2ad31f8aa3426d79ca6c62c2573870f1d039d","Path":"","Port":39580,"Protocol":"mconn"} service=MConnection
+2023-05-12T19:54:45+08:00 ERROR failed to accept connection err="peer \"b7b2ad31f8aa3426d79ca6c62c2573870f1d039d\" is already connected" module=p2p op=incoming/accepted peer=b7b2ad31f8aa3426d79ca6c62c2573870f1d039d
+2023-05-12T19:54:45+08:00 INFO stopping service impl=MConn{192.168.0.166:39580} module=p2p peer={"Hostname":"192.168.0.166","NodeID":"b7b2ad31f8aa3426d79ca6c62c2573870f1d039d","Path":"","Port":39580,"Protocol":"mconn"} service=MConnection
+2023-05-12T19:54:45+08:00 INFO received peer update module=statesync peer=ea7f769661525e69f4afe7abdb4f4e2a7b8c65ab status=up
+2023-05-12T19:54:45+08:00 INFO received peer update module=statesync peer=b7b2ad31f8aa3426d79ca6c62c2573870f1d039d status=up
+2023-05-12T19:54:45+08:00 INFO starting service impl=MConn{192.168.0.166:28956} module=p2p peer={"Hostname":"192.168.0.166","NodeID":"f6b83d0cacfb3b0fead1ddf7835911f269ef7e5d","Path":"","Port":28956,"Protocol":"mconn"} service=MConnection
+2023-05-12T19:54:45+08:00 INFO peer connected endpoint={} module=p2p peer=f6b83d0cacfb3b0fead1ddf7835911f269ef7e5d
+2023-05-12T19:54:45+08:00 INFO received peer update module=statesync peer=f6b83d0cacfb3b0fead1ddf7835911f269ef7e5d status=up
+2023-05-12T19:54:46+08:00 INFO received proposal module=consensus proposal={"Type":32,"block_id":{"hash":"E00313242D81CF54E1B22929AFE19F39FABA3F4FD7A84398FDB5790D200A5DAE","parts":{"hash":"82F058600B0F8BD58419F53A587A546FE71B86D4F4C2294957B5D137E05252C5","total":3}},"height":1,"pol_round":-1,"round":0,"signature":"PiSNv34EyZJJkC/NVXhmY5d2ww3XOwxut727F89nixHtBLQ8dy9lDKN6RnLMOIiFvjP+YkRki+TMEefMFP9+Cw==","timestamp":"2023-05-12T11:54:46.41453194Z"}
+2023-05-12T19:54:47+08:00 INFO received complete proposal block hash=E00313242D81CF54E1B22929AFE19F39FABA3F4FD7A84398FDB5790D200A5DAE height=1 module=consensus
+2023-05-12T19:54:48+08:00 ERROR rejected incoming good transaction; mempool full err="mempool is full: number of txs 5000 (max: 5000), total txs bytes 377309 (max: 1073741824)" module=mempool tx=D01300718B8EBCDDACD22B7299255978E2291BAAD172CCF4D7166521247950FF version=v1
+2023-05-12T19:54:49+08:00 ERROR rejected incoming good transaction; mempool full err="mempool is full: number of txs 5000 (max: 5000), total txs bytes 377309 (max: 1073741824)" module=mempool tx=38E2675ED4211F34F42517268D7B71E319C56A3B57561B6595A10F9693A0667E version=v1
+2023-05-12T19:54:49+08:00 ERROR rejected incoming good transaction; mempool full err="mempool is full: number of txs 5000 (max: 5000), total txs bytes 377309 (max: 1073741824)" module=mempool tx=8C947484CDCA6F3E96695C3B78ECDF2854B8AA0C484B2F67F6AC0324A3D46057 version=v1
+2023-05-12T19:54:49+08:00 ERROR rejected incoming good transaction; mempool full err="mempool is full: number of txs 5000 (max: 5000), total txs bytes 377309 (max: 1073741824)" module=mempool tx=AE37B54B6627051E88CFB1A049B093696F6B6B7E2505A285EACD473924371FAF version=v1
+2023-05-12T19:54:49+08:00 ERROR rejected incoming good transaction; mempool full err="mempool is full: number of txs 5000 (max: 5000), total txs bytes 377309 (max: 1073741824)" module=mempool tx=92CF116471CB05ABE41FEC6A6A66F3CE31A7267D0626F3DE62B9642A3C3B2EB9 version=v1
+2023-05-12T19:54:49+08:00 ERROR rejected incoming good transaction; mempool full err="mempool is full: number of txs 5000 (max: 5000), total txs bytes 377309 (max: 1073741824)" module=mempool tx=E5752B2550C76CD80DAA01A664C5E3820B9EBBF37D59685B3E979479004FDA7D version=v1
+2023-05-12T19:54:49+08:00 ERROR rejected incoming good transaction; mempool full err="mempool is full: number of txs 5000 (max: 5000), total txs bytes 377309 (max: 1073741824)" module=mempool tx=3EDD5236161A4920246922BF0D48389CBC4D299674BBCEE48E9865E4E1D07026 version=v1
+2023-05-12T19:54:49+08:00 ERROR rejected incoming good transaction; mempool full err="mempool is full: number of txs 5000 (max: 5000), total txs bytes 377309 (max: 1073741824)" module=mempool tx=DEA98BC1FD1C093E294B3C6BE31B0C40A6BD4494C3D27A6F780392E12D8D300B version=v1
+2023-05-12T19:54:49+08:00 ERROR rejected incoming good transaction; mempool full err="mempool is full: number of txs 5000 (max: 5000), total txs bytes 377309 (max: 1073741824)" module=mempool tx=AF74A7ED71CB5C211A85E678D0CBF61A848DAA81031B4168C05978BBC26C92D4 version=v1
+2023-05-12T19:54:49+08:00 ERROR rejected incoming good transaction; mempool full err="mempool is full: number of txs 5000 (max: 5000), total txs bytes 377309 (max: 1073741824)" module=mempool tx=C3D9DF12BA3A05DAEA0F083724285EDD550098244ACA5198758A3789CB3D7D05 version=v1
+2023-05-12T19:54:49+08:00 ERROR rejected incoming good transaction; mempool full err="mempool is full: number of txs 5000 (max: 5000), total txs bytes 377309 (max: 1073741824)" module=mempool tx=4046CD3ABDEFF2110C317752F3102B9D27D2990B58329FB946CE74FBE7EFB9A8 version=v1
+2023-05-12T19:54:49+08:00 ERROR rejected incoming good transaction; mempool full err="mempool is full: number of txs 5000 (max: 5000), total txs bytes 377309 (max: 1073741824)" module=mempool tx=491BC0ABFD59CD3F989A30736AA079EC766E5E3C8E3F4CD2B0F7C32165AAAE59 version=v1
+2023-05-12T19:54:49+08:00 ERROR rejected incoming good transaction; mempool full err="mempool is full: number of txs 5000 (max: 5000), total txs bytes 377309 (max: 1073741824)" module=mempool tx=ABFFA86691B7A71B87B7E280B5194FB1D253CCF6B744CDE61C5B9C6307FBDFDF version=v1
+2023-05-12T19:54:49+08:00 ERROR rejected incoming good transaction; mempool full err="mempool is full: number of txs 5000 (max: 5000), total txs bytes 377309 (max: 1073741824)" module=mempool tx=61AA1F1AD013A6ABA28F15F282558CF913A70B55A21653B9DF651C33E98FD05A version=v1
+2023-05-12T19:54:49+08:00 ERROR rejected incoming good transaction; mempool full err="mempool is full: number of txs 5000 (max: 5000), total txs bytes 377309 (max: 1073741824)" module=mempool tx=BCB5E5D508561E12B1F4F9480A5C489150DC2338932BC9560FB58535B0D45A20 version=v1
+2023-05-12T19:54:49+08:00 ERROR rejected incoming good transaction; mempool full err="mempool is full: number of txs 5000 (max: 5000), total txs bytes 377309 (max: 1073741824)" module=mempool tx=38940BA87714630A4A727B9C123BA4773E6793CCA09B2B753F06773654BEEE47 version=v1
+2023-05-12T19:54:49+08:00 ERROR rejected incoming good transaction; mempool full err="mempool is full: number of txs 5000 (max: 5000), total txs bytes 377309 (max: 1073741824)" module=mempool tx=5473847810B60ED30B0BEF17A562F224D873219BF6B04D35554619854329C78F version=v1
+2023-05-12T19:54:49+08:00 ERROR rejected incoming good transaction; mempool full err="mempool is full: number of txs 5000 (max: 5000), total txs bytes 377309 (max: 1073741824)" module=mempool tx=6C2145C0C34924B47A716F14F53D3AD4DA237B64D72DA5D8AECC0A09A88F4372 version=v1
+2023-05-12T19:54:49+08:00 ERROR rejected incoming good transaction; mempool full err="mempool is full: number of txs 5000 (max: 5000), total txs bytes 377309 (max: 1073741824)" module=mempool tx=7C997F1BB609FDDBAB4E0695B05108FB0FDDBA6ACEB2067B07BBB64055A2DA0C version=v1
+2023-05-12T19:54:49+08:00 ERROR rejected incoming good transaction; mempool full err="mempool is full: number of txs 5000 (max: 5000), total txs bytes 377309 (max: 1073741824)" module=mempool tx=9177E39C4F9A62F6FD7CE82FF8AF84CD460E76801A29BE83F9045F1346205351 version=v1
+2023-05-12T19:54:49+08:00 ERROR rejected incoming good transaction; mempool full err="mempool is full: number of txs 5000 (max: 5000), total txs bytes 377309 (max: 1073741824)" module=mempool tx=BDC8AE730E3F8F20F6CE0C091D37F0016C1D81B6448CC591888A44BB64D23B66 version=v1
+2023-05-12T19:54:49+08:00 ERROR rejected incoming good transaction; mempool full err="mempool is full: number of txs 5000 (max: 5000), total txs bytes 377309 (max: 1073741824)" module=mempool tx=CD9908A0352EDBCBFD61B5A80297DA85286C087B9445C233904678C1976CD005 version=v1
+2023-05-12T19:54:49+08:00 ERROR rejected incoming good transaction; mempool full err="mempool is full: number of txs 5000 (max: 5000), total txs bytes 377309 (max: 1073741824)" module=mempool tx=5ED06C1BA872E6F9E6664A9A310318DCB334FEA9862FA8504D9F6E1CEB6CFC4E version=v1
+2023-05-12T19:54:49+08:00 ERROR rejected incoming good transaction; mempool full err="mempool is full: number of txs 5000 (max: 5000), total txs bytes 377309 (max: 1073741824)" module=mempool tx=442D679425B070A49944E59EE04B9035CCB22008DC441363B8802F4A72B8DFD3 version=v1
+2023-05-12T19:54:49+08:00 ERROR rejected incoming good transaction; mempool full err="mempool is full: number of txs 5000 (max: 5000), total txs bytes 377309 (max: 1073741824)" module=mempool tx=0C8A34645D242749FEAE18B15F5666CC7499B3318A4835F86888B4153D18194C version=v1
+2023-05-12T19:54:49+08:00 ERROR rejected incoming good transaction; mempool full err="mempool is full: number of txs 5000 (max: 5000), total txs bytes 377309 (max: 1073741824)" module=mempool tx=87369237B43B6F80786556B79EFF2BDD6B57F5D3CDE18A2513FBE497942837BC version=v1
+2023-05-12T19:54:49+08:00 ERROR rejected incoming good transaction; mempool full err="mempool is full: number of txs 5000 (max: 5000), total txs bytes 377309 (max: 1073741824)" module=mempool tx=2EA0559F29286B65DAA80691283A4F7EB8EBB8B22293BD681DF5C7773AD9AA6F version=v1
+2023-05-12T19:54:49+08:00 ERROR rejected incoming good transaction; mempool full err="mempool is full: number of txs 5000 (max: 5000), total txs bytes 377309 (max: 1073741824)" module=mempool tx=58B186C4F424AF8BC9E5385E7CE16B5DE9B2BD2E6ECF9367E03A03BBF2A28E19 version=v1
+2023-05-12T19:54:49+08:00 ERROR rejected incoming good transaction; mempool full err="mempool is full: number of txs 5000 (max: 5000), total txs bytes 377309 (max: 1073741824)" module=mempool tx=B920094109653CE9027514F5914680C15100B41CE32E6C10C7CBECC4E35FA074 version=v1
+2023-05-12T19:54:49+08:00 ERROR rejected incoming good transaction; mempool full err="mempool is full: number of txs 5000 (max: 5000), total txs bytes 377309 (max: 1073741824)" module=mempool tx=48FE6CE1DD8864220E4BDE65E819FACA0FF45A32C6A6BDD07F62B8D651B49551 version=v1
+2023-05-12T19:54:49+08:00 ERROR rejected incoming good transaction; mempool full err="mempool is full: number of txs 5000 (max: 5000), total txs bytes 377309 (max: 1073741824)" module=mempool tx=6543D07D149CE53BEDDF93D9050705C88866FDEA81B7679DBEBE118065C23244 version=v1
+2023-05-12T19:54:49+08:00 ERROR rejected incoming good transaction; mempool full err="mempool is full: number of txs 5000 (max: 5000), total txs bytes 377309 (max: 1073741824)" module=mempool tx=4B065A9A1F2B1E7B9422C4E84F252A842A1216252D0772BD201EE5AA653298C4 version=v1
+2023-05-12T19:54:49+08:00 ERROR rejected incoming good transaction; mempool full err="mempool is full: number of txs 5000 (max: 5000), total txs bytes 377309 (max: 1073741824)" module=mempool tx=F988FCAA91A672A3D8B7ACCA48C120F202CF38FA80AF2FF069D4034ED5B99F00 version=v1
+2023-05-12T19:54:49+08:00 ERROR rejected incoming good transaction; mempool full err="mempool is full: number of txs 5000 (max: 5000), total txs bytes 377309 (max: 1073741824)" module=mempool tx=AF63BD562AC8A32D48FB4FB8616135305BECA6C00AED298D1AE2E5D1853279CA version=v1
+2023-05-12T19:54:49+08:00 ERROR rejected incoming good transaction; mempool full err="mempool is full: number of txs 5000 (max: 5000), total txs bytes 377309 (max: 1073741824)" module=mempool tx=01B3412EE06418965567DD6294BD186D5484D78CD15DC7D9A0D6404FCF67CD1C version=v1
+2023-05-12T19:54:49+08:00 ERROR rejected incoming good transaction; mempool full err="mempool is full: number of txs 5000 (max: 5000), total txs bytes 377309 (max: 1073741824)" module=mempool tx=764AC1AF074E27ED4AE91145F8D8B016A8F96CF00841C9AEE34AFF6C846BE589 version=v1
+2023-05-12T19:54:49+08:00 ERROR rejected incoming good transaction; mempool full err="mempool is full: number of txs 5000 (max: 5000), total txs bytes 377309 (max: 1073741824)" module=mempool tx=5DA6717E40B1FB5AA8700CAEF36EAE409F1E64E34048D4861E6D6BB5FB8F72FF version=v1
+2023-05-12T19:54:49+08:00 ERROR rejected incoming good transaction; mempool full err="mempool is full: number of txs 5000 (max: 5000), total txs bytes 377309 (max: 1073741824)" module=mempool tx=57604B88C41610053F3CF9608CD60F1A7029D536B4E0AD09A2874D2400EBE6C5 version=v1
+2023-05-12T19:54:49+08:00 ERROR rejected incoming good transaction; mempool full err="mempool is full: number of txs 5000 (max: 5000), total txs bytes 377309 (max: 1073741824)" module=mempool tx=30CD1C2178EB606ED7A748E174E37155D75C57B40AE8528F448A13DB51E566DA version=v1
+2023-05-12T19:54:51+08:00 INFO received proposal module=consensus proposal={"Type":32,"block_id":{"hash":"18AFB77E532228A4A58FE032AC18B30FBF7B21B6B75621515A5158E069640FD2","parts":{"hash":"09C463AA276646EE8C80CBB0C40BCCB7DA39042A27B99244B7130DDB4A0717EE","total":6}},"height":1,"pol_round":-1,"round":1,"signature":"vwncbxPwHO1XgW+Z0uti4uFzefXvgxO6hXABboF38sXEvHxKAMWrZvizquAE3S+7CNrvdFS/3MFBUo/ZTHFaBQ==","timestamp":"2023-05-12T11:54:51.326409508Z"}
+2023-05-12T19:54:52+08:00 INFO received complete proposal block hash=18AFB77E532228A4A58FE032AC18B30FBF7B21B6B75621515A5158E069640FD2 height=1 module=consensus
+2023-05-12T19:54:52+08:00 INFO finalizing commit of block hash=18AFB77E532228A4A58FE032AC18B30FBF7B21B6B75621515A5158E069640FD2 height=1 module=consensus num_txs=5000 root=
+2023-05-12T19:54:54+08:00 ERROR rejected incoming good transaction; mempool full err="mempool is full: number of txs 5000 (max: 5000), total txs bytes 377309 (max: 1073741824)" module=mempool tx=BC6A3246B4F03B9CB85F61703CF00B767B4D73D277102E51402182A3377268C2 version=v1
+2023-05-12T19:54:55+08:00 INFO executed block height=1 module=state num_invalid_txs=0 num_valid_txs=5000
+2023-05-12T19:54:55+08:00 ERROR rejected incoming good transaction; mempool full err="mempool is full: number of txs 5000 (max: 5000), total txs bytes 377309 (max: 1073741824)" module=mempool tx=BC6A3246B4F03B9CB85F61703CF00B767B4D73D277102E51402182A3377268C2 version=v1
+2023-05-12T19:54:55+08:00 ERROR rejected incoming good transaction; mempool full err="mempool is full: number of txs 5000 (max: 5000), total txs bytes 377309 (max: 1073741824)" module=mempool tx=BC6A3246B4F03B9CB85F61703CF00B767B4D73D277102E51402182A3377268C2 version=v1
+2023-05-12T19:54:55+08:00 ERROR rejected incoming good transaction; mempool full err="mempool is full: number of txs 5000 (max: 5000), total txs bytes 377309 (max: 1073741824)" module=mempool tx=BC6A3246B4F03B9CB85F61703CF00B767B4D73D277102E51402182A3377268C2 version=v1
+2023-05-12T19:54:55+08:00 ERROR rejected incoming good transaction; mempool full err="mempool is full: number of txs 5000 (max: 5000), total txs bytes 377309 (max: 1073741824)" module=mempool tx=BC6A3246B4F03B9CB85F61703CF00B767B4D73D277102E51402182A3377268C2 version=v1
+2023-05-12T19:54:55+08:00 ERROR rejected incoming good transaction; mempool full err="mempool is full: number of txs 5000 (max: 5000), total txs bytes 377309 (max: 1073741824)" module=mempool tx=BC6A3246B4F03B9CB85F61703CF00B767B4D73D277102E51402182A3377268C2 version=v1
+2023-05-12T19:54:55+08:00 ERROR rejected incoming good transaction; mempool full err="mempool is full: number of txs 5000 (max: 5000), total txs bytes 377309 (max: 1073741824)" module=mempool tx=BC6A3246B4F03B9CB85F61703CF00B767B4D73D277102E51402182A3377268C2 version=v1
+2023-05-12T19:54:55+08:00 INFO committed state app_hash= height=1 module=state num_txs=5000
+2023-05-12T19:54:56+08:00 INFO commit is for a block we do not know about; set ProposalBlock=nil commit=26C7810378DFC057FFC0FA8EA40A94C6AB0DF58AC1B6289790908337EF2F3676 commit_round=0 height=2 module=consensus proposal=
+2023-05-12T19:54:56+08:00 INFO received complete proposal block hash=26C7810378DFC057FFC0FA8EA40A94C6AB0DF58AC1B6289790908337EF2F3676 height=2 module=consensus
+2023-05-12T19:54:56+08:00 INFO finalizing commit of block hash=26C7810378DFC057FFC0FA8EA40A94C6AB0DF58AC1B6289790908337EF2F3676 height=2 module=consensus num_txs=1 root=
+2023-05-12T19:54:56+08:00 INFO executed block height=2 module=state num_invalid_txs=0 num_valid_txs=1
+2023-05-12T19:54:56+08:00 INFO committed state app_hash= height=2 module=state num_txs=1
+2023-05-12T19:54:57+08:00 INFO received proposal module=consensus proposal={"Type":32,"block_id":{"hash":"FE59C25B924C2A56339F5FFBB08F727489E2F3625F187E605D393FD23DC8166E","parts":{"hash":"943692F1FE914A8B6A188B896EB0816EDF9160A4697EBEE2B22FB96512142E86","total":3}},"height":3,"pol_round":-1,"round":0,"signature":"bBIKFzm3p+V97fYJy84sySq30L9aTAnEDC1Mzv4qpOGTcjNHTXeW/QwCe3s0BYGmY6nLsFBTd0ImJ7s0Yg6mBg==","timestamp":"2023-05-12T11:54:57.340956654Z"}
+2023-05-12T19:54:57+08:00 INFO received complete proposal block hash=FE59C25B924C2A56339F5FFBB08F727489E2F3625F187E605D393FD23DC8166E height=3 module=consensus
+2023-05-12T19:54:58+08:00 INFO finalizing commit of block hash=FE59C25B924C2A56339F5FFBB08F727489E2F3625F187E605D393FD23DC8166E height=3 module=consensus num_txs=1677 root=
+2023-05-12T19:54:59+08:00 INFO executed block height=3 module=state num_invalid_txs=0 num_valid_txs=1677
+2023-05-12T19:54:59+08:00 INFO committed state app_hash= height=3 module=state num_txs=1677
+2023-05-12T19:55:00+08:00 INFO received proposal module=consensus proposal={"Type":32,"block_id":{"hash":"395F4DF14CFA529FFCE76D53BF7F29018D9CC9C7B5397A2843AD7DE86971F20A","parts":{"hash":"B2AD190CDB6477B73FCDCFD218C35AB8818C87D41D8BEFA4AFC423FDBD211128","total":4}},"height":4,"pol_round":-1,"round":0,"signature":"54/9795frRhRnABmiSYGiBQt+RK+WoK+GwsQ6R3smGfTzPRjczhk/cVHN/BRPwyJj2GfQynKzVxa/ms2HAK8DQ==","timestamp":"2023-05-12T11:55:00.280220791Z"}
+2023-05-12T19:55:00+08:00 INFO received complete proposal block hash=395F4DF14CFA529FFCE76D53BF7F29018D9CC9C7B5397A2843AD7DE86971F20A height=4 module=consensus
+2023-05-12T19:55:02+08:00 INFO finalizing commit of block hash=395F4DF14CFA529FFCE76D53BF7F29018D9CC9C7B5397A2843AD7DE86971F20A height=4 module=consensus num_txs=3294 root=
+2023-05-12T19:55:03+08:00 INFO executed block height=4 module=state num_invalid_txs=0 num_valid_txs=3294
+2023-05-12T19:55:03+08:00 INFO committed state app_hash= height=4 module=state num_txs=3294
+2023-05-12T19:55:05+08:00 INFO received proposal module=consensus proposal={"Type":32,"block_id":{"hash":"E22C215A80FB2426D64E2FD0F17BFF6778DBEA918D2BC9DB6E0764BAD2026E21","parts":{"hash":"CE412D281453C354E9F19AD9DC78570440EBB3F7D54554DF0B8E31B614C56F95","total":3}},"height":5,"pol_round":-1,"round":0,"signature":"9x22WLdv2N2c42fiFmZT1yu0hmCIWxtV69tnVuhGNEiUJnlNm2hRzx3e144PCh7t5WcDNMPL8OQ1n4Lk1TOUBg==","timestamp":"2023-05-12T11:55:04.973779464Z"}
+2023-05-12T19:55:05+08:00 INFO received complete proposal block hash=E22C215A80FB2426D64E2FD0F17BFF6778DBEA918D2BC9DB6E0764BAD2026E21 height=5 module=consensus
+2023-05-12T19:55:06+08:00 INFO finalizing commit of block hash=E22C215A80FB2426D64E2FD0F17BFF6778DBEA918D2BC9DB6E0764BAD2026E21 height=5 module=consensus num_txs=1678 root=
+2023-05-12T19:55:06+08:00 INFO executed block height=5 module=state num_invalid_txs=0 num_valid_txs=1678
+2023-05-12T19:55:06+08:00 INFO committed state app_hash= height=5 module=state num_txs=1678
+2023-05-12T19:55:07+08:00 INFO received proposal module=consensus proposal={"Type":32,"block_id":{"hash":"E7FA5576E7C96AEAE2811C01818A6F1AA880D587D512EBBD3F3F624580336E0F","parts":{"hash":"58EC3B6C4A5C2FE952D433BC1E0E5742CB76F23EDF28AEE53542790168290556","total":1}},"height":6,"pol_round":-1,"round":0,"signature":"H0p69Hz+nsoRmuvhk3F01uRUBbjJo09EHbig5+frJU7GkFKvjsovAhxu99EDAjcBApod+N9aYrxHNlmyBYh4CQ==","timestamp":"2023-05-12T11:55:07.435503448Z"}
+2023-05-12T19:55:07+08:00 INFO received complete proposal block hash=E7FA5576E7C96AEAE2811C01818A6F1AA880D587D512EBBD3F3F624580336E0F height=6 module=consensus
+2023-05-12T19:55:08+08:00 INFO finalizing commit of block hash=E7FA5576E7C96AEAE2811C01818A6F1AA880D587D512EBBD3F3F624580336E0F height=6 module=consensus num_txs=201 root=
+2023-05-12T19:55:09+08:00 INFO executed block height=6 module=state num_invalid_txs=0 num_valid_txs=201
+2023-05-12T19:55:09+08:00 INFO committed state app_hash= height=6 module=state num_txs=201
+2023-05-12T19:55:11+08:00 INFO received proposal module=consensus proposal={"Type":32,"block_id":{"hash":"C5CB64E4648CD7A822897123F81CDB5400B96F99187152968F716FDAFCE72D2C","parts":{"hash":"DB0E6286B2DB3435FA8E1701988D3A7CF7265100233DAD273460A0100A0849BB","total":3}},"height":7,"pol_round":-1,"round":0,"signature":"ycGrwpZLGH5T+m7M7dRDURX5De4+GvA6lK3+V4Ti8MPXlE3KOEG0ZbCUxqltGYi8JxvpbNwunWzqlhcpYvx3Cg==","timestamp":"2023-05-12T11:55:10.192438781Z"}
+2023-05-12T19:55:11+08:00 INFO received complete proposal block hash=C5CB64E4648CD7A822897123F81CDB5400B96F99187152968F716FDAFCE72D2C height=7 module=consensus
+2023-05-12T19:55:13+08:00 INFO finalizing commit of block hash=C5CB64E4648CD7A822897123F81CDB5400B96F99187152968F716FDAFCE72D2C height=7 module=consensus num_txs=1875 root=
+2023-05-12T19:55:13+08:00 INFO executed block height=7 module=state num_invalid_txs=0 num_valid_txs=1875
+2023-05-12T19:55:13+08:00 INFO committed state app_hash= height=7 module=state num_txs=1875
+2023-05-12T19:55:14+08:00 INFO received proposal module=consensus proposal={"Type":32,"block_id":{"hash":"02DE077BF90B8768419881DCB9AECA0B2EC65227E9E3F4A0A9B5D7B21BF17AD6","parts":{"hash":"5905015BCBCB42B2CE04AF32CA127DBB20BAB573874FF01A819D057DA881174B","total":4}},"height":8,"pol_round":-1,"round":0,"signature":"FxW9uYWKMS/13K515vHHYCeLAf47+XT27wXt2LiYum4M8wTbhj8O6midjvHEpHNHrc0D4MngUcgeNICEhyWjBA==","timestamp":"2023-05-12T11:55:14.401416039Z"}
+2023-05-12T19:55:15+08:00 INFO received complete proposal block hash=02DE077BF90B8768419881DCB9AECA0B2EC65227E9E3F4A0A9B5D7B21BF17AD6 height=8 module=consensus
+2023-05-12T19:55:16+08:00 INFO finalizing commit of block hash=02DE077BF90B8768419881DCB9AECA0B2EC65227E9E3F4A0A9B5D7B21BF17AD6 height=8 module=consensus num_txs=3086 root=
+2023-05-12T19:55:17+08:00 INFO executed block height=8 module=state num_invalid_txs=0 num_valid_txs=3086
+2023-05-12T19:55:17+08:00 INFO committed state app_hash= height=8 module=state num_txs=3086
+2023-05-12T19:55:18+08:00 INFO received proposal module=consensus proposal={"Type":32,"block_id":{"hash":"6EC23F94427AA506C9F1B0DFC534983846CE5672F85CB3249B8F3BBF5DE7B546","parts":{"hash":"9767C82708EF80CDFD948A239150EF3672680EFF6F5B6CF6BC0C4A10BA3DB479","total":3}},"height":9,"pol_round":-1,"round":0,"signature":"mmh4bEVXxCWn1CCgz1fgG5QJay+Wsjdx8N3v21ztI5YiqCorc0kXhpEZDGmK2c5PJ9oe5ftwFRBFKDs1PuM6AA==","timestamp":"2023-05-12T11:55:18.707074076Z"}
+2023-05-12T19:55:19+08:00 INFO received complete proposal block hash=6EC23F94427AA506C9F1B0DFC534983846CE5672F85CB3249B8F3BBF5DE7B546 height=9 module=consensus
+2023-05-12T19:55:20+08:00 INFO finalizing commit of block hash=6EC23F94427AA506C9F1B0DFC534983846CE5672F85CB3249B8F3BBF5DE7B546 height=9 module=consensus num_txs=1916 root=
+2023-05-12T19:55:21+08:00 INFO executed block height=9 module=state num_invalid_txs=0 num_valid_txs=1916
+2023-05-12T19:55:21+08:00 INFO committed state app_hash= height=9 module=state num_txs=1916
+2023-05-12T19:55:21+08:00 INFO received proposal module=consensus proposal={"Type":32,"block_id":{"hash":"99B69D11FF78F562E29829E7F7F8AAA5477C3BD3BABB751AB05B3CC95F927753","parts":{"hash":"6C5FDD1947FE963C11BD8CAFD3114195C33BAAE075FFA3C25C01047F6BAC0843","total":2}},"height":10,"pol_round":-1,"round":0,"signature":"bS5BEKwDXyvR2l/aME39OBvTl7DEbs8FcE6OvNrhvUMeAzelZamW8D2Li12UmEs0h4vZAGuER0f/4TTCS6gtCw==","timestamp":"2023-05-12T11:55:21.723006958Z"}
+2023-05-12T19:55:23+08:00 INFO received complete proposal block hash=99B69D11FF78F562E29829E7F7F8AAA5477C3BD3BABB751AB05B3CC95F927753 height=10 module=consensus
+2023-05-12T19:55:25+08:00 INFO finalizing commit of block hash=99B69D11FF78F562E29829E7F7F8AAA5477C3BD3BABB751AB05B3CC95F927753 height=10 module=consensus num_txs=1536 root=
+2023-05-12T19:55:25+08:00 INFO executed block height=10 module=state num_invalid_txs=0 num_valid_txs=1536
+2023-05-12T19:55:26+08:00 INFO committed state app_hash= height=10 module=state num_txs=1536
+2023-05-12T19:55:29+08:00 INFO received proposal module=consensus proposal={"Type":32,"block_id":{"hash":"B9062DD1240D0DC3AF9C076C58B81F4856713A95CF011160083BFC8F0F198890","parts":{"hash":"11AC2E00140CE0E2132A0FF1FB49FE938A4E17E07DEDC0F2E366745387D626C8","total":5}},"height":11,"pol_round":-1,"round":0,"signature":"2/R9odjDxpFBBhHDPOJIbeT1ALYdM2+7V33fmSIu3XIxTzGETYV2kivp+C4d+CMQsXeEIn9fd2nrw4I7+iqxCg==","timestamp":"2023-05-12T11:55:27.354277617Z"}
+2023-05-12T19:55:29+08:00 INFO received complete proposal block hash=B9062DD1240D0DC3AF9C076C58B81F4856713A95CF011160083BFC8F0F198890 height=11 module=consensus
+2023-05-12T19:55:33+08:00 INFO received proposal module=consensus proposal={"Type":32,"block_id":{"hash":"B90CBDD0140A43A89D360110C9ECB881B541B94017FD8C139934753926382A0A","parts":{"hash":"A36477BC55D1CDD480B2FA899E71ED5EB65E59890B740B56913D87529862C3B1","total":6}},"height":11,"pol_round":-1,"round":1,"signature":"9+2kxKdzvU68X4axKYtXg+GIUDoXckPdmFz59l5S+LYxFTnsd9ioBnFN5xI6Hx30jo7Vic+9SIyK9z65+m8KCA==","timestamp":"2023-05-12T11:55:33.201350057Z"}
+2023-05-12T19:55:33+08:00 INFO received complete proposal block hash=B90CBDD0140A43A89D360110C9ECB881B541B94017FD8C139934753926382A0A height=11 module=consensus
+2023-05-12T19:55:34+08:00 INFO finalizing commit of block hash=B90CBDD0140A43A89D360110C9ECB881B541B94017FD8C139934753926382A0A height=11 module=consensus num_txs=4998 root=
+2023-05-12T19:55:36+08:00 INFO executed block height=11 module=state num_invalid_txs=0 num_valid_txs=4998
+2023-05-12T19:55:36+08:00 INFO committed state app_hash= height=11 module=state num_txs=4998
+2023-05-12T19:55:41+08:00 INFO received proposal module=consensus proposal={"Type":32,"block_id":{"hash":"082D6FC4F1068D5E4E983B67E4009CB32F82D1D311F1D46FEE0DCA722908C6B7","parts":{"hash":"4538C6675E2D274A15AFFF7F774FC05841B8AE4BC07F4CDADFD2080C91B003DC","total":1}},"height":12,"pol_round":-1,"round":0,"signature":"t2jImnYziucjORvYC0n7LHTrNfaWdGpemfGhn0QvLgBAmLcocqnQqvPgqapP687vq0D+auP9s+0F3OZAlVB7Cg==","timestamp":"2023-05-12T11:55:40.201486569Z"}
+2023-05-12T19:55:41+08:00 INFO received complete proposal block hash=082D6FC4F1068D5E4E983B67E4009CB32F82D1D311F1D46FEE0DCA722908C6B7 height=12 module=consensus
+2023-05-12T19:55:41+08:00 INFO finalizing commit of block hash=082D6FC4F1068D5E4E983B67E4009CB32F82D1D311F1D46FEE0DCA722908C6B7 height=12 module=consensus num_txs=1 root=
+2023-05-12T19:55:42+08:00 INFO executed block height=12 module=state num_invalid_txs=0 num_valid_txs=1
+2023-05-12T19:55:42+08:00 INFO committed state app_hash= height=12 module=state num_txs=1
+2023-05-12T19:55:44+08:00 INFO received proposal module=consensus proposal={"Type":32,"block_id":{"hash":"98C5A18613BB812F88A5A9D7CEFB6ADE282FF037755E2258326774D807FCD8AB","parts":{"hash":"9529575A68C958D994D57FC2BA249C2B54D4207792C17E3C9AFD1B37E68516BF","total":6}},"height":13,"pol_round":-1,"round":0,"signature":"B4Axb3Ha4stAblWJxO9m+W/abVtkk3B964u9ZJnvf7mvoaOP8wGxIlOz0LE6V+We2/4WU9NUiySCkEsipnDCBw==","timestamp":"2023-05-12T11:55:43.5001537Z"}
+2023-05-12T19:55:45+08:00 INFO received complete proposal block hash=98C5A18613BB812F88A5A9D7CEFB6ADE282FF037755E2258326774D807FCD8AB height=13 module=consensus
